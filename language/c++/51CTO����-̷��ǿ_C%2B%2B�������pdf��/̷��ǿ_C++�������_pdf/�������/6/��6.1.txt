@@ -1,0 +1,13 @@
+例6.1 通过指针变量访问整型变量。
+#include <iostream>
+using namespace std;
+int main( )
+{int a,b;                                  //定义整型变量a,b
+int *pointer_1,*pointer_2;                //定义指针变量*pointer_1,*pointer_2 
+a=100;b=10;                               //对a,b赋值
+pointer_1=&a;                             //把变量ａ的地址赋给pointer_1
+pointer_2=&b;                             //把变量ａ的地址赋给pointer_2
+cout<<a<<″ ″<<b<<endl;                    //输出a和b的值
+cout<<*pointer_1<<″ ″<<*pointer_2<<endl;  //输出*pointer_1和*pointer_2的值
+return 0;
+}

@@ -1,0 +1,17 @@
+例3.15 译密码。为使电文保密，往往按一定规律将电文转换成密码，收报人再按约定的规律将其译回原文。例如，可以按以下规律将电文变成密码：将字母A变成字母E，a变成e，即变成其后的第4个字母，W变成A，X变成B，Y变成C，Z变成D。见图3.20。字母按上述规律转换，非字母字符不变。如″Wonderful!″转换为″Asrhivjyp!″。输入一行字符，要求输出其相应的密码。
+图3.20
+程序如下：
+#include <iostream>
+using namespace std;
+int main( )
+{char c;
+ while ((c=getchar( ))!=′＼n′)
+   {if((c>=′a′ && c<=′z′) || (c>=′A′ && c<=′Z′))
+      {c=c+4;
+       if(c>′Z′ && c<=′Z′+4 || c>′z′) c=c-26;
+      }
+    cout<<c;
+   }
+ cout<<endl;
+ return 0;
+}  

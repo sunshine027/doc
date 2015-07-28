@@ -1,0 +1,10 @@
+例2.5 将有符号数据传送给无符号变量。
+#include <iostream>
+using namespace std;
+int main( )
+{ unsigned short a;
+  short int b=-1;
+  a=b;
+  cout<<″a=″<<a<<endl;
+  return 0;
+}

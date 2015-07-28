@@ -1,0 +1,3 @@
+python traceback
+traceback.print_exc() just print, return none
+traceback.format_ext() return traceback string

@@ -1,0 +1,2 @@
+1. ctrl+function: eclipse√ªœÏ”¶:
+   Delete:  /path/to/workplace/.metadata/.plugins/org.eclipse.jdt.core

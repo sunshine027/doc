@@ -1,0 +1,123 @@
+1.全角匹配 ：val.match(/[^\x00-\xff]/ig)
+2.去掉首尾空格：tarr[i] = tarr[i].replace(/(^\s*)|(\s*$)/g, '');
+3.去掉首引号：tarr[i] = tarr[i].replace(/^"/g,'');
+4.去掉尾引号：tarr[i] = tarr[i].replace(/"$/g,'');
+5.取当前的网址：location.host
+6.给某个元素设置新的属性或者替换原来的属性：
+var eml=document.getElementById("content");
+eml.setAttribute("href",data);
+eml.setAttribute("target","_blank");
+7.得到请求的值：var data=this.req.responseText;
+          document.getElementById("content").innerHTML=data;
+8. var array=from.split("-").join(",");
+9.对table排序：
+krugle.dialogs.bugEdit.sort = function(type, index, obj, ta){
+    var arObj = document.getElementById(obj);
+    var arr = [];
+    var table = document.getElementById(ta);
+    for (var i = 1; i < table.rows.length; i++) {
+        var row = table.rows[i];
+        var tmp = [];
+        for (var j = 0; j < row.cells.length; j++) {
+        
+        
+            tmp.push(row.cells[j].innerHTML);
+            
+        }
+        arr.push(tmp);
+    }
+    var lArray = [];
+    
+    if (arObj.className == "sort_down") {
+        this.upSort(type, arr, index);
+        arObj.className = "sort_up";
+    }
+    else {
+        this.downSort(type, arr, index);
+        arObj.className = "sort_down";
+    }
+    
+    for (var i = 0; i < arr.length; i++) {
+        var row = table.rows[i + 1];
+        for (var j = 0; j < row.cells.length; j++) {
+            row.cells[j].innerHTML = arr[i][j];
+            
+        }
+    }
+}
+krugle.dialogs.bugEdit.upSort = function(type, arr, index){
+    for (var i = 0; i < arr.length; i++) {
+    
+        for (var j = i + 1; j < arr.length; j++) {
+            if (type == "int") {
+            
+                if (Number(arr[i][index]) > Number(arr[j][index])) {
+                    var temp = arr[i];
+                    arr[i] = arr[j];
+                    arr[j] = temp;
+                }
+            }
+            if (type == "string") {
+                if (arr[i][index] > arr[j][index]) {
+                    var temp = arr[i];
+                    arr[i] = arr[j];
+                    arr[j] = temp;
+                }
+            }
+        }
+    }
+}
+krugle.dialogs.bugEdit.downSort = function(type, arr, index){
+    for (var i = 0; i < arr.length; i++) {
+    
+        for (var j = i + 1; j < arr.length; j++) {
+            if (type == "int") {
+            
+                if (Number(arr[i][index]) < Number(arr[j][index])) {
+                    var temp = arr[i];
+                    arr[i] = arr[j];
+                    arr[j] = temp;
+                }
+            }
+            if (type == "string") {
+                if (arr[i][index] < arr[j][index]) {
+                    var temp = arr[i];
+                    arr[i] = arr[j];
+                    arr[j] = temp;
+                }
+            }
+        }
+    }
+}
+10.设置某个div是否显示：
+   document.getElementById(name1).style.display = "block";
+    document.getElementById(name2).style.display = "none";
+   （none为不显示）
+11.nodetype的取值:
+元素类型 节点类型 
+元素element 1 
+属性attr 2 
+文本text 3 
+注释comments 8 
+文档document 9 
+firefox会把空白部分当做文本节点，而IE不会
+12.检查输入时间是否正确，包括闰年和一月里有没有31号：
+  var pattern = /^(([0-9]{3}[1-9]|[0-9]{2}[1-9][0-9]{1}|[0-9]{1}[1-9][0-9]{2}|[1-9][0-9]{3})-(((0[13578]|1[02])-(0[1-9]|[12][0-9]|3[01]))|((0[469]|11)-(0[1-9]|[12][0-9]|30))|(02-(0[1-9]|[1][0-9]|2[0-8]))))|((([0-9]{2})(0[48]|[2468][048]|[13579][26])|((0[48]|[2468][048]|[3579][26])00))-02-29)$/;
+13.如果想得到数值：如：
+var num1=filename.lastIndexOf(")");
+var num2=filename.lastIndexOf("(");
+var number=filename.substring(num2+1,num1);（得到的是字符串）
+var count=Number(number);（必须转换成数值型，才能保证下面的加法是对数值进行，否则就是字符串的连接操作）
+count+=startIndex;
+14.table操作：
+ var row=table.rows[startIndex];
+ row.rowIndex
+ count=table.rows.length;
+15.正则表达式：
+ 包括数字，字母，下划线，空格，连字符
+ /^([a-zA-Z0-9 ]|[_-])+$/
+16.编码和解码：encodeURIComponent 和decodeURIComponent
+17.getElementById 和getElementsByTagName
+ document.getElementById()
+ 但是div,span,document都有getElementsByTagName方法
+18.包含滚动条的元素通过scrollTop方法可以定位滚动条的位置

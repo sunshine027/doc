@@ -1,0 +1,25 @@
+例5.10 有3个字符串,要求找出其中最大者。要求用函数调用。
+程序如下：
+#include <iostream>
+#include <string>
+using namespace std;
+int main( )
+{ void max_string(char str［］［30］,int i);        //函数声明
+int i;
+  char country_name［3］［30］;
+  for(i=0;i<3;i++)
+      cin>>country_name［i］;                       //输入3个国家名
+  max_string(country_name,3);                   //调用max_string函数
+  return 0;
+}
+
+void max_string(char str［］［30］,int n)
+{
+  int i;
+  char string［30］;
+  strcpy(string,str［0］);                    //使string的值为str［0］的值
+  for(i=0;i<n;i++)
+      if(strcmp(str［i］,string)>0)              //如果str［i］>string
+strcpy(string,str［i］);               //将str［i］中的字符串复制到string 
+  cout<<endl<<″the largest string is： ″<<string<<endl;
+}

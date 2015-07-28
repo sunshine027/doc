@@ -1,0 +1,69 @@
+例7.5 有一个结构体变量stu，内含学生学号、姓名和3门课的成绩。要求在main函数中为各成员赋值，在另一函数print中将它们的值输出。
+(1) 用结构体变量作函数参数
+#include <iostream>
+#include <string>
+using namespace std;
+struct Student                            //声明结构体类型Student
+{ int num;
+char name[20];                           
+float score[3];
+};
+
+int main( )
+{ void print(Student);                    //函数声明，形参类型为结构体Student
+Student stu;                            //定义结构体变量
+stu.num=12345;                          //以下5行对结构体变量各成员赋值
+stu.name=″Li Fung″;               
+stu.score[0]=67.5;
+stu.score[1]=89;
+stu.score[2]=78.5;
+print(stu);                             //调用print函数，输出stu各成员的值    
+return 0;
+}
+
+void print(Student stu)
+{cout<<stu.num<<″ ″<<stu.name<<″ ″<<stu.score[0]<<″ ″
+<<stu.score[1]<<″ ″<<stu.score[2]<<endl;
+}
+
+(2) 用指向结构体变量的指针作实参
+#include <iostream>
+#include <string>
+using namespace std;
+struct Student
+{ int num;
+string name;                         //用string类型定义字符串变量
+float score[3];
+}stu={12345,″Li Fung″,67.5,89,78.5};   //定义结构体student变量stu并赋初值
+
+int main( )
+{ void print(Student *);          //函数声明，形参为指向Student类型数据的指针变量
+Student *pt=&stu;               //定义基类型为Student的指针变量pt，并指向stu 
+print(pt);                      //实参为指向Student类数据的指针变量
+return 0;
+}
+void print(Student *p)            //定义函数，形参p是基类型为Student的指针变量
+{ cout<<p->num<<″ ″<<p->name<<″ ″<<p->score[0]<<″ ″
+<<p->score[1]<<″ ″<<p->score[2]<<endl;
+}
+
+(3) 用结构体变量的引用作函数参数
+#include <iostream>
+#include <string>
+using namespace std;
+struct Student
+{ int num;
+string name;
+float score[3];
+}stu={12345,″Li Li″,67.5,89,78.5};
+
+int main( )
+{ void print(Student &);             //函数声明，形参为Student类型变量的引用
+print(stu);                        //实参为结构体Student变量
+return 0;
+}
+
+void print(Student &stud)            //函数定义，形参为结构体Student变量的引用
+{cout<<stud.num<<″ ″<<stud.name<<″ ″<<stud.score[0]<<″ ″
+<<stud.score[1]<<″ ″<<stud.score[2]<<endl;
+}

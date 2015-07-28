@@ -1,0 +1,5 @@
+VideoCamera
+adb shell am instrument -e class com.android.camera.power.ImageAndVideoCapture#testCapture5Videos -r -w com.android.camera.tests/android.test.InstrumentationTestRunner
+
+MovideView
+adb shell am instrument  -r -w com.cooliris.media.tests/android.test.InstrumentationTestRunner

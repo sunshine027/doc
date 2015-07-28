@@ -1,0 +1,143 @@
+例12.1 先建立一个Point(点)类，包含数据成员x,y(坐标点)。以它为基类，派生出一个Circle(圆)类，增加数据成员r(半径)，再以Circle类为直接基类，派生出一个Cylinder(圆柱体)类，再增加数据成员h(高)。要求编写程序，重载运算符“<<”和“>>”，使之能用于输出以上类对象。
+对于一个比较大的程序，应当分成若干步骤进行。先声明基类，再声明派生类，逐级进行，分步调试。
+(1) 声明基类Point类
+可写出声明基类Point的部分如下:
+#include <iostream>
+
+//声明类Point
+class Point
+{public:
+  Point(float x=0,float y=0);//有默认参数的构造函数
+  void setPoint(float,float);                 //设置坐标值
+  float getX( ) const {return x;}              //读x坐标
+  float getY( ) const {return y;}              //读y坐标
+  friend ostream & operator<<(ostream &,const Point &);//重载运算符“<<”
+protected:                                   //受保护成员
+  float x,y;
+};
+//下面定义Point类的成员函数
+
+//Point的构造函数
+Point::Point(float a,float b)                 //对x,y初始化
+{x=a;y=b;}
+//设置x和y的坐标值
+void Point::setPoint(float a,float b)         //为x,y赋新值
+{x=a;y=b;}
+//重载运算符“<<”，使之能输出点的坐标
+ostream & operator<<(ostream &output,const Point &p)
+{output<<″[″<<p.x<<″,″<<p.y<<″]″<<endl;
+ return output;
+}
+以上完成了基类Point类的声明。
+现在要对上面写的基类声明进行调试，检查它是否有错，为此要写出main函数。实际上它是一个测试程序。
+int main( )
+{Point p(3.5,6.4);//建立Point类对象p
+ cout<<″x=″<<p.getX( )<<″,y=″<<p.getY( )<<endl;//输出p的坐标值
+ p.setPoint(8.5,6.8);                            //重新设置p的坐标值
+ cout<<″p(new):″<<p<<endl;                       //用重载运算符“<<”输出p点坐标
+}
+程序编译通过，运行结果为
+x=3.5,y=6.4
+p(new):[8.5,6.8]
+测试程序检查了基类中各函数的功能，以及运算符重载的作用，证明程序是正确的。
+(2) 声明派生类Circle
+在上面的基础上，再写出声明派生类Circle的部分：
+class Circle:public Point//circle是Point类的公用派生类
+{public:
+  Circle(float x=0,float y=0,float r=0); //构造函数
+  void setRadius(float);                 //设置半径值
+  float getRadius( ) const;               //读取半径值
+  float area ( ) const;                   //计算圆面积
+  friend ostream &operator<<(ostream &,const Circle &);//重载运算符“<<”
+ private:
+  float radius;
+};
+
+//定义构造函数，对圆心坐标和半径初始化
+Circle::Circle(float a,float b,float r):Point(a,b),radius(r){ }
+//设置半径值
+void Circle::setRadius(float r)
+{radius=r;}
+//读取半径值
+float Circle::getRadius( ) const {return radius;}
+//计算圆面积
+float Circle::area( ) const
+{return 3.14159*radius*radius;}
+//重载运算符“<<”，使之按规定的形式输出圆的信息
+ostream &operator<<(ostream &output,const Circle &c)
+{output<<″Center=[″<<c.x<<″,″<<c.y<<″],r=″<<c.radius<<″,area=″<<c.area( )<<endl;
+ return output;
+}为了测试以上Circle类的定义，可以写出下面的主函数:int main( )
+{Circle c(3.5,6.4,5.2);//建立Circle类对象c，并给定圆心坐标和半径
+ cout<<″original circle:\\nx=″<<c.getX()<<″, y=″<<c.getY()<<″, r=″<<c.getRadius( )
+     <<″, area=″<<c.area( )<<endl;     //输出圆心坐标、半径和面积
+ c.setRadius(7.5);                   //设置半径值
+ c.setPoint(5,5);                    //设置圆心坐标值x,y
+ cout<<″new circle:\\n″<<c;           //用重载运算符“<<”输出圆对象的信息
+ Point &pRef=c;                      //pRef是Point类的引用变量，被c初始化 
+ cout<<″pRef:″<<pRef;                //输出pRef的信息
+ return 0;
+}程序编译通过，运行结果为original circle:(输出原来的圆的数据)
+x=3.5, y=6.4, r=5.2, area=84.9486
+new circle:                                (输出修改后的圆的数据)
+Center=[5,5], r=7.5, area=176.714
+pRef:[5,5]                                 (输出圆的圆心“点”的数据)
+(3) 声明Circle的派生类Cylinder
+前面已从基类Point派生出Circle类，现在再从Circle派生出Cylinder类。
+class Cylinder:public Circle// Cylinder是Circle的公用派生类
+{public:
+  Cylinder (float x=0,float y=0,float r=0,float h=0);//构造函数
+  void setHeight(float);                      //设置圆柱高
+  float getHeight( ) const;                    //读取圆柱高
+  float area( ) const;                         //计算圆表面积
+  float volume( ) const;                       //计算圆柱体积
+  friend ostream& operator<<(ostream&,const Cylinder&);//重载运算符“<<”
+ protected:
+  float height;                               //圆柱高
+};
+//定义构造函数
+Cylinder::Cylinder(float a,float b,float r,float h)  
+    :Circle(a,b,r),height(h){}
+//设置圆柱高
+void Cylinder::setHeight(float h){height=h;}
+//读取圆柱高
+float Cylinder::getHeight( ) const {return height;}
+//计算圆表面积
+float Cylinder::area( ) const
+{ return 2*Circle::area( )+2*3.14159*radius*height;}
+//计算圆柱体积
+float Cylinder::volume() const
+{return Circle::area()*height;}
+//重载运算符“<<”
+ostream &operator<<(ostream &output,const Cylinder& cy)
+{output<<″Center=[″<<cy.x<<″,″<<cy.y<<″],r=″<<cy.radius<<″,h=″<<cy.height
+       <<″\\narea=″<<cy.area( )<<″, volume=″<<cy.volume( )<<endl;
+ return output;
+}
+可以写出下面的主函数: 
+int main( )
+{Cylinder cy1(3.5,6.4,5.2,10);//定义Cylinder类对象cy1
+ cout<<″\\noriginal cylinder:\\nx=″<<cy1.getX( )<<″, y=″<<cy1.getY( )<<″, r=″
+     <<cy1.getRadius( )<<″, h=″<<cy1.getHeight( )<<″\\narea=″<<cy1.area()
+     <<″,volume=″<<cy1.volume()<<endl;//用系统定义的运算符“<<”输出cy1的数据
+ cy1.setHeight(15);                     //设置圆柱高
+ cy1.setRadius(7.5);                    //设置圆半径
+ cy1.setPoint(5,5);                     //设置圆心坐标值x,y
+ cout<<″\\nnew cylinder:\\n″<<cy1;        //用重载运算符“<<”输出cy1的数据
+ Point &pRef=cy1;                       //pRef是Point类对象的引用变量 
+ cout<<″\\npRef as a Point:″<<pRef;      //pRef作为一个“点”输出
+ Circle &cRef=cy1;                      //cRef是Circle类对象的引用变量
+ cout<<″\\ncRef as a Circle:″<<cRef;     //cRef作为一个“圆”输出
+ return 0;
+}
+运行结果如下:
+original cylinder:                         (输出cy1的初始值)
+x=3.5, y=6.4, r=5.2, h=10                  (圆心坐标x,y。半径r，高h)
+area=496.623, volume=849.486               (圆柱表面积area和体积volume)
+
+new cylinder:                              (输出cy1的新值)
+Center=[5,5], r=7.5, h=15                 (以[5,5]形式输出圆心坐标)
+area=1060.29, volume=2650.72               (圆柱表面积area和体积volume)
+
+pRef as a Point:[5,5]                      (pRef作为一个“点”输出)
+cRef as a Circle: Center=[5,5], r=7.5, area=176.714(cRef作为一个“圆”输出)

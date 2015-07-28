@@ -1,0 +1,4 @@
+1.NTFS:
+  windows use it
+2. FAT32(vfat):
+   old window system

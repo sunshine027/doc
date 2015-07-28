@@ -1,0 +1,11 @@
+$modify /etc/nagios/nrpe.cfg
+allowed_hosts=127.0.0.1,[centos-desktop.bj.intel.com]
+command[check_hda1]=/usr/lib64/nagios/plugins/check_disk -w 20% -c 10% -p [ /dev/sda1]
+[]是需要修改的
+最后启动nrpe服务
+
+sudo -u nagios /usr/sbin/nrpe -c /etc/nagios/nrpe.cfg -d
+pgrep nrpe
+检查是否安装好:
+check_nrpe -H mic-if1800 -c check_load
+check_nrpe -H mic-if1800 -c check_hda1

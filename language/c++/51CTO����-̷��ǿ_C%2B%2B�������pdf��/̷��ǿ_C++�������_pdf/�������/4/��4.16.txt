@@ -1,0 +1,11 @@
+例4.16 在调试程序时，常常希望输出一些所需的信息，而在调试完成后不再输出这些信息。可以在源程序中插入条件编译段。下面是一个简单的示例。
+#include <iostream>
+using namespace std;
+#define RUN                                 //在调试程序时使之成为注释行
+int main( )
+{ int x=1,y=2,z=3;
+#ifndef RUN                                //本行为条件编译命令
+cout<<″x=″<<ｘ<<″,y=″<<ｙ<<″,z=″<<ｚ；  //在调试程序时需要输出这些信息 
+#endif                                     //本行为条件编译命令
+cout<< ″x*y*z=″ *y*z<<endl;
+}

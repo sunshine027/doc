@@ -1,0 +1,18 @@
+例6.9 输出二维数组各元素的值。
+题目与例6.7相同，但本题用一个函数实现输出，用多维数组名作函数参数。
+#include <iostream>
+using namespace std;
+int main( )
+{ void output(int (*p)[4]);                       //函数声明    
+int a[3][4]={1,3,5,7,9,11,13,15,17,19,21,23};
+output(a);                                  //多维数组名作函数参数
+return 0;
+}
+
+void output(int (*p)[4])               //形参是指向一维数组的指针变量
+{ int i,j;
+for(i=0;i<3;i++)
+for(j=0;j<4;j++)  
+cout<<*(*(p+i)+j)<<″ ″;
+cout<<endl;
+}

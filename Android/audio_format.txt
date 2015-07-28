@@ -1,0 +1,12 @@
+format/codec              supported file type/container format
+AAC LC/LTP                 3GPP(.3gp),MPEG-4(.m4a),Matroska(.mak, intel)
+HE-AACv1(AAC+)
+HE-AACv2(enhanced AAC+)
+
+amr-nb				3GPP(.3gp),AMR(.amr)
+amr-wb				3GPP(.3gp),AMR(.amr)
+mp3				MP3(.mp3),Matroska(.mka,intel)     
+vorbis				Ogg(.ogg),Matroska(.mka)
+PCM/WAVE			WAVE(.wav)   
+
+see: http://developer.android.com/guide/appendix/media-formats.html     

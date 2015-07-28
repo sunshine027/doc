@@ -1,0 +1,8 @@
+例6.10 定义一个字符数组并初始化，然后输出其中的字符串。
+#include <iostream>
+using namespace std;
+int main( )
+{ char str[]=″I love CHINA!″;
+cout<<str<<endl;
+return 0;
+}

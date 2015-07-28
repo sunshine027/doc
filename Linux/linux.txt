@@ -1,0 +1,18 @@
+1.query rpm size:
+  sudo chroot . rpm -qa --qf "%{size} %{name}\n"|sort -n >../old.list
+2.clean memory:
+  echo 3 > /proc/sys/vm/drop_caches
+3.find package by command:
+  rpm -qf /sbin/mkfs.btrfs
+4. transfer files
+   tar czvf - . | nc -l 1234
+   nc localhost 1234 | tar xvfz -
+5. view port listen:
+   netstat -ntpl
+   lsof | grep 8081
+6. 去重，并统计重复数据:
+   xxx | sort | uniq -c
+7. switch to root user:
+   sudo su - (默认是root， -的意思是和root用户直接登录的环境一样）
+8. tar cvfz - tmuxconf.txt | nc -l 1234
+   nc ip 1234 | tar xvfz -

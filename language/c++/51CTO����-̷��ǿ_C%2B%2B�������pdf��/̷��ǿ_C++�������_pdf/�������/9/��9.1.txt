@@ -1,0 +1,36 @@
+例9.1 在例8.3基础上定义构造成员函数。
+#include <iostream>
+using namespace std;
+class Time
+{public:
+Time( )                    //定义构造成员函数，函数名与类名相同
+{hour=0;                  //利用构造函数对对象中的数据成员赋初值
+minute=0;
+sec=0;
+}
+void set_time( );           //函数声明
+void show_time( );          //函数声明
+private:
+int hour;                  //私有数据成员
+int minute;
+int sec;
+};
+
+void Time∷set_time( )        //定义成员函数，向数据成员赋值
+{cin>>hour;
+cin>>minute;
+cin>>sec;
+}
+void Time∷show_time( )         //定义成员函数，输出数据成员的值
+{
+ cout<<hour<<″:″<<minute<<″:″<<sec<<endl;
+}
+int main( )
+{
+Time t1;                   //建立对象t1，同时调用构造函数t1.Time( )
+t1.set_time( );             //对t1的数据成员赋值
+t1.show_time( );            //显示t1的数据成员的值 
+Time t2;                   //建立对象t2，同时调用构造函数t2.Time( )
+t2.show_time( );            //显示t2的数据成员的值
+return 0;
+}

@@ -1,0 +1,13 @@
+例3.10 求1+2+3+…+100。
+用流程图表示算法，见图3.10。
+根据流程图写出程序：
+#include <iostream>
+using namespace std;
+int main( )
+{int i=1,sum=0;
+   while (i<=100)
+    { sum=sum+i;
+      i++;
+    }
+cout<<″sum=″<<sum<<endl;
+}

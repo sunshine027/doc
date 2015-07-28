@@ -1,0 +1,9 @@
+Àı13.6 ÓÃgetº¯Êı¶ÁÈë×Ö·û¡£
+#include <iostream>
+int main( )
+{int c;
+ cout<<¡åenter a sentence:¡å<<endl;
+ while((c=cin.get())!=EOF)
+  cout.put(c);
+ return 0;
+}

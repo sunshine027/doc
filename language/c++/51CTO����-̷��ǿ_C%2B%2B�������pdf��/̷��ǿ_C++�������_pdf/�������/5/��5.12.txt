@@ -1,0 +1,41 @@
+例5.12 一个班有n个学生，需要把每个学生的简单材料(姓名和学号)输入计算机保存。然后可以通过输入某一学生的姓名查找其有关资料。当输入一个姓名后，程序就查找该班中有无此学生，如果有，则输出他的姓名和学号，如果查不到，则输出“本班无此人”。
+为解此问题，可以分别编写两个函数，函数input_data用来输入n个学生的姓名和学号，函数search用来查找要找的学生是否在本班。
+程序可编写如下： 
+#include <iostream>
+#include <string>
+using namespace std;
+string name［50］,num［50］;              //定义两个字符串数组，分别存放姓名和学号
+int n;                                //n是实际的学生数
+int main( )
+{void input_data( );                    //函数声明
+ void search(string find_name);        //函数声明
+ string find_name;                     //定义字符串变量，find_name是要找的学生 
+ cout<<″please input number of this class：″;  //输入提示： 请输入本班学生的人数
+ cin>>n;                                      //输入学生数
+ input_data( );                              //调用input_data函数，输入学生数据
+ cout<<″please input name you want find：″;  //输入提示： 请输入你要找的学生名
+ cin>>find_name;                            //输入要找的学生的姓名
+ search(find_name);                         //调用search函数，寻找该学生姓名
+ return 0;
+}
+
+void input_data( )                            //函数首部
+{int i;
+ for (i=0;i<n;i++)
+   {cout<<″input name and NO. of student ″<<i+1<<″：″;    
+//输入提示
+    cin>>name［i］>>num［i］;}                    //输入n个学生的姓名和学号     
+}
+
+void search(string find_name)                 //函数首部
+{int i;
+ bool flag=false;
+ for(i=0;i<n;i++)
+   if(name［i］==find_name)               //如果要找的姓名与本班某一学生姓名相同
+     { cout<<name［i］<<″ has been found, his number is ″ <<num［i］<<endl; 
+//输出姓名与学号
+flag=true;
+break;
+}  
+ if(flag==false) cout<<″can′t find this name″;//如找不到，输出“找不到”的信息
+}

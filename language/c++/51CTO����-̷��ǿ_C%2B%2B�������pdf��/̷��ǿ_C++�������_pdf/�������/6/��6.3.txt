@@ -1,0 +1,22 @@
+例6.3 题目同例6.2，即对输入的两个整数按大小顺序输出。
+这里用函数处理，而且用指针类型的数据作函数参数。
+程序如下： 
+#include  <iostream>
+using namespace std;
+int main( )
+{ void swap(int *p1,int *p2);     //函数声明
+int *pointer_1,*pointer_2,a,b;  //定义指针变量pointer_1,pointer_2，整型变量a,b
+cin>>a>>b;
+pointer_1=&a;                       //使pointer_1指向a
+pointer_2=&b;                       //使pointer_2指向b
+if(a<b) swap(pointer_1,pointer_2);  //如果a<b，使*pointer_1和*pointer_2互换
+cout<<″max=″<<a<<″ min=″<<b<<endl;//a已是大数，b是小数 
+return 0;
+}
+
+void swap(int *p1,int *p2)            //函数的作用是将*p1的值与*p2的值交换
+{ int temp;
+temp=*p1;          
+*p1=*p2;
+*p2=temp;            
+}

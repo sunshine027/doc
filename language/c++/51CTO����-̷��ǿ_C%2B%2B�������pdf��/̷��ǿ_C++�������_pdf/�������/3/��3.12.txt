@@ -1,0 +1,19 @@
+例3.12 用下面公式求π的近似值。π/4≈1-1/3+1/5-1/7+…直到最后一项的绝对值小于10的-7次方为止。
+根据给定的算法很容易编写程序如下：
+#include <iostream>
+#include <iomanip>
+#include <cmath>
+    using namespace std;
+int main( )
+{int s=1;
+ double n=1,t=1,pi=0;
+ while((fabs(t))>1e-7)
+   {pi=pi+t;
+  n=n+2;
+  s=-s;
+  t=s/n;
+ }
+ pi=pi*4;
+ cout<<″pi=″<<setiosflags(ios∷fixed)<<setprecision(6)<<pi<<endl;
+return 0;
+}

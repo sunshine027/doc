@@ -1,0 +1,134 @@
+----------------------------------------------------------,,,,,,
+Intel Corporation Matrix Tool Version 2.3a Release,,,,,,
+Copyright (c) 2009-2011, Intel Corp. All Rights Reserved.,,,,,
+For use with Intel(R) processors, chipsets and platforms.,,,,,
+Strictly For Intel Internal Use Only.,,,,,,
+email: matrix@intel.com,,,,,,
+----------------------------------------------------------,,,,,,
+,,,,,,
+,Captured for, 100.0002 seconds,,,,
+,,,,,,
+,,,,,,
+,-------,------------,-----------------------------------,,,
+,    CPU, Interrupt  , Information                       ,,,
+,-------,------------,-----------------------------------,,,
+,       ,CPU - 0     ,                                   ,,,
+,-------,------------,-----------------------------------,,,
+,    45:,66434, IO-APIC-fasteoi i2c-dw-pci-4  ,,,
+,    84:,22222, PCI-MSI-edge pvrsrvkm  ,,,
+,   LOC:,11289, Local timer  interrupts,,,
+,    22:,9534, IO-APIC-fasteoi intel_pmu_driver  ,,,
+,    85:,8068, PCI-MSI-edge isp_irq  ,,,
+,   RES:,4292, Rescheduling interrupts  ,,,
+,    30:,3606, IO-APIC-fasteoi INTEL_MID_DMAC1,  intel_sst_driver,,
+,    46:,2623, IO-APIC-fasteoi i2c-dw-pci-5  ,,,
+,    41:,1569, IO-APIC-fasteoi mmc2  ,,,
+,   TLB:,1359, TLB shootdowns  ,,,
+,    32:,326, IO-APIC-fasteoi penwell_otg,  langwell_udc,,
+,    27:,313, IO-APIC-fasteoi mmc0  ,,,
+,    11:,124, IO-APIC-fasteoi i2c-dw-pci-1  ,,,
+,   CAL:,74, Function call  interrupts,,,
+,    10:,41, IO-APIC-fasteoi i2c-dw-pci-0  ,,,
+,    16:,14, IO-APIC-fasteoi msic_adc  ,,,
+,   318:,2, LNW-GPIO-demux atmel_mxt224  ,,,
+,-------,------------,-----------------------------------,,,
+,       ,CPU - 1     ,                                   ,,,
+,-------,------------,-----------------------------------,,,
+,   LOC:,12293, Local timer  interrupts,,,
+,   RES:,8253, Rescheduling interrupts  ,,,
+,   TLB:,1671, TLB shootdowns  ,,,
+,   CAL:,1220, Function call  interrupts,,,
+,-------,------------,-----------------------------------,,,
+, Total ,158578, Interrupt Rate,1585.6531,intr/sec,
+,-------,------------,-----------------------------------,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,-----------,----------,----------,--------------------,,
+,   Event(s),Summary   ,,,,
+,-----------,----------,----------,--------------------,,
+,       CPU ,   Wake   ,  Events  ,                    ,,
+,-----------,----------,----------,--------------------,,
+,  Events   , #Event(s),Percentage, Rate (events/sec)  ,,
+,-----------,----------,----------,--------------------,,
+,Non Kernel ,12333,38.06%,123.3201,,
+,  Kernel   ,20070,61.94%,200.6839,,
+,-----------,----------,----------,--------------------,,
+,  Total    ,32403,          ,324.0041,,
+,-----------,----------,----------,--------------------,,
+,,,,,,
+,-----------,----------,----------,--------------------,,
+,   Event(s),Details:- ,,,,
+,-----------,----------,------,---------------,-------------------------,-------------------------------
+,   Sampling, Rate     ,(Secs),100.007,,
+,-----------,----------,------,---------------,-------------------------,-------------------------------
+, Non Kernel, Events(s),      ,               ,                         ,                               
+,-----------,----------,------,---------------,-------------------------,-------------------------------
+,Percentage , #Event(s),  PID ,  Process Name ,    Callback Function    ,    Initialized Function       
+,-----------,----------,------,---------------,-------------------------,-------------------------------
+,44.91%,5539,2041,CameraAeAfAwbTh,    (pm_suspend_timer_fn),                   __mod_timer 
+,28.01%,3454,2175,OMXCallbackDisp,         (hrtimer_wakeup),        hrtimer_start_range_ns 
+,8.11%,1000,384,    kondemand/0,  (delayed_work_timer_fn),                  do_dbs_timer 
+,4.03%,497,9,       events/0,  (delayed_work_timer_fn),            queue_delayed_work 
+,4.03%,497,9,       events/0,    (pm_suspend_timer_fn),                   __mod_timer 
+,3.45%,426,1527, SurfaceFlinger,        (process_timeout),                   __mod_timer 
+,1.77%,218,18,             pm,    (pm_suspend_timer_fn),                   __mod_timer 
+,0.81%,100,10,       events/1,  (delayed_work_timer_fn),            queue_delayed_work 
+,0.81%,100,9,       events/0,  (delayed_work_timer_fn),            queue_delayed_work 
+,0.81%,100,2026,.android.camera,         (hrtimer_wakeup),      schedule_hrtimeout_range 
+,0.81%,100,10,       events/1,  (delayed_work_timer_fn),            queue_delayed_work 
+,0.52%,64,439,        kswapd0,        (process_timeout),                   __mod_timer 
+,0.28%,34,2054,    MPEG4Writer,    (pm_suspend_timer_fn),                   __mod_timer 
+,0.19%,24,1389,         logcat,         (hrtimer_wakeup),      schedule_hrtimeout_range 
+,0.14%,17,2054,    MPEG4Writer,   (sync_supers_timer_fn),                   __mod_timer 
+,0.13%,16,1534,er.ServerThread,        (process_timeout),                   __mod_timer 
+,0.12%,15,1527, SurfaceFlinger, (OSTimerCallbackWrapper),                   __mod_timer 
+,0.11%,14,10,       events/1,    (pm_suspend_timer_fn),                   __mod_timer 
+,0.10%,12,1802,   flush-179:10,        (process_timeout),                   __mod_timer 
+,0.06%,8,1389,         logcat,        (wakeup_timer_fn),                   __mod_timer 
+,0.06%,7,2173,         Record,0,                        Thread 
+,0.06%,7,1317,    flush-179:0,     (blk_unplug_timeout),                   __mod_timer 
+,0.06%,7,9,       events/0,  (delayed_work_timer_fn),            queue_delayed_work 
+,0.06%,7,2178,    MPEG4Writer,        (wakeup_timer_fn),                   __mod_timer 
+,0.05%,6,1534,er.ServerThread,         (hrtimer_wakeup),      schedule_hrtimeout_range 
+,0.05%,6,9,       events/0,        (process_timeout),                   __mod_timer 
+,0.04%,5,9,       events/0, (OSTimerCallbackWrapper),                   __mod_timer 
+,0.03%,4,1554,PowerManagerSer,         (hrtimer_wakeup),      schedule_hrtimeout_range 
+,0.03%,4,1286,      kjournald,        (wakeup_timer_fn),                   __mod_timer 
+,0.03%,4,10,       events/1,        (process_timeout),                   __mod_timer 
+,0.02%,3,9,       events/0,  (delayed_work_timer_fn),            queue_delayed_work 
+,0.02%,3,1535,ActivityManager,         (hrtimer_wakeup),      schedule_hrtimeout_range 
+,0.02%,3,1594,       watchdog,         (hrtimer_wakeup),        hrtimer_start_range_ns 
+,0.02%,3,2169,CameraPreviewTh,         (hrtimer_wakeup),                  do_nanosleep 
+,0.02%,3,439,        kswapd0,        (process_timeout),                   __mod_timer 
+,0.02%,2,1545,       Playback,             do_nanosleep,                        Thread 
+,0.02%,2,1317,    flush-179:0,         (commit_timeout),                   __mod_timer 
+,0.02%,2,795,        mmcqd/0,   (cfq_idle_slice_timer),                   __mod_timer 
+,0.02%,2,1534,er.ServerThread,  (alarm_timer_triggered),        hrtimer_start_range_ns 
+,0.02%,2,1389,         logcat,         (commit_timeout),                   __mod_timer 
+,0.02%,2,10,       events/1,  (delayed_work_timer_fn),            queue_delayed_work 
+,0.02%,2,653,irq/318-atmel_m,    (pm_suspend_timer_fn),                   __mod_timer 
+,0.01%,1,1545,       Playback,              __mod_timer,                        Thread 
+,0.01%,1,2026,.android.camera,        (wakeup_timer_fn),                   __mod_timer 
+,0.01%,1,1545,       Playback,       queue_delayed_work,                        Thread 
+,0.01%,1,1632,         Binder,                        #,                        Thread 
+,0.01%,1,2187,      AsyncTask, schedule_hrtimeout_range,                            #2 
+,0.01%,1,1317,    flush-179:0,        (process_timeout),                   __mod_timer 
+,0.01%,1,1885,pool-1-thread-1,         (commit_timeout),                   __mod_timer 
+,0.01%,1,1706,     HeapWorker,         (hrtimer_wakeup),        hrtimer_start_range_ns 
+,0.01%,1,439,        kswapd0,     (blk_unplug_timeout),                   __mod_timer 
+,0.01%,1,2004,CookieSyncManag,         (hrtimer_wakeup),      schedule_hrtimeout_range 
+,0.01%,1,9,       events/0,  (delayed_work_timer_fn),            queue_delayed_work 
+,0.01%,1,2186,         matrix,         (hrtimer_wakeup),                  do_nanosleep 
+,-----------,----------,------,---------------,-------------------------,-------------------------------
+,     Kernel, Event(s) ,      ,               ,                         ,                               
+,-----------,----------,------,---------------,-------------------------,-------------------------------
+,Percentage , #Event(s),  PID ,  Process Name ,    Callback Function    ,    Initialized Function       
+,-----------,----------,------,---------------,-------------------------,-------------------------------
+,49.83%,10000,0,        swapper,       (tick_sched_timer),        hrtimer_start_range_ns 
+,49.82%,9998,0,        swapper,       (tick_sched_timer),        hrtimer_start_range_ns 
+,0.25%,50,0,        swapper,       (estimation_timer),                   __mod_timer 
+,0.10%,20,1,        swapper,  (sched_rt_period_timer),               enqueue_task_rt 
+,0.01%,1,0,        swapper,       (tick_sched_timer),        hrtimer_start_range_ns 
+,0.01%,1,0,        swapper,      (peer_check_expire),                   __mod_timer 
+,-----------,----------,------,---------------,-------------------------,-------------------------------

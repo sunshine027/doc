@@ -1,0 +1,57 @@
+
+2. 查看label和loop device的对应关系:
+   sudo kpartx -av $raw_name
+   sleep 2
+   blkid_output=$(blkid -L boot | sed 's/.*loop\([0-9]*\)p\([0-9]\)/\2/')
+   parted_boot_output=$(parted $raw_name print| grep 'boot' | awk '{print $1}')
+   test  $blkid_output -eq $parted_boot_output
+
+
+4. github:
+    GIT_SSL_NO_VERIFY=1 git clone https://github.com/chengui/mic.git
+    git checkout -t origin/devel -b devel
+    cd packaging
+    make
+5. update repodata后，can not find pattern:
+   $ modifyrepo repodata/group.xml repodata/
+   $ modifyrepo repodata/patterns.xml repodata/
+
+
+8.commit:
+  Good, several suggestion of commit msg:
+
+  1. do not use "." in the line end for subject (and to keep it shorter than 50 chars at best)
+
+  2. in the msg body, do not use long line than 80 chars
+
+  3. use change-id hook
+
+  4. use 'Fixes: #xxxx' mark for redmine
+
+
+10. mount -t nfs thinkcentre:/home/jenkins/img mount-point 
+11.osc:
+      osc addremove
+
+12. syslinux只是bootloader的一种
+   mbr和gpt是两种不同的分区表
+    bootloader一般负责写分区表
+
+
+16.mic-appliance:
+   qemu-system-x86_64 -machine accel=kvm:xen:tcg -name opensuse -M pc -m 8192 -smp 8 -vga none -drive file=/var/lib/jenkins/mic-appliance,snapshot=on -nographic -virtfs local,id=test_dev,path=/var/lib/jenkins/workspace/image-creator/mic,security_model=mapped,mount_tag=share
+17. build rpm:
+   1. a.spec:
+      name: a 
+      Version: 1.0
+      Release: 1
+      Summary: a package  
+      Group: Test
+      License: GPLv2
+      Requires: b
+      URL: http://www.test.com
+      %description
+      package for test preinstall function 
+      %files
+  2. rpmbuild -ba a.spec
+  3. rpm is located: ~/rpmbuild/RPMS/x86_64/a-*.rpm

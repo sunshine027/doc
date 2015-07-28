@@ -1,0 +1,46 @@
+Below is how to set hostname for each distro, hope it¡¯s useful to you:
+
+Fedora:
+/etc/hostname
+/etc/hosts
+# vi /etc/sysconfig/network-scripts/ifcfg-eth0
+DHCP_HOSTNAME=your-desktop
+# vi /etc/sysconfig/network
+HOSTNAME=your-desktop
+
+OpenSUSE:
+/etc/HOSTNAME
+/etc/hosts
+
+# vi /etc/dhclient.conf
+send host-name ¡°your-desktop¡±
+supersede domain-name "bj.intel.com";
+prepend domain-name-servers 10.248.2.5, 10.239.27.228;
+
+Ubuntu:
+vi /etc/hostname
+   /etc/hosts
+
+# vi /etc/dhcp/dhclient.conf
+send fqdn.fqdn "your-desktop.bj.intel.com";
+send fqdn.server-update on;
+do-forward-updates true;
+supersede domain-name "bj.intel.com";
+prepend domain-name-servers 10.248.2.5, 10.239.27.228;
+
+Restart network
+# /etc/init.d/network restart
+
+Or 
+
+# service network restart
+
+Search hostname
+# vi /etc/resolv.conf
+domain bj.intel.com
+search bj.intel.com
+nameserver 10.248.2.5
+nameserver 10.239.27.228
+# nslookup your-desktop.bj.intel.com
+
+

@@ -1,0 +1,37 @@
+例7.7 设有若干个人员的数据，其中有学生和教师。学生的数据中包括： 姓名、号码、性别、职业、年级。教师的数据包括： 姓名、号码、性别、职业、职务。可以看出，学生和教师所包含的数据是不同的。现要求把它们放在同一表格中，见图7.13。
+如果job项为s（学生），则第5项为grade（年级）。即Li是3年级的。如果job项是t（教师），则第5项为position（职务）。Wang是prof(教授)。显然对第5项可以用共用体来处理（将class和position放在同一段内存中）。
+要求输入人员的数据，然后再输出。为简化起见，只设两个人（一个学生、一个教师）。
+程序如下： 
+#include <iostream>
+#include <string>
+#include <iomanip>               //因为在输出流中使用了控制符setw
+using namespace std;
+struct
+{ int num;
+char name[10];
+char sex;
+char job;
+union P                   //声明共用体类型
+{ int grade;             //年级
+char position[10];     //职务
+}category;              //成员category 为共用体变量
+}person[2];                //定义共用体数组person，含两个元素
+
+int main( )
+{ int i;
+for(i=0;i<2;i++)                                        //输入两个学生的数据
+{cin>>person[i].num>>person[i].name>>person[i].sex>>person[i].job;
+if(person[i].job==′s′) cin>>person[i].category.grade; //若是学生则输入年级
+else if (person[i].job==′t′) cin>>person[i].category.position;//若是教师则输入职务
+}
+cout<<endl<<″No.  Name   sex  job  grade/position″<<endl;
+for(i=0;i<2;i++)
+{if (person[i].job==′s′)
+cout<<person[i].num<<setw(6)<<person[i].name<<″    ″<<person[i].sex
+<<″    ″<<person[i].job<<setw(10)<<person[i].category.grade<<endl;
+else
+cout<<person[i].num<<setw(6)<<person[i].name<<″    ″<<person[i].sex
+<<″    ″<<person[i].job<<setw(10)<<person[i].category.position<<endl;
+}
+return 0;
+}

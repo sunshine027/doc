@@ -1,0 +1,18 @@
+i have made a simple test, you can look at the result at: http://sphinx-test1.readthedocs.org/en/latest/
+steps:
+1. install sphinx with pip: sudo pip install sphinx
+2. create a public project on github, my project is: https://github.com/sunshine027/readdoc-test
+3. clone the readdoc-test to localhost.
+4. change directory to readdoc-test and run sphinx-quickstart, answer the question, you can keep most of them with the default value first, but please select 'yes' to 'autodoc' extension, and I split 'source' and 'build' directory.
+5. add some rst file: i just use mic's readme file, rename it to mic.rst, and put it to source directory, and add 'mic' under 'toctree' directive in index.rst. index.rst is entrance of all source files, the 'toctree' is a way to connect multiple files to a single hierarchy of documents.
+6. run 'sphinx-build -b html source build' or 'make html'(source is source directory, build is build directory, there is a question about it when you run 'sphinx-quickstart')
+7. if success, commit all files to github.
+8. sign up an account on readthedoc then sign in.
+9. import the github project on readthedoc with repo url, it will build the docs and show the doc url.
+10. config github with readdoc, then after you push new changes to github, readdoc will build new docs automatically:
+a. Go to the ¡°Settings¡± page for your project
+b. Click ¡°Webhooks & Services¡±
+c. In the ¡°Services¡± section, click ¡°Add service¡±
+d. In the list of available services, click ¡°ReadTheDocs¡±
+e. Check ¡°Active¡±
+f. Click ¡°Add service¡±

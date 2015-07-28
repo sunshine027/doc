@@ -1,0 +1,23 @@
+1.check lvm space:
+   vdf -h
+2.snapshot:
+  note: disk provision has two mode: thick and thin, (thick will allocate all space to vm first, but thin will just allocate a          little space first, and then the vm disk will grow bigger)
+        useful link: http://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=1025279
+  1)the snapshot will change to thick even if it is thin when created the vm.
+  2) the vm begin to use xx-0001.vmdk after created snapsoht.
+  3)snapshot will consume space too, so don't create too many snapshot,
+  4)delete snapshot from top to bottom
+
+3. increase disk image:
+  1)create one vm
+  2)copy .vmdk to this vm dir
+  3)renmae vmdk to a new name defined with step1: http://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=1002491(Renaming using the virtual disk using the ESX/ESXi host console interface)
+  4)increase disk space with 'edit settings'
+  5)eclarge partition
+4.userful command:
+  1)vmkfstools
+  2)vim-cmd
+5.clone vmdisk: http://lost-and-found-narihiro.blogspot.com/2011/08/esxi-410-update-1-how-to-make-clone-vm.html
+  1)mkdir dir-name
+  2)vmkfstools -i src.vmdk dst.vmdk
+6.create vmdisk: http://blogs.balius.com/2010/12/24/esxi-creating-new-virtual-machines-servers-from-the-command-line/

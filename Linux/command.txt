@@ -1,0 +1,4 @@
+1. tar cvfz - tmuxconf.txt | nc -l 1234
+   nc ip 1234 | tar xvfz -
+2. id -un
+3. command -v sudo(which sudo)

@@ -1,0 +1,27 @@
+例6.4 输入a,b,c 3个整数，按由大到小的顺序输出。
+用上面介绍的方法，用3个指针变量指向3个整型变量，然后用swap函数来实现互换3个整型变量的值。
+程序如下： 
+#include <iostream>
+using namespace std;
+int main( )
+{ void exchange(int *,int *,int *);    //对exchange函数的声明
+int a,b,c,*p1,*p2,*p3;
+cin>>a>>b>>c;                        //输入3个整数
+p1=&a;p2=&b;p3=&c;                   //指向3个整型变量
+exchange(p1,p2,p3);                  //交换p1,p2,p3指向的3个整型变量的值
+cout<<a<<″ ″<<b<<″ ″<<c<<endl;       //按由大到小的顺序输出3个整数
+}
+
+void exchange(int *q1,int *q2,int *q3)
+{void swap(int *,int *);              //对swap函数的声明
+if(*q1<*q2) swap(q1,q2);             //调用swap,将q1与q2所指向的变量的值互换
+if(*q1<*q3) swap(q1,q3);             //调用swap,将q1与q3所指向的变量的值互换
+if(*q2<*q3) swap(q2,q3);             //调用swap,将q2与q3所指向的变量的值互换
+}
+
+void swap(int *pt1,int *pt2)           //将pt1与pt2所指向的变量的值互换
+{int temp;
+temp=*pt1;
+*pt1=*pt2;
+*pt2=temp;
+}

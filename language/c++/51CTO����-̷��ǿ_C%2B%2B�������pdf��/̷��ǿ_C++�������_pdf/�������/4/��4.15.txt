@@ -1,0 +1,17 @@
+例4.15 输入两个整数，要求输出其中的大者。用外部函数实现。
+file1.cpp（文件１）
+#include <iostream>
+using namespace std;
+int main( )
+ {extern int max(int,int);  //声明在本函数中将要调用在其他文件中定义的max函数
+  int a,b;
+  cin>>a>>b;
+  cout<<max(a,b)<<endl;
+  return 0;
+ }
+file2.cpp（文件2）
+int max(int x,int y)
+{int z;
+ z=x>y?x：y;
+ return z;
+ }

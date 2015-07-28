@@ -1,0 +1,125 @@
+----------------------------------------------------------
+Intel Corporation Matrix Tool Version 2.3a Release
+Copyright (c) 2009-2011, Intel Corp. All Rights Reserved.
+For use with Intel(R) processors, chipsets and platforms.
+Strictly For Intel Internal Use Only.
+email: matrix@intel.com
+----------------------------------------------------------
+
+,Captured for, 100.0002 seconds,
+
+
+,-------,------------,-----------------------------------,
+,    CPU, Interrupt  , Information                       ,
+,-------,------------,-----------------------------------,
+,       ,CPU - 0     ,                                   ,
+,-------,------------,-----------------------------------,
+,   LOC:,       9948 , Local timer  interrupts
+,    85:,       8483 , PCI-MSI-edge pvrsrvkm  
+,    23:,       6161 , IO-APIC-fasteoi intel_scu_ipc  
+,    41:,       2783 , IO-APIC-fasteoi mmc1  
+,    22:,       1759 , IO-APIC-fasteoi intel_pmu_driver  
+,    27:,        782 , IO-APIC-fasteoi mmc0  
+,    32:,        346 , IO-APIC-fasteoi penwell_otg,  langwell_udc
+,   RES:,        209 , Rescheduling interrupts  
+,    10:,         79 , IO-APIC-fasteoi i2c-dw-pci-0  
+,   TLB:,         79 , TLB shootdowns  
+,    11:,         53 , IO-APIC-fasteoi i2c-dw-pci-1  
+,    16:,         10 , IO-APIC-fasteoi msic_adc  
+,   CAL:,          7 , Function call  interrupts
+,   318:,          4 , LNW-GPIO-demux atmel_mxt224  
+,-------,------------,-----------------------------------
+,       ,CPU - 1     ,                                   ,
+,-------,------------,-----------------------------------,
+,   LOC:,       4658 , Local timer  interrupts
+,   CAL:,       1069 , Function call  interrupts
+,   RES:,        281 , Rescheduling interrupts  
+,   TLB:,        107 , TLB shootdowns  
+,-------,------------,-----------------------------------
+, Total ,      36818 , Interrupt Rate,    368.1556,intr/sec
+,-------,------------,-----------------------------------
+
+
+
+,-----------,----------,----------,--------------------
+,   Event(s),Summary   ,
+,-----------,----------,----------,--------------------
+,       CPU ,   Wake   ,  Events  ,                    
+,-----------,----------,----------,--------------------
+,  Events   , #Event(s),Percentage, Rate (events/sec)  
+,-----------,----------,----------,--------------------
+,Non Kernel ,      7831,  43.6949%,       78.3048
+,  Kernel   ,     10091,  56.3051%,      100.9033
+,-----------,----------,----------,--------------------
+,  Total    ,     17922,          ,      179.2081
+,-----------,----------,----------,--------------------
+
+,-----------,----------,----------,--------------------
+,   Event(s),Details:- ,
+,-----------,----------,------,---------------,-------------------------,-------------------------------,
+,   Sampling, Rate     ,(Secs), 100.0060
+,-----------,----------,------,---------------,-------------------------,-------------------------------,
+, Non Kernel, Events(s),      ,               ,                         ,                               ,
+,-----------,----------,------,---------------,-------------------------,-------------------------------,
+,Percentage , #Event(s),  PID ,  Process Name ,    Callback Function    ,    Initialized Function       ,
+,-----------,----------,------,---------------,-------------------------,-------------------------------,
+,  42.8809% ,      3358,  2251,TimedEventQueue,         (hrtimer_wakeup),        hrtimer_start_range_ns ,
+,  12.7570% ,       999,   386,    kondemand/0,  (delayed_work_timer_fn),                  do_dbs_timer ,
+,  12.6931% ,       994,  1962,oid.voicesearch,         (hrtimer_wakeup),      schedule_hrtimeout_range ,
+,  11.3012% ,       885,    18,             pm,    (pm_suspend_timer_fn),                   __mod_timer ,
+,  11.0458% ,       865,  2063,        mmcqd/1,   (cfq_idle_slice_timer),                   __mod_timer ,
+,   1.6473% ,       129,  1563,       Playback,             do_nanosleep,                        Thread ,
+,   1.2642% ,        99,     9,       events/0,  (delayed_work_timer_fn),            queue_delayed_work ,
+,   1.2514% ,        98,    10,       events/1,  (delayed_work_timer_fn),            queue_delayed_work ,
+,   1.2387% ,        97,    10,       events/1,  (delayed_work_timer_fn),            queue_delayed_work ,
+,   0.9833% ,        77,  1504,         logcat,         (hrtimer_wakeup),      schedule_hrtimeout_range ,
+,   0.8173% ,        64,    18,             pm,    (pm_suspend_timer_fn),                   __mod_timer ,
+,   0.2937% ,        23,  1574,  WindowManager,         (hrtimer_wakeup),      schedule_hrtimeout_range ,
+,   0.2426% ,        19,  2080,   flush-179:20,        (process_timeout),                   __mod_timer ,
+,   0.2171% ,        17,  2080,   flush-179:20,     (blk_unplug_timeout),                   __mod_timer ,
+,   0.1532% ,        12,  1552,er.ServerThread,        (process_timeout),                   __mod_timer ,
+,   0.1022% ,         8,  2070,.cooliris.media,         (hrtimer_wakeup),      schedule_hrtimeout_range ,
+,   0.1022% ,         8,  1285,      kjournald,        (wakeup_timer_fn),                   __mod_timer ,
+,   0.0894% ,         7,     9,       events/0,    (pm_suspend_timer_fn),                   __mod_timer ,
+,   0.0766% ,         6,  1552,er.ServerThread,         (hrtimer_wakeup),      schedule_hrtimeout_range ,
+,   0.0766% ,         6,     9,       events/0,        (process_timeout),                   __mod_timer ,
+,   0.0766% ,         6,  1284,    flush-179:0,     (blk_unplug_timeout),                   __mod_timer ,
+,   0.0638% ,         5,   763,        mmcqd/0,   (cfq_idle_slice_timer),                   __mod_timer ,
+,   0.0638% ,         5,  2254,TimedEventQueue,  (delayed_work_timer_fn),            queue_delayed_work ,
+,   0.0638% ,         5,  1504,         logcat,        (wakeup_timer_fn),                   __mod_timer ,
+,   0.0638% ,         5,     9,       events/0,  (delayed_work_timer_fn),            queue_delayed_work ,
+,   0.0638% ,         5,   740,irq/318-atmel_m,    (pm_suspend_timer_fn),                   __mod_timer ,
+,   0.0511% ,         4,  1553,ActivityManager,         (hrtimer_wakeup),      schedule_hrtimeout_range ,
+,   0.0511% ,         4,  1504,         logcat,         (commit_timeout),                   __mod_timer ,
+,   0.0383% ,         3,  1284,    flush-179:0,        (process_timeout),                   __mod_timer ,
+,   0.0255% ,         2,  1609,       watchdog,         (hrtimer_wakeup),        hrtimer_start_range_ns ,
+,   0.0255% ,         2,     9,       events/0,  (delayed_work_timer_fn),            queue_delayed_work ,
+,   0.0255% ,         2,    10,       events/1,        (process_timeout),                   __mod_timer ,
+,   0.0128% ,         1,    18,             pm,    (pm_suspend_timer_fn),                   __mod_timer ,
+,   0.0128% ,         1,  1284,    flush-179:0,         (commit_timeout),                   __mod_timer ,
+,   0.0128% ,         1,  1638,     HeapWorker,         (hrtimer_wakeup),        hrtimer_start_range_ns ,
+,   0.0128% ,         1,  1542,         Binder,                        #,                        Thread ,
+,   0.0128% ,         1,  2261,      AsyncTask, schedule_hrtimeout_range,                            #2 ,
+,   0.0128% ,         1,  1659,     HeapWorker,         (hrtimer_wakeup),        hrtimer_start_range_ns ,
+,   0.0128% ,         1,  1553,ActivityManager,         (commit_timeout),                   __mod_timer ,
+,   0.0128% ,         1,  1552,er.ServerThread,  (alarm_timer_triggered),        hrtimer_start_range_ns ,
+,   0.0128% ,         1,  1544, SurfaceFlinger,        (process_timeout),                   __mod_timer ,
+,   0.0128% ,         1,     9,       events/0,  (delayed_work_timer_fn),            queue_delayed_work ,
+,   0.0128% ,         1,  1572,PowerManagerSer,         (hrtimer_wakeup),      schedule_hrtimeout_range ,
+,   0.0128% ,         1,  2249,         matrix,         (hrtimer_wakeup),                  do_nanosleep ,
+,-----------,----------,------,---------------,-------------------------,-------------------------------,
+,     Kernel, Event(s) ,      ,               ,                         ,                               ,
+,-----------,----------,------,---------------,-------------------------,-------------------------------,
+,Percentage , #Event(s),  PID ,  Process Name ,    Callback Function    ,    Initialized Function       ,
+,-----------,----------,------,---------------,-------------------------,-------------------------------,
+,  60.3013% ,      6085,     0,        swapper,       (tick_sched_timer),        hrtimer_start_range_ns ,
+,  38.2420% ,      3859,     0,        swapper,       (tick_sched_timer),        hrtimer_start_range_ns ,
+,   0.5946% ,        60,     0,        swapper,       (tick_sched_timer),                 hrtimer_start ,
+,   0.4757% ,        48,     0,        swapper,       (estimation_timer),                   __mod_timer ,
+,   0.2676% ,        27,     0,        swapper,       (tick_sched_timer),                 hrtimer_start ,
+,   0.1090% ,        11,     1,        swapper,  (sched_rt_period_timer),               enqueue_task_rt ,
+,   0.0099% ,         1,     0,        swapper,       (tick_sched_timer),        hrtimer_start_range_ns ,
+,-----------,----------,------,---------------,-------------------------,-------------------------------,
+
+
+

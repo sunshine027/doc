@@ -1,0 +1,29 @@
+例5.7 用选择法对数组中10个整数按由小到大排序。
+所谓选择法就是先将10个数中最小的数与a［0］对换;再将a［1］到a［9］中最小的数与a［1］对换……每比较一轮,找出一个未经排序的数中最小的一个。共比较9轮。
+根据此思路编写程序如下：
+#include <iostream>
+using namespace std;
+int main( )
+{void select_sort(int array［］,int n);             //函数声明
+ int a［10］,i;
+ cout<<″enter the originl array：″<<endl;
+ for(i=0;i<10;i++)                                //输入10个数
+   cin>>a［i］;
+ cout<<endl;
+ select_sort(a,10);                              //函数调用，数组名作实参
+ cout<<″the sorted array：″<<endl;
+ for(i=0;i<10;i++)                               //输出10个已排好序的数
+   cout<<a［i］<<″  ″;
+ cout<<endl;
+ return 0;
+}
+
+void select_sort(int array［］,int n)              //形参array是数组名
+{int i,j,k,t;
+ for(i=0;i<n-1;i++)
+{k=i;
+     for(j=i+1;j<n;j++)                    
+       if(array［j］<array［k］) k=j;
+ t=array［k］;array［k］=array［i］;array［i］=t;
+}
+} 

@@ -1,0 +1,13 @@
+例5.9 设计和输出一个钻石图形。    
+#include <iostream>
+using namespace std;
+void main( )
+{char diamond［］［5］={{′ ′,′ ′,′*′},{′ ′,′*′,′ ′,′*′},{′*′,′ ′,′ ′,′ ′,′*′},
+{′ ′,′*′,′ ′,′*′},{′ ′,′ ′,′*′}};
+     int i,j;
+     for (i=0;i<5;i++)
+       {for (j=0;j<5;j++)
+cout<<diamond［i］［j］;          //逐个引用数组元素，每次输出一个字符
+cout<<endl;
+}
+}

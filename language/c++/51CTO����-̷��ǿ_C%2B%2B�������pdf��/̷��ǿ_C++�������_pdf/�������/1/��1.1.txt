@@ -1,0 +1,9 @@
+例1.1 输出一行字符： “This is a C++ program.”。
+程序如下： 
+#include <iostream>                //包含头文件iostream
+using namespace std;                //使用命名空间std
+int main( )
+{
+cout<<″This is a C++ program.″;
+return 0;
+}

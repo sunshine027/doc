@@ -1,0 +1,9 @@
+例3.4 用scanf和printf函数进行输入和输出。
+#include <iostream>
+using namespace std;
+int main( )
+{int a; float b; char c;
+ scanf(″%d %c %f″,&a,&c,&b);           //注意在变量名前要加地址运算符&
+ printf(″a=%d,b=%f,c=%c＼n″,a,b,c);
+ return 0;
+}

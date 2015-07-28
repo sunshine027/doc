@@ -1,0 +1,17 @@
+例11.2 将例11.1中的公用继承方式改为用私有继承方式(基类Student不改)。
+可以写出私有派生类如下:
+class Student1: private Student//用私有继承方式声明派生类Student1
+{public:
+void display_1( )                       //输出两个数据成员的值
+{cout<<″age: ″<<age<<endl;          //引用派生类的私有成员，正确
+cout<<″address: ″<<addr<<endl;}    //引用派生类的私有成员，正确
+private:
+int age;                          
+string addr;
+};请分析下面的主函数:int main( )
+{Student1  stud1;//定义一个Student1类的对象stud1
+ stud1.display();             //错误，私有基类的公用成员函数在派生类中是私有函数
+stud1.display_1( );          //正确。Display_1函数是Student1类的公用函数
+stud1.age=18;                //错误。外界不能引用派生类的私有成员
+return 0;
+ }

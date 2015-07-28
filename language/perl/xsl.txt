@@ -1,0 +1,53 @@
+1.针对这样的xml:<a number="1">hello</a>可以用<xsl:value-of select="@number"/>来获取属性number 的值
+2.根据奇数偶数行添加相应的属性
+<tr>
+    <xsl:attribute name="class">
+	<xsl:if test="boolean(position() mod 2)">even</xsl:if>
+									   </xsl:attribute>
+</tr>
+3.定义一个变量，获取当前的位置值（如果是新的一轮循环，则从1重新开始）：
+  <xsl:variable name="rowIndex"><xsl:value-of select="position()"/></xsl:variable>
+4.定义一变量，值为某个标签下子标签的总的个数：
+   <xsl:variable name="num"><xsl:value-of select="coun(../file)"/></xsl:variable>
+5.取某个已定义的变量的值：<xsl:value-of select="$rows"/>
+6.if表达式判断：<xsl:if test="$prow=1 and $rowNum=1">
+7.如果第一列需要跨行（注意：把<th>房子<xsl:if>里面）：
+  <xsl:if test="position()=1">
+      <th>
+	 <xsl:attribute name="rowspan"><xsl:value-of select="$num"/></xsl:attribute>
+	 <xsl:value-of select="../@score"/>
+      </th>
+      <td>
+	<xsl:attribute name="rowspan"><xsl:value-of select="$num"/></xsl:attribute>
+	<a target="_blank"><xsl:attribute name="href"><xsl:value-of select="../@link"/>
+        </xsl:attribute><xsl:value-of select="../@name"/></a>
+     </td>
+  </xsl:if>	
+8.计算当前节点所处的层数:
+<xsl:variable name="levelid"><xsl:value-of
+   select="count(ancestor-or-self::*)"/></xsl:variable>
+9.如果在xsl中想使用if /else结构可以用以下代替：
+xsl:if语法没有else的属性。如果我们要进行多项选择，那么就要使用xsl:choose / xsl:when / xsl:otherwise系列流程控制语法了。具体的使用请看下面的XSL文件例子：
+
+<xsl:template match="PEOPLE">
+
+<xsl:choose>
+
+<xsl:when test="@name = 'ajie'">
+
+<B><xsl:value-of select="@name"/></B>
+
+</xsl:when>
+
+<xsl:when test="@name">
+
+<I><xsl:value-of select="@name"/></I>
+
+</xsl:when> 
+
+<xsl:otherwise>
+
+No name available
+
+</xsl:otherwise>
+

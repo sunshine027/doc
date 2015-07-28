@@ -1,0 +1,46 @@
+例14.1 给出三角形的三边a,b,c，求三角形的面积。只有a+b>c,b+c>a,c+a>b时才能构成三角形。设置异常处理，对不符合三角形条件的输出警告信息，不予计算。
+先写出没有异常处理时的程序:
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main( )
+{double triangle(double,double,double);
+ double a,b,c;
+ cin>>a>>b>>c;
+ while(a>0 && b>0 && c>0)
+  {cout<<triangle(a,b,c)<<endl;
+   cin>>a>>b>>c;
+  }
+  return 0;
+}
+
+double triangle(double a,double b,double c)
+{double area;
+ double s=(a+b+c)/2;
+ area=sqrt(s*(s-a)*(s-b)*(s-c));
+ return area;
+}
+修改后的程序如下:
+#include <iostream>
+#include <cmath>
+using namespace std;
+void main( )
+{double triangle(double,double,double);
+ double a,b,c;
+ cin>>a>>b>>c;
+ try//在try块中包含要检查的函数
+  {while(a>0 && b>0 && c>0)
+    {cout<<triangle(a,b,c)<<endl;
+   cin>>a>>b>>c;
+    }
+  }
+ catch(double)                       //用catch捕捉异常信息并作相应处理
+  {cout<<″a=″<<a<<″,b=″<<b<<″,c=″<<c<<″,that is not a triangle!″<<endl;}
+ cout<<″end″<<endl;
+}
+
+double triangle(double a,double b,double c)  //计算三角形的面积的函数
+{double s=(a+b+c)/2;
+ if (a+b<=c||b+c<=a||c+a<=b) throw a;   //当不符合三角形条件抛出异常信息
+ return sqrt(s*(s-a)*(s-b)*(s-c));
+}

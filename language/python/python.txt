@@ -1,0 +1,2 @@
+1. time needed for run:
+   python -m cProfile ./manage.py test iris.core.tests.test_firefox_login 2>&1 | tee /tmp/profile.log

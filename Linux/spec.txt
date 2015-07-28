@@ -1,0 +1,1 @@
+1. http://backreference.org/2011/09/17/some-tips-on-rpm-conditional-macros/

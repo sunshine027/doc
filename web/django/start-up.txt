@@ -1,0 +1,8 @@
+0. work environment
+1. requirement.txt
+   testing.txt
+2. settings_base.py settings_product.py settings_dev.py(remove secret key)
+3. template inheritance
+4. robot.txt/humans.txt
+5. code coverage
+6. account with google

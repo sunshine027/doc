@@ -1,0 +1,61 @@
+例14.5 利用命名空间来解决例14.4程序名字冲突问题。
+修改两个头文件，把在头文件中声明的类分别放在两个不同的命名空间中。
+//header1.h  (头文件1)
+#include <string>
+#include <cmath>
+using namespace std;
+namespace ns1//声明命名空间ns1
+{class Student                 //在命名空间ns1内声明Student类
+{public:
+Student(int n,string nam,int a)
+{num=n;name=nam;age=a;}
+void get_data( );
+     private:
+int num;
+string name;
+int age;
+    };
+ void Student::get_data()     //定义成员函数
+     {cout<<num<<″ ″<<name<<″ ″<<age<<endl;
+     }
+
+ double fun(double a,double b)  //在命名空间ns1内定义fun函数
+    {return sqrt(a+b);}
+}
+
+//header2.h ((头文件2)
+#include <string>
+#include <cmath>
+using namespace std;
+namespace ns2                      //声明命名空间ns2
+ {class Student
+{public:
+Student(int n,string nam,char s)
+{num=n;name=nam;sex=s;}
+void get_data( );
+private:
+int num;
+char name[20];
+char sex;
+};
+void Student::get_data( )
+   {cout<<num<<″ ″<<name<<″ ″<<sex<<endl;
+}
+double fun(double a,double b)
+{return sqrt(a-b);}
+ }
+
+//main file (主文件)
+#include <iostream>
+#include ″cc14-5-h1.h″          //包含头文件1
+#include ″cc14-5-h2.h″          //包含头文件2
+using namespace std;
+int main( )
+{ns1::Student stud1(101,″Wang″,18);  //用命名空间ns1中声明的Student类定义stud1
+stud1.get_data( );                  //不要写成ns1::stud1.get_data( );
+cout<<ns1::fun(5,3)<<endl;         //调用命名空间ns1中的fun函数
+ns2::Student stud2(102,″Li″,′f′);  //用命名空间ns2中声明的Student类定义stud2 
+stud2.get_data( );
+cout<<ns2::fun(5,3)<<endl;         //调用命名空间ns1中的fun函数
+return 0;
+ }

@@ -1,0 +1,31 @@
+例14.4 名字冲突。
+程序员甲在头文件header1.h中定义了类Student和函数fun。
+//header1.h (头文件1，设其文件名为cc14-4-h1.h)
+#include <string>
+#include <cmath>
+using namespace std;
+class Student//声明Student类
+{public:
+   Student(int n,string nam,char s)
+{num=n;name=nam;sex=s;}
+   void get_data( );
+private:
+   int num;
+   string name;
+   char sex;
+ };
+void Student::get_data( )               //成员函数定义
+{cout<<num<<″ ″<<name<<″ ″<<sex<<endl;
+}
+double fun(double a,double b)          //定义全局函数(即外部函数)
+{return sqrt(a+b);}
+在main函数所在的文件中包含头文件header1.h:
+#include <iostream>
+#include ″cc14-4-h1.h″       //注意要用双引号，因为文件一般是放在用户目录中的
+using namespace std;
+int main( )
+{Student stud1(101,″Wang″,18);  //定义类对象stud1
+   stud1.get_data( );
+   cout<<fun(5,3)<<endl;
+   return 0;
+   }

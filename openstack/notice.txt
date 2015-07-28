@@ -1,0 +1,7 @@
+1.rabbitmq
+  before intall, modify: adding "127.0.0.1 hostname" in /etc/hosts
+2. neutron agent-list return empty
+   ntp doesn't configure
+3. In a CirrOS image, the login account is cirros. The password is cubswin:)
+4. export LC_ALL=C
+5. repo dir: /var/lib/cobbler/webroot/cobbler

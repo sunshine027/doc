@@ -1,0 +1,3 @@
+1. date: always naive
+2. datetime, time: naive or aware
+3. timedelta: only store days, seconds, microseconds

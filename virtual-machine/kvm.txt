@@ -1,0 +1,4 @@
+1. Could not access KVM kernel module: Permission denied
+failed to initialize KVM: Permission denied
+Back to tcg accelerator
+solv: sudo chown jenkins:kvm /dev/kvm(if you run by jenkins)

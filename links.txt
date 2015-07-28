@@ -1,0 +1,17 @@
+1.computer booting: 
+                 http://www.ruanyifeng.com/blog/2013/02/booting.html
+2.somebody's blog: 
+                  http://unixfoo.blogspot.com/2009/01/xen-performance-monitoring.html
+3.bash: 
+                 http://www.gnu.org/software/bash/manual/bashref.html
+4. isoftstone password: 
+                    https://passport.isoftstone.com/forgot
+5. fedora doc: 
+             https://docs.fedoraproject.org/en-US/Fedora/17
+6.makefile:
+    http://www.codeproject.com/Articles/31488/Makefiles-in-Linux-An-Overview
+7. http:
+   http://www.w3.org/Protocols/rfc2616/rfc2616-sec5.html
+   s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+   s.connect((HOST, PORT))
+   s.send('GET / HTTP/1.1\r\n\r\n')

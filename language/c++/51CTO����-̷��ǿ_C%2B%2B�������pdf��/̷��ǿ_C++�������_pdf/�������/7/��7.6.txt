@@ -1,0 +1,19 @@
+例7.6 开辟空间以存放一个结构体变量。
+#include <iostream>
+#include <string>        
+using namespace std;
+struct Student             //声明结构体类型Student
+{ string name;
+int num;
+char sex;
+};
+int main( )
+{ Student *p;            //定义指向结构体类型Student的数据的指针变量
+p=new Student;         //用new运算符开辟一个存放Student型数据的空间
+p->name=″Wang Fun″;    //向结构体变量的成员赋值
+p->num=10123;
+p->sex=′m′;
+cout<<p->name<<endl<<p->num<<endl<<p->sex<<endl; //输出各成员的值
+delete p;          //撤销该空间
+return 0;
+}

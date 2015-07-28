@@ -1,0 +1,29 @@
+1. django cache
+  a.如果cache backend is DatabaseCache, 如果清除缓存, cache.clear()必须包装在transaction里面，like:
+    transaction.start()
+    cache.clear()
+    transaction.commit()
+    否则clear不起作用
+    查看是否清除，可以查看cache table(通过manage.py createcachetable 创建)
+
+2. ManyToManyFiled:
+   a.xxx.add(c,d,e) // don't need to save, it has been save into database
+   or when copy:
+   old_licenses = a.licenses(license is ManytoManyField)
+   a.pk=None
+   a.save()
+   a.licenses=old_licenses  //don't need to save, it has been save into database
+
+3. 查询多对多，或者一对多:
+   Blog.objects.filter(entry__headline__contains='Lennon',
+        entry__pub_date__year=2008) (两个条件是and)
+
+   Blog.objects.filter(entry__headline__contains='Lennon').filter(
+        entry__pub_date__year=2008)(两个连续的filter没有关系，都是在model的基础上filter）
+   但是前提是blog和entry是一对多的关系
+   Blog.objects.filter(name__contains='Lennon').filter(name__contains="2008")(两个连续的filter是and的关系)
+   
+4.  GitTree.objects.filter(
+... Q(licenses__shortname__contains='lemon')|
+... Q(licenses__fullname__contains='2008'))
+[<GitTree: lemon/2008>, <GitTree: lemon/2008>](why returned two, they are the same?)

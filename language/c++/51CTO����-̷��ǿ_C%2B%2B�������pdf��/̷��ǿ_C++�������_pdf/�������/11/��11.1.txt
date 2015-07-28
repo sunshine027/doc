@@ -1,0 +1,28 @@
+例11.1 访问公有基类的成员。
+下面写出类的声明部分:
+Class Student//声明基类
+{public:                                       //基类公用成员
+void get_value( )
+{cin>>num>>name>>sex;}
+void display( )
+{cout<<″ num: ″<<num<<endl;
+cout<<″ name: ″<<name<<endl;
+cout<<″ sex: ″<<sex<<endl;}
+private :                                     //基类私有成员
+   int num;
+   string name;
+   char sex;
+};   
+
+class Student1: public Student                 //以public方式声明派生类Student1
+ {public:
+void display_1( )
+{cout<<″ num: ″<<num<<endl;           //企图引用基类的私有成员，错误
+       cout<<″ name: ″<<name<<endl;         //企图引用基类的私有成员，错误
+       cout<<″ sex: ″<<sex<<endl;           //企图引用基类的私有成员，错误
+       cout<<″ age: ″<<age<<endl;           //引用派生类的私有成员，正确
+       cout<<″ address: ″<<addr<<endl;}     //引用派生类的私有成员，正确
+private:
+       int age;
+       string addr;
+ };

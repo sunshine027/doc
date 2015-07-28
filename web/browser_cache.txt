@@ -1,0 +1,9 @@
+1.cache
+   a. server
+    Cache-Control:max-age=1800(缓存时间)
+    Expires:
+    Last-Modified
+   b.browser:
+     If-Modified-Since
+     Cache-Control: max-age=0
+   浏览器根据： Last-Modified and Etag来决定是否重新请求服务器

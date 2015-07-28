@@ -1,0 +1,668 @@
+ID  Sev  Pri  OS  Assignee  Status  Resolution  Title  
+1376 [SEC]  Cri  to_  Andr  bhargavix.h.kuligod@intel.com  RESO  DUPL  TASKFORCE: Fabric error occurs while booting the system  
+1463 [SEC]  Cri  to_  Andr  hitesh.k.patel@intel.com  NEW   System hang will happen when pressing power button and texture streaming for camera preview.  
+1467 [SEC]  Cri  to_  Andr  fabricex.sorel@intel.com  NEW   Modem 6260 PnP issue and pending materials  
+1454 [SEC]  Hig  to_  Andr  haijun.cao@intel.com  NEW   LIS3LV02DX accelerometer (I2C) driver is blocking during a voice call.  
+1449 [SEC]  Hig  to_  Andr  rajeev.d.muralidhar@intel.com  RESO  DUPL  System Sleep & Wake USB  
+1461 [SEC]  Hig  to_  Andr  niveditha.sundaram@intel.com  NEW   MidCrypto deadlocks during concurrent operation  
+1455 [SEC]  Hig  to_  Andr  hong.liu@intel.com  NEW   The proximity sensor driver blocks the s0i3  
+1282 [SEC]  Hig  to_  Andr  zhengliex.song@intel.com  RESO  DUPL  System die when playing video  
+1442 [SEC]  Hig  to_  Andr  ramesh.agarwal@intel.com  NEW   Charging status inconsistent in WW17 Medfield Android Release  
+1453 [SEC]  Hig  to_  Andr  howard.s.hamilton@intel.com  NEW   [PnP] Gfx not entering D0i3 during camera application workloads  
+1464 [SEC]  Med  to_  Andr  bin.yang@intel.com  NEW   random S3 suspend panic in i2c_dw_xfer_msg for dev->msgs is NULL  
+1459 [SEC]  Med  to_  Andr  erwanx.mahe@intel.com  ASSI   build_all: format errors in log output  
+1288 [SEC]  Med  to_  Andr  sebastienx.niciarz@intel.com  RESO  DUPL  L2CAP throuput test_uplink (CDK as Client) is failed.(the current average value is about 0.88Mb/s)  
+1458 [SEC]  Med  to_  Andr  bruce.j.beare@intel.com  ASSI   Reboot after installer completes  
+1469 [SEC]  Med  to_  Andr  christophex.lebouc@intel.com  NEW   SST timeout or GPADC timeout case caused phone hang after using vBB0.03 firmware  
+1290 [SEC]  Med  to_  Andr  jeanx.trivelly@intel.com  ASSI   DUT can not iteratively switch connection from AP unsecured to AP secured 50 times.  
+1420 [SEC]  Med  to_  Andr  rajeev.d.muralidhar@intel.com  NEW   s0ix support while some cpu offline  
+1460 [SEC]  Med  to_  Andr  erwanx.mahe@intel.com  ASSI   troubleshoot.sh script is incorrect for gingerbread  
+1364 [SEC]  Med  to_  Andr  gangx.a.chen@intel.com  ASSI   Power optimization: ALSA HAL setHardwareParams buffer changes for Music use-case  
+1448 [SEC]  Med  to_  Andr  fabricex.sorel@intel.com  NEW   Modem power consumption is High in system Standby  
+1365 [SEC]  Med  to_  Andr  panneer.s.arumugam@intel.com  ASSI   Power optimization: Optimize Audiotrack obtainBuffer wake-ups for Music use case  
+1382 [SEC]  Med  to_  Andr  hongyu.zhang@intel.com  RESO  WONT  Switching camera app from still to video switches ISP to video mode  
+1323 [SEC]  Med  to_  Andr  eric.morel@intel.com  NEED   RF performance-modem : ACLR FDDII fails Intel specs  
+1446 [SEC]  Med  to_  Andr  jack.ren@intel.com  RESO  DUPL  [PnP] Observed high wakes during S0i3 when we set governor policy to Ondemand  
+1444 [SEC]  Med  to_  Andr  xiaolin.zhang@intel.com  RESO  FIXE  added 1080p and 720p capture resolution item support.  
+1423 [SEC]  Med  to_  Andr  frederic.predon@intel.com  RESO  FIXE  Revert the patches which break the telephony test 2011-04-26  
+1439 [SEC]  Med  to_  Andr  haijun.cao@intel.com  NEW   High i2c-dw-pci-5 interrupts (60/s) from accelerometer sensor while playing video  
+1330 [SEC]  Med  to_  Andr  erwanx.mahe@intel.com  NEW   No gerrit entry but filing a bug on gerrit slowness on viewing files  
+1468 [SEC]  Med  to_  Andr  chao.bi@intel.com  ASSI   Fail to Import SIM phonebook to Device Phone Book  
+1413 [SEC]  Med  to_  Andr  johnson.z.wu@intel.com  RESO  FIXE  Audio record: Audio HAL should open alsa device with 44.1KHz as sampling rate  
+1438 [SEC]  Med  to_  Andr  jian.a.zhu@intel.com  ASSI   iCDK can't camp on 2G live network in China  
+1371 [SEC]  Med  to_  Andr  gangx.a.chen@intel.com  RESO  FIXE  Keep the wired headset inserting into the board, the sound outputs from speaker &wired headset instead of only wired headset after playing the ringtone of "settings".  
+1443 [SEC]  Med  to_  Andr  ramesh.agarwal@intel.com  NEW   Battery sysfs 'Charge_counter' starts with a negative value in WW17 Medfield Android Release  
+1373 [SEC]  Med  to_  Andr  livingston.tong@intel.com  NEW   Could not download image onto one defect iCDK baseboard  
+1441 [SEC]  Low  to_  Andr  lakshmi.n.vinnakota@intel.com  RESO  INVA  Capture of Big Endian format files is failing  
+1333 [SEC]  Low  to_  Andr  james.p.freyensee@intel.com  NEW   Please fix FW so we can reboot iCDK w/leaving USB plugged in  
+1419 [SEC]  Low  to_  Andr  rajeev.d.muralidhar@intel.com  NEW   added weak platform_pm callbacks  
+1436 [SEC]  Low  to_  Andr  saadi.maalem@intel.com  NEW   system crash when launch phone application (1/20)  
+1437 [SEC]  Low  to_  Andr  saadi.maalem@intel.com  NEW   System freeze when setting normal ringtone (1/20)  
+1440 [SEC]  Low  to_  Andr  lakshmi.n.vinnakota@intel.com  RESO  INVA  Capture of 8 bit audio file is failing  
+1374 [SEC]  Low  to_  Andr  shengquan.yuan@intel.com  RESO  FIXE  mfld video driver codying style cleanup  
+1405 [SEC]  Blo  to_  Andr  louis.le.gall@intel.com  NEW   Integration of alsa IFX sound card  
+1452 [SEC]  enh  to_  Andr  nicolas.roux@intel.com  ASSI   [METABUG_KPI_PnP]  
+1307 [SEC]  enh  to_  Andr  davidx.muoio@intel.com  NEW   Add support for POLLHUP on ttyIFX0  
+1398 [SEC]  enh  to_  Andr  wen.w.wang@intel.com  ASSI   Need to update ISP driver for PNW C0 stepping  
+1415 [SEC]  enh  to_  Andr  fabricex.sorel@intel.com  RESO  FIXE  Update IFX FW to SUNRISE_SMB_1116.C  
+1407 [SEC]  enh  to_  Andr  juliex.regairaz@intel.com  NEW   [NLCP] RSSI level is displayed as low  
+1414 [SEC]  enh  to_  Andr  juliex.regairaz@intel.com  NEW   [NLCP] can't connect / disconnect to an AP twice  
+1403 [SEC]  enh  to_  Andr  honorex.tricot@intel.com  ASSI   [NLCP] Wrong "Link Speed" for connected AP  
+1386 [SEC]  enh  to_  Andr  jurgen.von.oerthel@intel.com  NEW   enable memory bandwidth read and write counters in the ISP firmware  
+1410 [SEC]  enh  to_  Andr  juliex.regairaz@intel.com  NEW   [NLCP] No more scan after AP disconnection  
+1342 [SEC]  enh  to_  Andr  jean-michelx.bachot@intel.com  INTE  FIXE  Add WIDI Flag in Android build Makefile  
+1335 [SEC]  enh  to_  Andr  jackx.w.lix@intel.com  NEW   Rapid RIL 5.5 Integration  
+1456 [SEC]  enh  to_  Andr  jing.tao@intel.com  ASSI   atomisp driver contains hex constants  
+1295 [SEC]  enh  to_  Andr  jeanx.trivelly@intel.com  ASSI   WLAN: Enabling WLAN Tethering  
+1383 [SEC]  enh  to_  Andr  gang.a.hu@intel.com  NEW   libmfldadvci API exposes too much detail  
+1297 [SEC]  enh  to_  Andr  juliex.regairaz@intel.com  NEW   WLAN: Scan time enhancements  
+1404 [SEC]  enh  to_  Andr  juliex.regairaz@intel.com  NEW   [NLCP] Wifi state goes to unsuccessful state after sleep  
+1412 [SEC]  enh  to_  Andr  juliex.regairaz@intel.com  NEW   [NLCP] Can't enable/disable WiFi twice  
+479 [SEC]  Cri  P1  Andr  randy.xu@intel.com  ASSI   [Video]: System is easy to hang when Gfx PVR_K timeout is found during video playback  
+800 [SEC]  Cri  P1  Andr  jackx.w.lix@intel.com  RESO  FIXE  WIFI activation failed  
+500 [SEC]  Cri  P1  Andr  yan.a.wang@intel.com  RESO  FIXE  boot from eMMC (with kernel+rootFS) is not stable in some board  
+745 [SEC]  Cri  P1  Andr  timothy.c.dietz@intel.com  RESO  FIXE  S0i3 not working on IFWI B0.14  
+941  Cri  P1  Andr  jenny.tc@intel.com  ASSI   PnP: PnP iCDK board unstable for S0i3 measurements compared to iCDK boards  
+1339 [SEC]  Cri  P1  Andr  saadi.maalem@intel.com  NEW   Puint FW shut down Iunit power before driver has finished context save which will cause system hang  
+1304 [SEC]  Cri  P1  Andr  yang.chang@borqs.com  ASSI   Apps manager does not release memory as it should  
+608 [SEC]  Cri  P1  Andr  livingston.tong@intel.com  RESO  FIXE  PR1 Display very dim or black  
+1001  Cri  P1  Andr  eduardox.mendi@intel.com  INTE  FIXE  [PnP] USB B cable unplug is not recognised correctly with latest USB runtime_pm patches  
+1302 [SEC]  Cri  P1  Andr  loicx.martin@intel.com  INTE  FIXE  SPI debug uart does not work after S3  
+439 [SEC]  Cri  P1  Andr  eric.seibel@intel.com  RESO  FIXE  platform failed to camp on network - modem not camp  
+1052  Cri  P1  Andr  christophex.lebouc@intel.com  RESO  DUPL  mdfld-Android - Frequent Fabric Error Occerance(F503) in Medfield iCDK Boards  
+607 [SEC]  Cri  P1  Andr  christophex.lebouc@intel.com  ASSI   PNP:Random Fabric Errors observed while booting Android builds  
+1281 [SEC]  Cri  P1  Andr  rakesh.a.ughreja@intel.com  ASSI   Board die when play audio  
+1252 [SEC]  Cri  P1  Andr  philippe.skowronski@intel.com  ASSI   SIM status is UNKNOWN  
+718 [SEC]  Cri  P1  Andr  jing.tao@intel.com  RESO  FIXE  go to s0i3 while preview will cause system hang  
+600 [SEC]  Cri  P1  Andr  olivier.carpentier@intel.com  RESO  FIXE  BKB MFD PR1 (aka BB2) board temperature is too hot]  
+837 [SEC]  Hig  P1  Andr  xiaolin.zhang@intel.com  RESO  FIXE  System hang when call QBUF v4L2 IOCTL with a wrong buffer index.  
+694 [SEC]  Hig  P1  Andr  frederic.predon@intel.com  ASSI   Boot failures 1/5  
+1213  Hig  P1  Andr  jurgen.von.oerthel@intel.com  ASSI   1080p video recording will have green blocks at the center of the viewfinder  
+1408 [SEC]  Hig  P1  Andr  eric.morel@intel.com  NEW   RF perf/modem : modem reboot / Pmax WCDMA  
+692 [SEC]  Hig  P1  Andr  jackx.w.lix@intel.com  RESO  FIXE  Rapid RIL is not correctly synchronized with STK application  
+546 [SEC]  Hig  P1  Andr  ping.liang@intel.com  INTE  FIXE  [Audio] one audio clip in mp4 file container with mp3 codec makes music player crash  
+535 [SEC]  Hig  P1  Andr  celinex.chotard@intel.com  RESO  FIXE  [Video]obtainBuffer timed out error happens and video playback only shows a still frame (40% reproducibility)  
+715 [SEC]  Hig  P1  Andr  thierry.deleau@intel.com  RESO  FIXE  Include AT proxy project and checkin code  
+1276 [SEC]  Hig  P1  Andr  christophex.lebouc@intel.com  INTE  FIXE  Temporary UI freeze with IFW BE.15  
+791 [SEC]  Hig  P1  Andr  jing.tao@intel.com  ASSI   [PnP] ISP (Camera Imaging IP) is not power gated in S0 Idle mode  
+1094  Hig  P1  Andr  rajeev.d.muralidhar@intel.com  RESO  FIXE  [Taskforce] SDHC causes fabric errors during S3 resume  
+1317 [SEC]  Hig  P1  Andr  wei.gao@borqs.com  RESO  DUPL  [Camera] Camera crashes when switching between front camera and back camera  
+794 [SEC]  Hig  P1  Andr  johnson.z.wu@intel.com  ASSI   0001606: [Music Player] Music can't resume after end a call  
+1350 [SEC]  Hig  P1  Andr  hao.wu@intel.com  RESO  WORK  [OSPM] Plug USB micro B when DUT in S0i3 makes it to reset  
+1137  Hig  P1  Andr  weian.chen@intel.com  RESO  FIXE  The encoded clips have green frame and corruption in MFLD Android R4.3  
+1305 [SEC]  Hig  P1  Andr  christophe.continente@intel...  ASSI   libc_malloc_debug_leak.so is not working  
+632 [SEC]  Hig  P1  Andr  jason.m.bills@intel.com  ASSI   Android kernel can not be loaded when power up with usb cable plugged  
+1208  Hig  P1  Andr  li.zeng@intel.com  RESO  FIXE  [PnP]Video playback stops working after 30sec and system does not respond after that  
+1159  Hig  P1  Andr  saadi.maalem@intel.com  NEW   Taskforce : Android mfld : Platform does not enter into S0i3/S3 using Punit Fix FW.  
+617 [SEC]  Hig  P1  Andr  hassenex.ben.abdallah@intel...  ASSI   [AUDIO] Playback audio MP3 crash audio when moving cursor on progress bar  
+734 [SEC]  Hig  P1  Andr  fabienx.barthes@intel.com  RESO  FIXE  [Video] "ObtainBuffer timed out" error happens during plugging out earphone (40% re-producibility)  
+1080  Hig  P1  Andr  timothy.c.dietz@intel.com  NEW   LPE clock was changed to 200MHz during LPE clock switching for 1 usync period causing LPE stops execution  
+962  Hig  P1  Andr  arvind.s.tomar@intel.com  ASSI   I2S Pins Configuration in D0i3/S0i3  
+1409 [SEC]  Hig  P1  Andr  jenny.tc@intel.com  ASSI   After more than 90mins of audio/video playback system is shutdown  
+ID  Sev  Pri  OS  Assignee  Status  Resolution  Title  
+1381 [SEC]  Hig  P1  Andr  mark.a.allyn@intel.com  ASSI   Spurious interrupts (irq 25) while entering S0i3  
+1153  Hig  P1  Andr  rajesh.poornachandran@intel...  ASSI   [PnP] Latest Android build Gfx driver down not handle display OFF case properly; display panel consumes 157mW  
+811 [SEC]  Hig  P1  Andr  kun.k.wang@intel.com  ASSI   Memory leak cause video playback hang (without audio) after a long time  
+1389 [SEC]  Hig  P1  Andr  rajesh.poornachandran@intel...  ASSI   call to new IPC command required to solve display panel overconsumption in display OFF  
+1298 [SEC]  Hig  P1  Andr  timothy.c.dietz@intel.com  ASSI   DUT logs from PTI are often corrupted  
+1313 [SEC]  Hig  P1  Andr  juliex.regairaz@intel.com  REOP   [WLAN]the connection with AP broke automatically after surfing internet for a while.  
+1097  Hig  P1  Andr  sundar.iyer@intel.com  RESO  FIXE  [PNP] Set the default governor as ondemand instead of performance  
+1343 [SEC]  Hig  P1  Andr  vgonzalez@intrinsyc.com  ASSI   Call Barring queries using MMI codes are failing  
+542 [SEC]  Hig  P1  Andr  laura.l.warner@intel.com  RESO  WONT  Screen frozen while browsing with the UI  
+924  Hig  P1  Andr  xiaolin.zhang@intel.com  RESO  WORK  Viewfinder freezes after selecting any of the Color Effects.  
+1380 [SEC]  Hig  P1  Andr  jayant.mangalampalli@intel.com  ASSI   MidCrypto DH param stresses begin failing, DUT reboots  
+482 [SEC]  Hig  P1  Andr  xiaowei.a.li@intel.com  RESO  FIXE  [Video]Fail to play some H.263 Video clips  
+1219  Hig  P1  Andr  erwanx.mahe@intel.com  ASSI   Watchdog daemon absent from test cycle build  
+1145  Hig  P1  Andr  rose.w.han@intel.com  RESO  FIXE  Mfld/Android: v-sync switch not included in build (R4.3)  
+1277 [SEC]  Hig  P1  Andr  leo.he@borqs.com  INTE  FIXE  libdl.so.2 missed in device/intel/kboot/in/initrd-base.gz  
+1076  Hig  P1  Andr  nicolas.roux@intel.com  NEW   MFLD_Android:-PMU Driver functionality is not enabled(S3 and S0i3)  
+1264 [SEC]  Hig  P1  Andr  rajeev.d.muralidhar@intel.com  REOP   Panics when press power button while camera previewing  
+1430 [SEC]  Hig  P1  Andr  erwanx.mahe@intel.com  ASSI   Merge of both mfld_cdk and mfld_pr1 folder  
+1266 [SEC]  Hig  P1  Andr  johnson.z.wu@intel.com  RESO  FIXE  Can't detect wired headset when insert the wired headset before booting up the board  
+993  Hig  P1  Andr  li.zeng@intel.com  RESO  DUPL  error message is printed during video playback error  
+984  Hig  P1  Andr  tim.coppernoll@intel.com  RESO  FIXE  Chaabi verification of a signed OS fails during normal boot, but not DnX  
+1327 [SEC]  Hig  P1  Andr  chuanxiao.dong@intel.com  RESO  FIXE  [SD/MMC]there is a race between card-detect rescan and clock-gate work instances  
+1378 [SEC]  Hig  P1  Andr  hao.wu@intel.com  RESO  DUPL  USB suspend fix for S3  
+932  Hig  P1  Andr  alek.du@intel.com  ASSI   Taskforce: Mtfld-Android No Driver with D3/D0i3 for UART0  
+914  Hig  P1  Andr  gang.a.hu@intel.com  RESO  FIXE  Video Recording - selecting a recording quality other than High (Low, MMS, Youtube) crashes the camera app.  
+1038  Hig  P1  Andr  jason.m.bills@intel.com  ASSI   Can't charge battery more than 3.4V if power button is enabled  
+1172  Hig  P1  Andr  liang.l.yang@intel.com  RESO  FIXE  System hang when switch capture mode to video recording mode with OV2720 camera.  
+1417 [SEC]  Hig  P1  Andr  saadi.maalem@intel.com  NEW   Phone goes in sleep mode after releasing a Voice call  
+830 [SEC]  Hig  P1  Andr  yanmin.zhang@intel.com  RESO  DUPL  Video cannot be played by s0i3[PmP]  
+1293 [SEC]  Hig  P1  Andr  jason.m.bills@intel.com  RESO  FIXE  Playback audio regression  
+1154  Hig  P1  Andr  rajesh.poornachandran@intel...  ASSI   [PnP] Pipe C should be OFF if any one MIPI panel is attached  
+714  Hig  P1  Andr  suhail.ahmed@intel.com  ASSI   Modem FW 1112_pre2 breakes HSI communication with Coriolis SIM card  
+1258 [SEC]  Hig  P1  Andr  wen.w.wang@intel.com  ASSI   Random kernel hang observed while booting Android builds  
+1275 [SEC]  Hig  P1  Andr  juliex.regairaz@intel.com  RESO  FIXE  [PnP]UDP Downlink is terminating the Wi-Fi connection in ELP Mode.  
+383 [SEC]  Hig  P1  Andr  livingston.tong@intel.com  RESO  FIXE  Can't capture image from the primary camera  
+1303 [SEC]  Hig  P1  Andr  timothy.c.dietz@intel.com  NEW   PTI does not work after S0i3 or S3  
+613 [SEC]  Hig  P1  Andr  yong.yao@intel.com  RESO  DUPL  [Audio] There is no sound via the wired headset when play a music  
+1384 [SEC]  Hig  P1  Andr  davidx.muoio@intel.com  NEW   The modem often does not respond after resetting it.  
+1226 [SEC]  Hig  P1  Andr  suhail.ahmed@intel.com  ASSI   HSI driver does not support runtime power management  
+849 [SEC]  Hig  P1  Andr  aymenx.zayet@intel.com  ASSI   [PnP] Unable to enter in S0i3 mode during voice call  
+1400 [SEC]  Hig  P1  Andr  lakshmi.n.vinnakota@intel.com  ASSI   audio fail after resume from s3  
+1357 [SEC]  Hig  P1  Andr  suhail.ahmed@intel.com  RESO  INVA  SUNFISE_SMB_1110.01 cannot be downloaded via HSI port  
+1349 [SEC]  Hig  P1  Andr  gilles.rimauro@intel.com  RESO  DUPL  [OSPM] Voice call does not wake up device from S0i3 and phone call no more possible when system is woken up from S0i3  
+687 [SEC]  Hig  P1  Andr  dong.yang@intel.com  RESO  FIXE  fatal signal 11 in WebViewCoreThre cause browser crash.  
+1421 [SEC]  Hig  P1  Andr  livingston.tong@intel.com  ASSI   MSIC : Headset detection is not consistent in MFLD PR1 board  
+1051  Hig  P1  Andr  sebastienx.niciarz@intel.com  RESO  FIXE  mdfld-Android Shared Transport Driver Not Enabled (BT, FM, GPS)  
+829 [SEC]  Hig  P1  Andr  vijay.bhimarao@intel.com  ASSI   Don't wake up from s0i3[PmP]  
+1388 [SEC]  Hig  P1  Andr  bin.yang@intel.com  RESO  FIXE  new command required to solve display panel overconsumption in display OFF  
+486 [SEC]  Hig  P1  Andr  selina.wang@intel.com  RESO  FIXE  [Camera] Camera crashes with dark screen after changing the video recording quality from high to low, and also crash after changing between front camera and back camera  
+875  Hig  P1  Andr  christophex.lebouc@intel.com  RESO  DUPL  XML Workaround for Bug 3149160 - 20k PD on SDIO_WP pin is not reliable  
+623 [SEC]  Hig  P1  Andr  eric.seibel@intel.com  RESO  FIXE  Power key not working: not able to switch off the phone  
+1355 [SEC]  Hig  P1  Andr  pranav.k.sanghadia@intel.com  NEED   gsmttys are created but RIL does not create network interface and no signal bars  
+588 [SEC]  Hig  P1  Andr  johnson.z.wu@intel.com  REOP   PnP: Browser plugins(mp3, flash) not avialable on Android-Gingerbread build  
+827 [SEC]  Hig  P1  Andr  li.zeng@intel.com  RESO  FIXE  Video play will fail after s0i3.  
+1324 [SEC]  Hig  P1  Andr  thomasx.guillemin@intel.com  REOP   Android phone Application crashes  
+1301 [SEC]  Hig  P1  Andr  hao.wu@intel.com  RESO  FIXE  USB does not work after S3  
+1375 [SEC]  Hig  P1  Andr  rajeev.d.muralidhar@intel.com  NEW   TASKFORCE: 'Ack_C6 Timeout' print appear on SCU terminal when device in S0i3 on build WW18.1  
+1129  Hig  P1  Andr  weian.chen@intel.com  RESO  FIXE  Video corruption occur when playing this parkrun mp4 clip  
+1450 [SEC]  Hig  P1  Andr  erwanx.mahe@intel.com  NEW   Build: PR2 Specific projects needs to be created  
+1411 [SEC]  Hig  P1  Andr  chuanxiao.dong@intel.com  ASSI   MMC causes fabric error during long hour audio playback  
+555 [SEC]  Hig  P1  Andr  alainx.kouassu@intel.com  RESO  FIXE  Inter RAT cell reselection 3G to/from 2G fails (iCDK ES2)  
+1424 [SEC]  Hig  P1  Andr  hao.wu@intel.com  ASSI   System hangs after exiting from s3 if plugging in USB cable when system sleeps at s3  
+1175  Hig  P1  Andr  weian.chen@intel.com  RESO  FIXE  SPS/PPS stripping in AVC encoder omx component causes distortion with non-MPEG4 output  
+710 [SEC]  Hig  P1  Andr  fabienx.barthes@intel.com  RESO  FIXE  [PnP] Audio init issue, high power consumption in IDLE (VIHFVIN)  
+950  Hig  P1  Andr  timothy.c.dietz@intel.com  NEW   Failed to get USB wake ups interrupts from MSIC, when USB is in D0i3 state.  
+1205  Hig  P1  Andr  yaney.rodriguez@intel.com  REOP   Battery sysfs and charger sysfs are not getting updated on removing USB OTG Charger.  
+1107  Hig  P1  Andr  jason.m.bills@intel.com  ASSI   MFLD_Android: Camera Button as a wake source does not wake the system from S0i3 state  
+1354 [SEC]  Hig  P1  Andr  niveditha.sundaram@intel.com  NEW   IRQ25 disable after a period of inactivity  
+790 [SEC]  Hig  P1  Andr  yannx.billet@intel.com  REOP   [PnP] GL3 (L3 Cache) is not Power Gated in Idle (S0) Display ON and OFF use case  
+1195  Hig  P1  Andr  rajesh.poornachandran@intel...  NEW   [PnP]Turn off DUAL MIPI Port by default  
+1209  Hig  P1  Andr  timothy.c.dietz@intel.com  ASSI   S0ix-1 and s0ix-2 will hang while exercising Power Management capabilities.  
+1321 [SEC]  Hig  P1  Andr  timothy.c.dietz@intel.com  ASSI   Audio playback over MSIC regression with SCU FW B0.26  
+1182  Hig  P1  Andr  asit.kumar.verma@intel.com  RESO  FIXE  PnP Android: TMD Display panel/touch screen power is more then 7 mW even for Display off case.  
+1065  Hig  P1  Andr  jayant.mangalampalli@intel.com  ASSI   CHAABI2SCU_UMIP_WRITE hangs systems when data size is given very large number (fuzzing)  
+913  Hig  P1  Andr  venkateswarlu.v.vinjamuri@i...  RESO  FIXE  [PnP] 76 interrupts from pvrsrvkm driver on idle android/Medfiled system  
+532 [SEC]  Hig  P1  Andr  sumod.cherukkate@intel.com  ASSI   0001305: [Calling]Can not make a MO call via the key on the headset.  
+939  Med  P1  Andr  li.zeng@intel.com  RESO  DUPL  [PnP]Dynamic support for overlay during video playback  
+883  Med  P1  Andr  jiebing.li@intel.com  RESO  FIXE  PROMOTE from penwell: AVE_CV: USB BULK OUT endpoint STALL on USBTEST compliance test suite  
+658 [SEC]  Med  P1  Andr  hao.wu@intel.com  RESO  WORK  PROMOTE from penwell: AVE_CV: Android Fabric error when switching between USB Client, host and idle mode  
+622 [SEC]  Med  P1  Andr  niveditha.sundaram@intel.com  ASSI   PROMOTE from penwell: PUnit security keys are not being sent after S0i2/S0i3  
+503 [SEC]  Med  P1  Andr  hongyu.zhang@intel.com  RESO  FIXE  [Camera] Image capture only supports 640x480 resolution 540KB file size  
+1022  Med  P1  Andr  jayant.mangalampalli@intel.com  ASSI   POS: secureIPC_ATP test app fails to run srtc read test  
+801 [SEC]  Med  P1  Andr  yuanx.xu@intel.com  RESO  FIXE  [Video]Playback H263, H264 and MPEG4-AAC videos formats are failed on PR1  
+1006  Med  P1  Andr  chuansheng.liu@intel.com  RESO  DUPL  CWS WLAN: Cannot play Quicktime video due to there isn't the application for Android  
+1259 [SEC]  Low  P1  Andr  hong.liu@intel.com  INTE  FIXE  Random kernel hang observed while booting Android builds for bh1770glc_probe  
+1280 [SEC]  enh  P1  Andr  laura.l.warner@intel.com  ASSI   [METABUG] Top Telephony Issues  
+587 [SEC]  enh  P1  Andr  saadi.maalem@intel.com  ASSI   [METABUG] WSIV ST - TOP BZ  
+1308 [SEC]  enh  P1  Andr  chuanxiao.dong@intel.com  ASSI   please add a partition on SD card.  
+589 [SEC]  enh  P1  Andr  wen.w.wang@intel.com  ASSI   PnP:ISP subsystem is in D0 in Android builds(Weekly 0318)  
+840 [SEC]  enh  P1  Andr  jian.feng.qin@intel.com  NEW   [METABUG] Platform Integration Top 10 Audio/Video/Camera/Graphics Defects  
+1402 [SEC]  enh  P1  Andr  gangx.a.chen@intel.com  RESO  INVA  TTY audio configuration is not handled  
+690 [SEC]  enh  P1  Andr  christophex.lebouc@intel.com  ASSI   [METABUG] Boot instabilities  
+731 [SEC]  enh  P1  Andr  saadi.maalem@intel.com  NEW   [METABUG] Platform Integration Top 10 Defects  
+1265 [SEC]  enh  P1  Andr  laura.l.warner@intel.com  NEW   [METABUG] Platform CWS Integration Top 5 Defects  
+1347 [SEC]  enh  P1  Andr  selma.bensaid@intel.com  ASSI   LPE registers concerning SSPs need to be modified for SSP I2S Driver  
+674 [SEC]  enh  P1  Andr  tanx.v.le@intel.com  REOP   CWS WLAN: [Android] Video download hung up while playing back and FTP file transfer failed  
+1306 [SEC]  enh  P1  Andr  saadi.maalem@intel.com  NEW   [METABUG] - Memory Leaks  
+1048  Cri  P2  Andr  frederic.predon@intel.com  RESO  FIXE  mtfld-Android - High speed Interface not enabled (HSDPA Modem).  
+712 [SEC]  Hig  P2  Andr  jim.stanley@intel.com  RESO  DUPL  HSI driver stack requires PM, fix to TTY creation, reset/shutdown handling  
+1200  Hig  P2  Andr  loicx.martin@intel.com  ASSI   [PnP] long S0 periods during S0i3 on latest Androind build WW15 (0407)  
+ID  Sev  Pri  OS  Assignee  Status  Resolution  Title  
+1130  Hig  P2  Andr  sebastienx.niciarz@intel.com  RESO  FIXE  Can use the BT headset receive a call, but the voice cannot transferred by BT headset  
+430 [SEC]  Hig  P2  Andr  jean-christophe.sinet@intel...  ASSI   PnP: Modem 2G/3G voice call ,high power consumption  
+591 [SEC]  Hig  P2  Andr  jing.tao@intel.com  REOP   PnP:Video subsystem is in D0 in Android builds(Weekly 0318) in idle  
+1078  Hig  P2  Andr  randy.xu@intel.com  RESO  FIXE  [PnP Android] Gfx driver Keep CPU busy during Idle Display ON (C0 residency 80%)  
+1024  Hig  P2  Andr  christophex.lebouc@intel.com  RESO  FIXE  microSD card couldn't be detected when it was insertted after the sytem booted up.  
+1166  Hig  P2  Andr  erwanx.mahe@intel.com  ASSI   Stale software and IFWI components block multiple tests in test cycle releases  
+789 [SEC]  Hig  P2  Andr  li.zeng@intel.com  VERI  FIXE  Task Force:[PnP] D0i3 NOT functional (Regression) for VED/VEC IP's in latest driver package  
+1018  Hig  P2  Andr  yaney.rodriguez@intel.com  RESO  FIXE  Battery : Coulomb counter to charge_now bad conversion  
+1063  Hig  P2  Andr  nicolas.roux@intel.com  ASSI   Taskforce: [PNP Android]: AVg VnnAON rail power for forced Soi3 is at 6 mW higher then meego @3mW,target is less then 1 mW.  
+429 [SEC]  Hig  P2  Andr  karl.rielland@intel.com  ASSI   UI freeze after boot in home sceen  
+1351 [SEC]  Hig  P2  Andr  erwanx.mahe@intel.com  ASSI   Releases later than 0419 do nt contain kernel modules anymore  
+992  Hig  P2  Andr  al.bettner@intel.com  RESO  DUPL  CWS WLAN: Cannot configure browser settings for proxy server to connect to internet  
+947  Hig  P2  Andr  mark.a.allyn@intel.com  NEED   Graphics driver interferes with operation of sep device  
+1329 [SEC]  Hig  P2  Andr  liang.sun@borqs.com  ASSI   Audio AMC is using incorrect modem DLC  
+711 [SEC]  Hig  P2  Andr  yijin.sun@intel.com  INTE  FIXE  [PnP] Audio driver issue, high power consumption in IDLE (VAUDAVIN)  
+713 [SEC]  Hig  P2  Andr  suhail.ahmed@intel.com  RESO  FIXE  /dev/ttyIFX might not be integrated properly on HSI Medfield Android R4.3  
+1101  Hig  P2  Andr  hong.liu@intel.com  ASSI   Taskforce: Touchscreen not resuming on resume from S3  
+610 [SEC]  Hig  P2  Andr  nicholas.j.yoke@intel.com  RESO  FIXE  Enabling NFC on iCDK and BlackBay through SFI Table  
+985  Hig  P2  Andr  olivier.carpentier@intel.com  RESO  FIXE  Unable to browse media files stored in SD Card from user apps (Media Player/ Gallery)  
+1068  Hig  P2  Andr  sameerx.lattannavar@intel.com  INTE  FIXE  TASK_FORCE: Running Audio post S0i3 hangs the system with iERR  
+1066  Hig  P2  Andr  asit.kumar.verma@intel.com  NEED   [PNP Android]: V_1P22_VCCAON_CSI avg power for forced S0i3 is @ 1.5 mW .Target is few microwatts.  
+987  Hig  P2  Andr  lakshmi.n.vinnakota@intel.com  RESO  WORK  HSMIC capture is silent  
+963  Hig  P2  Andr  suhail.ahmed@intel.com  ASSI   There is a read error when a test app first tries to issue AT command to /dev/ttyIFX0 port  
+1055  Hig  P2  Andr  santhosh.k.reddy.s@intel.com  ASSI   MFLD_Android : Wakeups caused by Surfaceflinger and Activity manager are very high on WW11.5 Gingerbread build when the board is in S0i3.  
+685 [SEC]  Hig  P2  Andr  vamsi.krishnax.guturu@intel...  RESO  INVA  [PnP]Low UDP throughputs(Uplink & Downlink) in Wi-Fi  
+1422 [SEC]  Hig  P2  Andr  jianli.zhang@borqs.com  ASSI   The browser automaticall quit/close after loading only one web page  
+1328 [SEC]  Hig  P2  Andr  suhail.ahmed@intel.com  NEW   [PnP] Modem high power consumption (30mA) in IDLE with HSI IFWI  
+934  Hig  P2  Andr  fengwei.yin@intel.com  ASSI   {BKB2]When touch TS during 1st 8 sec of kernel boot stops TS and kybrd from functioning properly  
+1064  Hig  P2  Andr  gilles.rimauro@intel.com  ASSI   Taskforce: [PNP Android]:VCCPADXXXAON_1P20 avg power for forced S0i3 is @ 8 mW higher then 7.5 mW observed on meego builds and targets.  
+707 [SEC]  Hig  P2  Andr  petrix.harri@intel.com  RESO  FIXE  Wifi download transfer failed  
+729 [SEC]  Hig  P2  Andr  sebastien.cayetanot@intel.com  RESO  FIXE  No Audio on BT HFP headset when MO/MT call  
+920  Hig  P2  Andr  venkateswarlu.v.vinjamuri@i...  NEW   [pnp] ILB patch porting from Meego kernel to Android  
+744 [SEC]  Hig  P2  Andr  dominique.grange@intel.com  RESO  DUPL  Wrong battery temperature reading  
+1433 [SEC]  Hig  P2  Andr  lakshmi.n.vinnakota@intel.com  RESO  DUPL  alsa_arecord utility is crashing while recoding loud voice for dual channel by using DMIC.  
+1236 [SEC]  Hig  P2  Andr  ramesh.babu@intel.com  RESO  WORK  Call with a wired headset, the other side cannot hear the voice, I can hear the voice.  
+577 [SEC]  Hig  P2  Andr  frederic.predon@intel.com  RESO  FIXE  Release one active call by pressing ¡°1¡±+SEND doesn¡¯t work while second call on hold  
+1395 [SEC]  Hig  P2  Andr  livingston.tong@intel.com  ASSI   Primary camera not displaying the proper direction of the image.  
+583 [SEC]  Hig  P2  Andr  sebastienx.niciarz@intel.com  ASSI   [PnP]BT- Low uplink throughput(l2test)  
+1337 [SEC]  Hig  P2  Andr  bin.yang@intel.com  ASSI   adc driver timeout when play video for a long time -- msic_adc msic_adc.16: sample timeout  
+906  Hig  P2  Andr  jim.stanley@intel.com  RESO  FIXE  HSI with DMA: Pio timeout causing troubles (loss of messages) in dma mode  
+1083 [SEC]  Hig  P2  Andr  guoqiang.cao@intel.com  ASSI   Mfld/Android/GB: GridMark failed  
+964  Hig  P2  Andr  philippe.skowronski@intel.com  ASSI   Running wget to downland a large compressed file over HSI stack tends to get the received file in a corrupted state  
+1222  Hig  P2  Andr  jurgen.von.oerthel@intel.com  ASSI   Digital Zoom running in ISP preview mode with RGB565 format has a green line in the top of the image.  
+788 [SEC]  Hig  P2  Andr  pierre.tardy@intel.com  ASSI   Taskforce: [PNP Android]: AVg VnnAON rail power for forced Soi3 is at 6 mW higher then meego @3mW,target is less then 1 mW.  
+1272 [SEC]  Hig  P2  Andr  selma.bensaid@intel.com  ASSI   Intel MID I2S: Remove temporary workaround patch [http://android.intel.com:8080/#change,5839]  
+797 [SEC]  Hig  P2  Andr  jin.xiao@intel.com  ASSI   Signal bar lost during browsing  
+764 [SEC]  Hig  P2  Andr  laurentx.fert@intel.com  ASSI   [Audio] System freeze when playing AMR NB audio file iterative  
+1394 [SEC]  Hig  P2  Andr  xiaolin.zhang@intel.com  ASSI   Different resolution have different Field of View (FOV).  
+1010  Hig  P2  Andr  frederic.predon@intel.com  RESO  FIXE  Unsollicited modem reset not handled properly  
+717 [SEC]  Hig  P2  Andr  jing.tao@intel.com  RESO  FIXE  camera take picture cause driver crash after s0i3  
+1121  Hig  P2  Andr  randy.xu@intel.com  RESO  FIXE  [Android PnP] High CPU utilization by events/0 on GB0325 build in S0/Idle  
+1346 [SEC]  Hig  P2  Andr  frederic.predon@intel.com  ASSI   FTP data connection drop during cell reselection 3G <-> 2G  
+747 [SEC]  Hig  P2  Andr  haijun.cao@intel.com  RESO  WORK  [PnP] HTML5 Video not playing in Android-Gingerbread  
+807 [SEC]  Hig  P2  Andr  wei.gao@borqs.com  ASSI   [Audio] Audio file from rtsp server cannot be played via streaming player  
+1334 [SEC]  Hig  P2  Andr  james.p.freyensee@intel.com  NEW   Need way to pause automated kboot to flash problem kernels  
+1023  Hig  P2  Andr  yaney.rodriguez@intel.com  NEW   Interrupts not getting generated for peak current control  
+1110  Hig  P2  Andr  christophex.lebouc@intel.com  RESO  FIXE  New SFI Table entry for fuel gauge chip  
+1369 [SEC]  Hig  P2  Andr  ke.ai@intel.com  NEED   flashing dot dash line appears at the right side of some full screen displayed images  
+1090  Hig  P2  Andr  ganeshx.petkar@intel.com  RESO  FIXE  Noise heard from IHF randomly  
+523 [SEC]  Hig  P2  Andr  alainx.kouassu@intel.com  ASSI   HSDPA Throughput is too low  
+526 [SEC]  Hig  P2  Andr  juliex.regairaz@intel.com  RESO  FIXE  CWS-WLAN: Features are not integrated or only partially integrated - cannot test  
+1245 [SEC]  Hig  P2  Andr  nicolas.roux@intel.com  RESO  DUPL  MDFLD_OSPM: System does not enter into LPMP3 state  
+888  Hig  P2  Andr  timothy.c.dietz@intel.com  NEW   AONT timer wake wakes up system from S3  
+1204  Hig  P2  Andr  yaney.rodriguez@intel.com  NEW   DTS driver not registered for MDFLD_ANDROID_WW15 Release.  
+1352 [SEC]  Hig  P2  Andr  cyrillex.nivelle@intel.com  ASSI   [OSPM] Board crashed in S0i3 when receiving data from a WLAN Iperf  
+766 [SEC]  Hig  P2  Andr  arnaud.devreese@intel.com  ASSI   WLAN : MAC provisionning secure partition  
+1194  Hig  P2  Andr  timothy.c.dietz@intel.com  ASSI   TASK FORCE: S0i1 is not happening on the first run after boot on WW15.5 and WW16.1. S0i1 does not happen and we see a SCU hang.  
+538 [SEC]  Hig  P2  Andr  santhosh.k.reddy.s@intel.com  ASSI   PnP: WCDMA/3G PS Data connection lost very frequently  
+1428 [SEC]  Hig  P2  Andr  jianli.zhang@borqs.com  NEW   when input the command in terminal emulator sometimes, the system reboot.  
+1312 [SEC]  Hig  P2  Andr  nicholas.j.yoke@intel.com  NEW   Could not get the expected value(0x0a) from OSNIBR.RR for EM use case P_CAP_40107  
+1058  Hig  P2  Andr  fengwei.yin@intel.com  RESO  DUPL  System get lots of interrupt lost error messages and SCU 7-led show F503  
+976  Hig  P2  Andr  jiebing.li@intel.com  ASSI   Charging current incorrect when DUT connect to Medfiled Host  
+1143  Hig  P2  Andr  jayant.mangalampalli@intel.com  ASSI   DSS Chip Tool installer does not build with Win7/VS2010 Pro  
+1152  Hig  P2  Andr  guoqiang.cao@intel.com  ASSI   [PnP] Gfx KPI - 3DMM ES2.0 Taiji/Hover targets not met  
+267 [SEC]  Hig  P2  Andr  zhenjie.pan@intel.com  RESO  FIXE  [Storage] DUT can not mount the SD card after format it  
+748 [SEC]  Hig  P2  Andr  nicolas.petit@intel.com  RESO  FIXE  Can not find libpn544_fw.so in current Gingerbread SW version  
+495 [SEC]  Hig  P2  Andr  randy.xu@intel.com  ASSI   [video] playback of a few MP4 (H264/AVC) files fail with Erroneous page count. Leaking Pages  
+979  Hig  P2  Andr  christophex.lebouc@intel.com  RESO  FIXE  System to go to AD / Charging OS until SMIP.IA_APPS_RUN threshold reached  
+1223  Hig  P2  Andr  jurgen.von.oerthel@intel.com  ASSI   Digital zoom running in ISP primay mode and video 1080p easy to cause ISP timeout  
+524 [SEC]  Hig  P2  Andr  carlos.pargada@intel.com  REOP   HSUPA Throughput is too low  
+960  Hig  P2  Andr  sylvestrex.dischamp@intel.com  ASSI   Dialing state is not returned through XCALLSTAT for SIM Toolkit SETUP CALL command  
+1013  Hig  P2  Andr  nicolas.roux@intel.com  NEW   Medfield-Android: Device not able to enter LPMP3 when display is off and music is playing  
+1322 [SEC]  Hig  P2  Andr  sylvestrex.dischamp@intel.com  ASSI   Modem hangs after 126 B2B MT Voice calls  
+1059  Hig  P2  Andr  christophex.lebouc@intel.com  NEW   KBOOT shouldn't be stored on the usr data area of eMMC card.  
+1025  Hig  P2  Andr  yaney.rodriguez@intel.com  NEW   Peak_Current_Control sysfs action_mask shows incorrect value  
+810 [SEC]  Hig  P2  Andr  fredericx.berat@intel.com  RESO  FIXE  Mobile Terminated SMS class 2 are not saved in SIM card  
+1300 [SEC]  Hig  P2  Andr  christophe.continente@intel...  RESO  DUPL  Tapping on touch screen does not wake the platform - 20110419-001 build with IFWI v0.15  
+1158  Hig  P2  Andr  tim.coppernoll@intel.com  INTE  FIXE  Interrupts appear when playback is initiated on HS through alsa_aplay  
+1338 [SEC]  Hig  P2  Andr  kerry.vander.kamp@intel.com  ASSI   After cold boot, IAFW boot COS or MOS randomly  
+1425 [SEC]  Hig  P2  Andr  rajeev.d.muralidhar@intel.com  ASSI   kernel panic during s3 stress testing  
+1289 [SEC]  Hig  P2  Andr  nicolas.roux@intel.com  RESO  FIXE  MDFLD_OSPM:Long hour S0i3 test fails  
+1432 [SEC]  Hig  P2  Andr  saadi.maalem@intel.com  NEW   ULFM activation causes UI/kernel freezes  
+813 [SEC]  Hig  P2  Andr  heng.su@intel.com  NEW   platfrom can not boot up from sd card  
+1206  Hig  P2  Andr  jenny.tc@intel.com  NEW   Battery charge_control register shows incorrect value  
+1027  Hig  P2  Andr  christophe.guerard@intel.com  ASSI   POS: chaabi2scu_mip_read hangs  
+1019  Hig  P2  Andr  sameerx.lattannavar@intel.com  RESO  FIXE  Taskforce: MFLD_Android : Display does not turn on after GFX transitioning from D3 to D0  
+716 [SEC]  Hig  P2  Andr  davidx.muoio@intel.com  RESO  FIXE  Unable to communicate with modem through TTY interface /dev/ttyIFX0  
+927  Hig  P2  Andr  asit.kumar.verma@intel.com  NEW   [PnP] High S0 activity during exits from S0i3 increasing power consumption on VCC and VNN rail on SOC and MSIC losses  
+562 [SEC]  Hig  P2  Andr  ramesh.agarwal@intel.com  RESO  DUPL  charger diconnected => still show charging info in uevent  
+1392 [SEC]  Hig  P2  Andr  fabricex.sorel@intel.com  NEW   0001722: [Telephony]can not render any webpage after phone's re-camp the network.  
+ID  Sev  Pri  OS  Assignee  Status  Resolution  Title  
+648 [SEC]  Hig  P2  Andr  santhosh.k.reddy.s@intel.com  RESO  FIXE  [PnP] Three JTAG clock signals consume total of 1.76 mA in S0i3 via FLIS settings for 2k pull-up resistors  
+1326 [SEC]  Hig  P2  Andr  jianli.zhang@borqs.com  RESO  DUPL  [Call] No audio on call (PR1)  
+697 [SEC]  Hig  P2  Andr  petrix.harri@intel.com  RESO  FIXE  Too many logs during data transfer  
+1465 [SEC]  Hig  P2  Andr  hongyu.zhang@intel.com  ASSI   Camera physical shutter key does no work.  
+1431 [SEC]  Hig  P2  Andr  lakshmi.n.vinnakota@intel.com  RESO  INVA  alsa_arecord utility is crashing while recording loud voice for dual channel by using AMIC.  
+706 [SEC]  Hig  P2  Andr  guillaumex.lucas@intel.com  RESO  FIXE  SIM Toolkit freeze with Orange french SIM card  
+1283 [SEC]  Hig  P2  Andr  dongsheng.zhang@intel.com  ASSI   System die when copy file about 900M  
+1183  Med  P2  Andr  honorex.tricot@intel.com  ASSI   wireless AP appear and disapper in scan list round and round  
+909  Med  P2  Andr  guillaumex.lucas@intel.com  RESO  FIXE  3GPP conformance - 31.124 - 27.22.6.2 Seq 2.1  
+915  Med  P2  Andr  jurgen.von.oerthel@intel.com  ASSI   View finding - preview effects do not change the appearance of the video recording  
+666 [SEC]  Med  P2  Andr  zhengliex.song@intel.com  RESO  DUPL  [Video]"AudioTrack( 1282): obtainBuffer timed" message when doing playback stress test  
+1119  Med  P2  Andr  elaine.wang@intel.com  REOP   Video Encode Profile Level in header info isn't correct.  
+656 [SEC]  Med  P2  Andr  jack.ren@intel.com  ASSI   Need to define OS/Driver behavior in response to IMR violation MSI  
+584 [SEC]  Med  P2  Andr  nicolas.roux@intel.com  ASSI   [OSPM] Entering S0i3 mode crashes the platform  
+897  Med  P2  Andr  sylvestrex.dischamp@intel.com  ASSI   cell properties not updated after a voice call handover  
+1385 [SEC]  Med  P2  Andr  xiaolin.zhang@intel.com  RESO  FIXE  Camera app hangs when low resolution video mode selected  
+994  Med  P2  Andr  frederic.predon@intel.com  RESO  DUPL  contact in SIM card could not be found/imported  
+902  Med  P2  Andr  christophex.lebouc@intel.com  RESO  FIXE  Darker OSR SplashScreen while flashing the OS  
+948  Med  P2  Andr  nicolas.roux@intel.com  NEW   [PnP] MSIC VPROG2 needs to be shut off when not being used including case of S0i3 when display is not active.  
+911  Med  P2  Andr  jean-christophe.sinet@intel...  RESO  WONT  Cellular RF current consumption high while in call  
+1260 [SEC]  Med  P2  Andr  jurgen.von.oerthel@intel.com  INTE  FIXE  176x144 resolution video recording easy cause ISP timeout  
+1445 [SEC]  Med  P2  Andr  sytze.klijnsma@intel.com  ASSI   Oscillation of Auto White Ballance  
+1053  Med  P2  Andr  yaney.rodriguez@intel.com  REOP   Battery and Charger sysf shows incorrect value for MDFLD_ANDROID 20110308 Ginger Bread Build  
+403 [SEC]  Med  P2  Andr  cyril.germond@intel.com  ASSI   Earpiece not working on some enclosed PR1 BB2 boards  
+765 [SEC]  Med  P2  Andr  alexandre.lewicki@intel.com  RESO  FIXE  WLAN: CRDA requirements for P_IUC_5118  
+836 [SEC]  Med  P2  Andr  shuguang.gong@intel.com  RESO  FIXE  V4L2 ENUMINPUT IOCTL cannot enum the secondary camera.  
+951  Med  P2  Andr  liang.l.yang@intel.com  RESO  FIXE  Secondary Camera not displaying the proper position of the image.  
+667 [SEC]  Med  P2  Andr  dan.liang@intel.com  ASSI   [Video] "Unable to create audio track" error happens during playing some high fps H264 video clips  
+755 [SEC]  Med  P2  Andr  fabricex.sorel@intel.com  ASSI   0000982: [BKB2]Mute can not work well during calling  
+597 [SEC]  Med  P2  Andr  ramesh.babu@intel.com  RESO  WORK  Headset re-plug not detected during voice call  
+566 [SEC]  Med  P2  Andr  yuanx.xu@intel.com  RESO  FIXE  [Video] Messy thumbnail shows up on some H264 Level 1.x clips  
+704 [SEC]  Med  P2  Andr  nicolas.petit@intel.com  ASSI   reduce debug noise in config files  
+901  Med  P2  Andr  frederic.predon@intel.com  RESO  FIXE  sms class 2 sms not received occasionally  
+912  Med  P2  Andr  eric.morel@intel.com  ASSI   3GPP conformance : registration issue on RF test 34.121 7.8.5  
+903  Med  P2  Andr  jean-christophe.sinet@intel...  RESO  WONT  RF FEM current selftest is unreliable  
+923  Med  P2  Andr  christophex.lebouc@intel.com  RESO  DUPL  Penwell UART_0_CTS intermediate voltage level issue at Medfield platform boot up  
+997  Med  P2  Andr  nicolas.roux@intel.com  NEW   [PnP] S0 residency is 7% during S0i3 Vs target is 1% for S0i3 will hit M4 power targets  
+496 [SEC]  Med  P2  Andr  madhusudanx.n.bangalore@int...  RESO  FIXE  [Camera] 'Color Effect' is not restored after capturing (with any 'Color Effect'), saving & displaying that image.  
+838 [SEC]  Med  P2  Andr  celinex.chotard@intel.com  ASSI   [Video] 1 out of 20 tries got error message when playback H263 video AMR audio  
+446 [SEC]  Med  P2  Andr  al.bettner@intel.com  REOP   CWS: USB to Ethernet converter does not work. Need Ethernet interface for WiFi conformance testing.  
+898  Med  P2  Andr  renaudx.senet@intel.com  ASSI   [PnP] 2G & 3G IDLE / Modem sub system high power consumption  
+1447 [SEC]  Med  P2  Andr  sytze.klijnsma@intel.com  ASSI   Auto exposure keeps on adjusting  
+946  Med  P2  Andr  yaney.rodriguez@intel.com  NEW   [PnP] VAUDA needs to be proactively shut off when not in use  
+669 [SEC]  Med  P2  Andr  weian.chen@intel.com  RESO  FIXE  [Video]Frames fail to show up on some Level>=30 H263 media clips  
+796 [SEC]  Med  P2  Andr  chi.ding@intel.com  ASSI   [Video] ipp_aac_dec returns erron and causes system freeze when play .3gp 25 times  
+763 [SEC]  Med  P2  Andr  jason.m.bills@intel.com  ASSI   power key to start PR1 should be removed to use ACS  
+1397 [SEC]  Med  P2  Andr  shuo.liu@intel.com  ASSI   [Video] capabilities of supporting >50fps H263 codecs failed  
+786 [SEC]  Med  P2  Andr  asit.kumar.verma@intel.com  NEW   [PnP] Regression on power consumption on ¡°VCCPADXXXAON_1P20¡± rail  
+804 [SEC]  Med  P2  Andr  suhail.ahmed@intel.com  INTE  FIXE  HSI controller must not enable timeout error handling for DMA operations  
+1368 [SEC]  Med  P2  Andr  fabricex.sorel@intel.com  ASSI   0001796: [Calling] ADN cannot be used.  
+1070  Med  P2  Andr  asit.kumar.verma@intel.com  RESO  FIXE  [PNP Android]: avg power V_1P22_VCCAON_DSI for rail is @ 1.2 mW higher then targets  
+653 [SEC]  Med  P2  Andr  christophex.lebouc@intel.com  RESO  FIXE  XML Workaround for Bug 3149160 - 20k PD on SDIO_WP pin is not reliable  
+1269 [SEC]  Med  P2  Andr  sanyog.r.kale@intel.com  RESO  WONT  There is noise when play the stream recorded by calling interface "pcm.AndroidCapture_BuiltinMic_normal"  
+1309 [SEC]  Med  P2  Andr  yu.y.xia@intel.com  INTE  FIXE  exposure compensation doesn't work as expected  
+1377 [SEC]  Med  P2  Andr  sundar.iyer@intel.com  NEW   Add dependency for MSIC_GPADC driver for the thermal driver  
+1243 [SEC]  Med  P2  Andr  zheng.ba@intel.com  RESO  WORK  After take a picture, before the next preview, the screen will become splash screen for a while.  
+1418 [SEC]  Med  P2  Andr  jayant.mangalampalli@intel.com  ASSI   DUT reboots when running secureIPC test suite  
+896  Med  P2  Andr  sylvestrex.dischamp@intel.com  RESO  FIXE  CardIdentifier disappears from SimManager properties after PIN query  
+904  Med  P2  Andr  jean-christophe.sinet@intel...  ASSI   3GPP conformance : some HSUPA RF performance tests fails  
+477 [SEC]  Med  P2  Andr  wei.gao@borqs.com  ASSI   [Camera] The mechanical capture button (to capture the image) doesn¡¯t work.  
+918  Med  P2  Andr  laurentx.fert@intel.com  NEW   [pnp] max3110 issue to bypass  
+705 [SEC]  Med  P2  Andr  jackx.w.lix@intel.com  RESO  FIXE  Signal STK session end not correctly done  
+1396 [SEC]  Med  P2  Andr  jurgen.von.oerthel@intel.com  ASSI   Auto Focus function works but is not accurate.  
+511 [SEC]  Med  P2  Andr  madhusudanx.n.bangalore@int...  RESO  FIXE  [Camera] In the Viewfinder mode the popup menus does NOT rotate with the rotation of the device.  
+497 [SEC]  Med  P2  Andr  saadi.maalem@intel.com  RESO  WONT  [Security]There is no PUK input UI to unlock the SIM lock when the wrong pin is inputted 3 times.  
+1162  Med  P2  Andr  li.zeng@intel.com  RESO  FIXE  [PnP] Gfx driver initiate suspend to OSPM eventhough VED/VEC/GL3 IP's not in suspended mode  
+1360 [SEC]  Med  P2  Andr  li.zeng@intel.com  ASSI   [Video] Mosaics appeared while playing some H264 Level3 720P video clips  
+1353 [SEC]  Med  P2  Andr  cyrillex.nivelle@intel.com  NEED   The process android.process.acore has stopped unexpectedly  
+533 [SEC]  Med  P2  Andr  newfel.harrat@intel.com  ASSI   [Video] Should be able to support VP8 video codec  
+1320 [SEC]  Med  P2  Andr  fabienx.peix@intel.com  RESO  INVA  BasicAdapterTest#test_enableDisable from Android CTS fails  
+646 [SEC]  Med  P2  Andr  christophex.lebouc@intel.com  RESO  FIXE  Firmware: Enable fast strings by default  
+806 [SEC]  Med  P2  Andr  panneer.s.arumugam@intel.com  RESO  FIXE  [Video] Playback speed of MP4 with combination of H264/eAAC+(HE-AAC v2) is slower than it should be  
+1138  Med  P2  Andr  hongyu.zhang@intel.com  ASSI   Camera can not encode some types of video in MFLD Android R4.3  
+517 [SEC]  Med  P2  Andr  yuanx.xu@intel.com  RESO  FIXE  The thumbnail of some H.264 Baseline Profile video clips not able to be displayed in Gallery  
+929  Med  P2  Andr  benoit.romieu@intel.com  ASSI   IFX MODEM : at+cpwroff or at+cfun=0 are not handled correctly on MUX channel  
+910  Low  P2  Andr  jayant.mangalampalli@intel.com  ASSI   300K Extended FW fails during boot  
+907  Low  P2  Andr  sylvestrex.dischamp@intel.com  ASSI   Unexpected extra space in the AT command answer for requesting the device information  
+599 [SEC]  Blo  P2  Andr  jinyun.zhang@borqs.com  ASSI   PnP: NO VOIP application in Android-Gingerbread image  
+1189  enh  P2  Andr  kerry.vander.kamp@intel.com  ASSI   Enabling Audience voice processor on FFRD through SFI Table  
+382 [SEC]  enh  P2  Andr  livingston.tong@intel.com  RESO  FIXE  BKB2 shuts down when the battery drops below 3.4v, even with charger connected all the time  
+1314 [SEC]  enh  P2  Andr  dan.liang@intel.com  ASSI   [Video feature request] Need support .flv and .f4v file container with VP6/H264 video codec and mp3/AAC audio codec  
+802 [SEC]  enh  P2  Andr  guillaumex.lucas@intel.com  INTE  FIXE  Integration of the tethering capability  
+1173  enh  P2  Andr  jason.hu@intel.com  ASSI   [PnP] Dynamic support for overlay during video playback  
+1144  Hig  P3  Andr  jayant.mangalampalli@intel.com  ASSI   watchdog devel headers not in R4.3 source tree  
+1091  Hig  P3  Andr  christophex.lebouc@intel.com  RESO  FIXE  "E50B" is displayed on SCU serial port LED  
+966  Hig  P3  Andr  alainx.kouassu@intel.com  ASSI   Concurrent execution of wget for large files results in premature termination or stall of the commands  
+826 [SEC]  Hig  P3  Andr  nicholas.j.yoke@intel.com  NEED   Need kernel to handle MSI enabling when it comes up to avoid unhandled interrupts.  
+1135  Hig  P3  Andr  jayant.mangalampalli@intel.com  ASSI   POS: External CRYS ATP tests fail  
+1134  Hig  P3  Andr  mark.a.allyn@intel.com  ASSI   POS: External key manager (kmng) ATP tests fail  
+647 [SEC]  Hig  P3  Andr  nicholas.j.yoke@intel.com  RESO  FIXE  Core DTS reading keep bouncing in a range of 4c every sec when using Osc DTS and C4/C6 enabled part (TP-B0D1 YSUK)  
+1160  Hig  P3  Andr  pierre.tardy@intel.com  NEW   [PNP] Frequent wake ups caused by system_server in Android  
+1218  Hig  P3  Andr  mark.a.allyn@intel.com  ASSI   Request to provide validation with a mechanism to verify that MidCrypto engine is used by OpenSSL  
+1285 [SEC]  Hig  P3  Andr  sanyog.r.kale@intel.com  ASSI   System die when audio recording  
+1133  Hig  P3  Andr  jayant.mangalampalli@intel.com  ASSI   POS: CC6_MW_ATP - multiple menu items dne, will not execute  
+873  Med  P3  Andr  christophex.lebouc@intel.com  RESO  DUPL  FW: Disable HC Blocking DEBUG0[20] by default  
+1161  Med  P3  Andr  guoqiang.cao@intel.com  ASSI   [PnP] Gfx KPI - SimulationMark Binary not available  
+447 [SEC]  Med  P3  Andr  wei.gao@borqs.com  ASSI   Two same camera photo folders are displayed after capturing a picture  
+1457 [SEC]  Med  P3  Andr  bruce.j.beare@intel.com  ASSI   Android_disk build target does not build unless disk_installer target has been built  
+737 [SEC]  Med  P3  Andr  jin.xiao@intel.com  ASSI   In China SH public network, no sim card, emergencycall fail when at+xbanbsel=1800  
+1164  Med  P3  Andr  lawrence.r.klos@intel.com  ASSI   [PnP] Gfx KPI - Targets for GLBench2.0 Not Avalable  
+ID  Sev  Pri  OS  Assignee  Status  Resolution  Title  
+1462 [SEC]  Med  P3  Andr  xiaolin.zhang@intel.com  NEW   Preview in image capture mode is stretched when setting the resolution to 16:9 ratio (720p/1080p) .  
+1363 [SEC]  Med  P3  Andr  madar.sikkandar.d@intel.com  RESO  FIXE  Power optimization: Music player need not wake up when display is off  
+631 [SEC]  Med  P3  Andr  shanshanx.liu@intel.com  INTE  FIXE  Can't adjust the volume of voice call by volume up/down key  
+749 [SEC]  Med  P3  Andr  wei.gao@borqs.com  ASSI   [Video] Gallery fails to extract thumbnail clusters with "Texture creation fail" message  
+1370 [SEC]  Med  P3  Andr  randy.xu@intel.com  RESO  FIXE  the displayed notification scroll bar is not in the middle  
+730 [SEC]  Med  P3  Andr  fredericx.berat@intel.com  ASSI   [MMS] Receiving MMS fails with french Orange SIM card  
+513 [SEC]  Med  P3  Andr  madhusudanx.n.bangalore@int...  ASSI   [Camera] There is no Radio button for ¡°Restore to defaults¡± to restore the Camera Settings.  
+628 [SEC]  Med  P3  Andr  chi.ding@intel.com  ASSI   Can not play audio file: AAC_HE_V2_16000Hz_mono.aac  
+921  Med  P3  Andr  tim.coppernoll@intel.com  ASSI   [pnp] port eMMC driver from Meego to Android  
+956  Med  P3  Andr  marcx.blassin@intel.com  ASSI   Impossible to remove modules with rmmod  
+1426 [SEC]  Med  P3  Andr  josephx.gao@intel.com  NEED   "mkdosfs" creates a FAT32 system but should create FAT16 system  
+1155  Med  P3  Andr  yaney.rodriguez@intel.com  NEW   [PnP] SOC thermal Sensors rail "V_VCCTHMSOCSI0_1P80" is consuming 8mW power during Idle case  
+1177  Med  P3  Andr  weian.chen@intel.com  RESO  FIXE  AVC encoder omx uses a constant size for buffers at the input port  
+1017  Med  P3  Andr  jason.m.bills@intel.com  NEW   SPI1 UART doesn't work in IA FW in BKB1.5  
+1156  Med  P3  Andr  juliex.regairaz@intel.com  NEW   [PnP] Browsing KPI - Browsing GSMA WLAN not meeting Platform Power target of 500mW  
+1185  Med  P3  Andr  khanh.v.nguyen@intel.com  ASSI   Medfield ES2: The player plays some audio clips, but has not sound in R4.3.  
+1141  Med  P3  Andr  jasonx.m.harper@intel.com  RESO  FIXE  [PnP] Local MP3 Playback (Screen OFF) Power KPI not meeting power target of 172mW  
+652 [SEC]  Med  P3  Andr  christophex.lebouc@intel.com  ASSI   FW: Enable_RTT_while_locked DEBUG1[4] by default  
+1188  Med  P3  Andr  panneer.s.arumugam@intel.com  RESO  FIXE  Medfield ES2: The playback sound of some clips is different with the original sound in R4.3.  
+741 [SEC]  Med  P3  Andr  dharageswari.r@intel.com  RESO  DUPL  Listen to the music by wired headset, pull out the headset, resume the music, the music paused for 10 seconds abnormally, then re-play.  
+1180  Med  P3  Andr  lakshmi.n.vinnakota@intel.com  RESO  WORK  Capture of audio files using DMIC4 is failing  
+1104  Med  P3  Andr  nicholas.j.yoke@intel.com  NEW   Provide a mechanism in wFSTK to auto populate keys  
+871  Med  P3  Andr  christophex.lebouc@intel.com  RESO  DUPL  FW: Enable Hunit bypass HMISC1[7] by default  
+481 [SEC]  Med  P3  Andr  randy.xu@intel.com  ASSI   [Image] Thumbnail of GIF_4320x2160_96dpi_8bit cannot be shown correctly in Gallery  
+874  Med  P3  Andr  christophex.lebouc@intel.com  RESO  DUPL  FW: Enable_RTT_while_locked DEBUG1[4] by default  
+1005  Med  P3  Andr  jurgen.von.oerthel@intel.com  ASSI   SP initialization complete interrupt is missing  
+758 [SEC]  Med  P3  Andr  wei.c.gao@intel.com  ASSI   0001522: [Home] UI issue when hightlight on music wigdet  
+1163  Med  P3  Andr  guoqiang.cao@intel.com  ASSI   [PnP] Gfx KPI - BaseMark GUI (3D and Nav UI)  
+957  Med  P3  Andr  louis.le.gall@intel.com  ASSI   [new dev] allow bt modules to be loaded if no sco sink/src creatd + suspend BT sco sink&src if hsp profile not set  
+471 [SEC]  Med  P3  Andr  wei.gao@borqs.com  ASSI   [Image] special character in JPG will cause media scanner dead  
+959  Med  P3  Andr  zuping.qin@intel.com  ASSI   PTI driver tests may experience crash on Froyo and Gingerbread MFLD  
+1366 [SEC]  Med  P3  Andr  ping.liang@intel.com  ASSI   [Media scanner] media cranner makes error "waitForCondition timed out" with system hung  
+545 [SEC]  Med  P3  Andr  thomasx.guillemin@intel.com  RESO  FIXE  No signal and no 2G Icon while camped and downloading (iCDK ES2)  
+894  Med  P3  Andr  jing.tao@intel.com  ASSI   ov2720 quality: too many noise of output raw data  
+514 [SEC]  Med  P3  Andr  madhusudanx.n.bangalore@int...  ASSI   [Camera] There is no menu option to select the ¡®Primary Camera¡¯.  
+1191  Med  P3  Andr  kerry.vander.kamp@intel.com  ASSI   Disabled clock gates need to be enabled in the firmware for Units B, D0, H and I.  
+958  Med  P3  Andr  marcx.blassin@intel.com  ASSI   Duplicate service definition in init.rc and init.device.rc  
+777 [SEC]  Med  P3  Andr  shengquan.yuan@intel.com  ASSI   [Video] sqlite returns error with disk I/O error after repetitive playing one mp4 clip 30 times  
+1174  Med  P3  Andr  weian.chen@intel.com  RESO  FIXE  AVC encoder omx component overwriting OMX_VIDEO_PARAM_PORTFORMATTYPE.nIndex  
+1336 [SEC]  Med  P3  Andr  christophe.continente@intel...  ASSI   The pin can not be inputted because the input windows can not be focused.  
+1093  Med  P3  Andr  khanh.v.nguyen@intel.com  ASSI   (Audio) He aac codec stream can't be played  
+853  Med  P3  Andr  christophe.guerard@intel.com  ASSI   PROMOTE from penwell: PUnit security keys are not being sent after S0i2/S0i3  
+1082  Med  P3  Andr  timothy.c.dietz@intel.com  NEW   SCU FW Does Not Pass Manufacturing Mode Jumper Status to IA  
+751 [SEC]  Med  P3  Andr  hitesh.k.patel@intel.com  ASSI   LCD Display color distorted  
+1186  Med  P3  Andr  khanh.v.nguyen@intel.com  ASSI   Medfield ES2: The speed of audio clips playback is quicker than normal in R4.3  
+650 [SEC]  Med  P3  Andr  christophex.lebouc@intel.com  ASSI   FW: Enable RQArb Roll Enable DEBUG0[21] by default  
+876  Med  P3  Andr  nicholas.j.yoke@intel.com  NEW   D-unit register settings not optimized for power and performance  
+1434 [SEC]  Med  P3  Andr  gangx.a.chen@intel.com  RESO  FIXE  Play a song when in call via earpiece, the song can't be heard and the song can't be played correctly.  
+1390 [SEC]  Med  P3  Andr  juliex.regairaz@intel.com  RESO  FIXE  FTP transfers of 50MB+ files via WiFi fail to complete when using AndFTP client  
+866  Med  P3  Andr  livingston.tong@intel.com  ASSI   PROMOTE from penwell: AVE_CV: Unable to receive FM signal on Medfield iCDK platform during FM playback  
+1125  Med  P3  Andr  dharageswari.r@intel.com  RESO  DUPL  There is white noise when call pcm.AndroidCapture_Headset_normal to capture a piece of audio  
+776 [SEC]  Med  P3  Andr  christophex.lebouc@intel.com  RESO  DUPL  System Boot failed  
+1092  Med  P3  Andr  livingston.tong@intel.com  ASSI   msvdx motion vector silicon bug causes corruption for 1920x1080 mpeg4 clip when playing on the MFLD Android 20110318  
+945  Med  P3  Andr  bin.yang@intel.com  NEW   I2C frequency is measured as 407Khz at fast mode  
+1416 [SEC]  Med  P3  Andr  ramesh.babu@intel.com  ASSI   [Audio accessory] The micro of headset is not detected  
+721 [SEC]  Med  P3  Andr  xiaolin.zhang@intel.com  RESO  WORK  0001579: Phone hang during boot up.  
+872  Med  P3  Andr  christophex.lebouc@intel.com  RESO  DUPL  FW: Enable RQArb Roll Enable DEBUG0[21] by default  
+1406 [SEC]  Med  P3  Andr  bingx.deng@intel.com  RESO  FIXE  After refusing the MT call, the song is outputted from Speaker&wired headset instead of only wired headset.  
+1401 [SEC]  Med  P3  Andr  shanshanx.liu@intel.com  ASSI   When play the recorded audio via wired headset with mic, the sound is too small to be heard.  
+720 [SEC]  Med  P3  Andr  gang.a.hu@intel.com  RESO  FIXE  Camera does no response.  
+661 [SEC]  Med  P3  Andr  mariex.petit@intel.com  RESO  FIXE  Medfield Android R4.3 Release Notes do not have clear and adequate Android load instructions  
+1372 [SEC]  Med  P3  Andr  christophe.continente@intel...  NEW   No response to sliding when running the application Aldiko  
+773 [SEC]  Med  P3  Andr  gang.a.hu@intel.com  RESO  FIXE  Camera will crash, when switch between photographed mode and camera mode some times  
+885  Med  P3  Andr  jason.m.bills@intel.com  ASSI   Lock Dual Channel Bit in the BCTRL register of B unit is not set in the C0 PO FW  
+1088  Med  P3  Andr  timothy.c.dietz@intel.com  RESO  DUPL  [PnP] Enabling D0i3/D3 on LPE (LSS8) increase power on "VCCPADXXXAON_1P20" by ~7mW  
+1379 [SEC]  Med  P3  Andr  arulselvan.m@intel.com  RESO  INVA  When a audio file is played on earpiece just after boot, the audio is heard on both Headset and Earpiece  
+1122  Med  P3  Andr  khanh.v.nguyen@intel.com  ASSI   Medfield ES2: The player does not support some types of audio files.  
+1345 [SEC]  Med  P3  Andr  weian.chen@intel.com  ASSI   [Video] Got black screen with OMXCodec error during video playback  
+1316 [SEC]  Med  P3  Andr  kishore.mottadi@intel.com  NEW   Battery status do not change to Full when it is completely charged.  
+651 [SEC]  Med  P3  Andr  christophex.lebouc@intel.com  ASSI   FW: Disable HC Blocking DEBUG0[20] by default  
+654 [SEC]  Med  P3  Andr  yong.yao@intel.com  RESO  FIXE  D-unit self-refresh bit in C0 not enabled in BIOS  
+1179  Med  P3  Andr  lakshmi.n.vinnakota@intel.com  RESO  WORK  Capture of audio files using DMIC3 is failing  
+1278 [SEC]  Med  P3  Andr  xiaokang.qin@intel.com  INTE  FIXE  Please help to unify partition name both POS and Android  
+655 [SEC]  Med  P3  Andr  christophex.lebouc@intel.com  RESO  FIXE  R.O. core DTS needs to enable binary search mechanism by default to converge temperature  
+1427 [SEC]  Med  P3  Andr  jianpingx.li@intel.com  RESO  FIXE  Rebase omx-compent decode code  
+981  Low  P3  Andr  randy.xu@intel.com  RESO  INVA  Mfld: 2D_X: EXA Extension-repeat test failed - 134 of 136 tests passed.  
+891  Low  P3  Andr  adityax.gadgil@intel.com  ASSI   Audio goes silent if gst alsasink latency-time is > 100000  
+949  Low  P3  Andr  livingston.tong@intel.com  ASSI   AvP MSIC Coulomb Counter Total-error not meeting specifications.  
+1099  Low  P3  Andr  jenny.tc@intel.com  ASSI   adc_temperature interface not found in Medfield_Android_ROW_20110318-003 build  
+980  Low  P3  Andr  michael.h.chen@intel.com  RESO  INVA  Mfld: 2D_X: Xproto test failed - 230 tests pass, 1 fewer than the 231 tests that pass in reference result.  
+965  Low  P3  Andr  frederic.predon@intel.com  RESO  WONT  /dev/ttyIFX might not be integrated properly on HSI Medfield Android R4.3  
+1007  Low  P3  Andr  yaney.rodriguez@intel.com  NEW   sysfs current_now of msic-battery is always constant.  
+563 [SEC]  Low  P3  Andr  dominique.grange@intel.com  ASSI   after MaintenanceCharging status stay full when charger is dis and re connect  
+1140  enh  P3  Andr  nicolas.roux@intel.com  ASSI   [METABUG_KPI] Active Idle (Screen ON) Power KPI not meeting power target of 458mW  
+1149  enh  P3  Andr  nicolas.roux@intel.com  ASSI   [METABUG_KPI] Standby KPI - GSM standby not meeting Platform Power target of 12.5mW  
+1184  enh  P3  Andr  nicolas.roux@intel.com  ASSI   Cstate values are inconsitent  
+672 [SEC]  enh  P3  Andr  christophe.guerard@intel.com  ASSI   Modem log can not be captured by Lauterbach with MPTA  
+961  enh  P3  Andr  hervex.marechal@intel.com  ASSI   6260 FW change for tracing to accomidate Medfield HW arch  
+1287 [SEC]  enh  P3  Andr  austin.hu@intel.com  ASSI   Placeholder for HDMI extend video use case support  
+1344 [SEC]  enh  P3  Andr  xiaokang.qin@intel.com  INTE  FIXE  To support Modem FW update in OTA  
+1466 [SEC]  enh  P3  Andr  hongyu.zhang@intel.com  NEW   Share buffering not enabled in video capture  
+1142  enh  P3  Andr  nicolas.roux@intel.com  ASSI   [METABUG_KPI] Multimedia, Video playback - h.264 - HP - 1080p->720p 30fps Power KPI not meeting Power taget of 863mW  
+1150  enh  P3  Andr  nicolas.roux@intel.com  ASSI   [METABUG_KPI] Standby KPI - WLAN associated standby not meeting Platform Power target of 14.5mW  
+756 [SEC]  enh  P3  Andr  vanja.rados@intel.com  REOP   0001549: [Tele]can not import contacts from SIM card.  
+1358 [SEC]  enh  P3  Andr  xiaokang.qin@intel.com  ASSI   Add Factory Restore support in PrOS  
+930  enh  P3  Andr  elaine.wang@intel.com  ASSI   [PnP] High C2 during 1080p 30 FPS video playback without audio  
+1148  enh  P3  Andr  nicolas.roux@intel.com  ASSI   [METABUG_KPI] Standby KPI - WCDMA standby not meeting Platform Power target of S3-13.5mW; S0i3-16.5  
+1139  enh  P3  Andr  nicolas.roux@intel.com  ASSI   [METABUG_KPI] Active Idle (Screen OFF) Power KPI not meeting power target of 95mW  
+1435 [SEC]  enh  P3  Andr  renaudx.senet@intel.com  NEW   [metabug]: Modem consumption optimization  
+1151  enh  P3  Andr  nicolas.roux@intel.com  ASSI   [METABUG_KPI] Browsing KPI - Browsing GSMA 3G WCDMA not meeting Platform Power target of 505mW  
+ID  Sev  Pri  OS  Assignee  Status  Resolution  Title  
+1331 [SEC]  enh  P3  Andr  jasonx.m.harper@intel.com  ASSI   Use OpenMAX audio software codec components to reduce power consumption  
+1359 [SEC]  enh  P3  Andr  xiaokang.qin@intel.com  ASSI   OSIP update tool enhancement  
+1319 [SEC]  enh  P3  Andr  yuanx.zhao@intel.com  INTE  FIXE  DLC5 is allocated to atproxy, but used by Audio Hal  
+662 [SEC]  Cri  P4  Andr  leo.he@borqs.com  RESO  FIXE  IA32 CPU Firmware hung  
+1273 [SEC]  Hig  P4  Andr  shenghua.lu@intel.com  ASSI   playing music while have the lcd backlight turned dark,the music stop  
+695 [SEC]  Hig  P4  Andr  juliex.regairaz@intel.com  RESO  FIXE  WLAN : WEP Open connection failure  
+803 [SEC]  Hig  P4  Andr  suhail.ahmed@intel.com  INTE  DUPL  HSI protocol handler makes TTY interface when SPI is enabled  
+1274 [SEC]  Hig  P4  Andr  sylvestrex.dischamp@intel.com  ASSI   Data drop during CPC activation - deactivation  
+828 [SEC]  Hig  P4  Andr  danielx.lee@intel.com  RESO  DUPL  Enter into soi3 unsuccessful[PmP]  
+809 [SEC]  Hig  P4  Andr  jian.a.zhu@intel.com  RESO  DUPL  0001605: sometimes stk app icon won't show after phone boot up  
+1263 [SEC]  Hig  P4  Andr  jasonx.m.harper@intel.com  RESO  FIXE  mp3 file with cover (image/jpg) can not be played normally  
+768 [SEC]  Hig  P4  Andr  olivier.leveque@intel.com  RESO  FIXE  TIWLAN SDIO interface unreliable with 50 MHz clock  
+1098  Hig  P4  Andr  lakshmi.n.vinnakota@intel.com  RESO  INVA  HSMIC option is not available in alsa_amixer.  
+761 [SEC]  Hig  P4  Andr  petrix.harri@intel.com  RESO  FIXE  TIWLAN module leaves powered on at the boot despite never turned on from the UI  
+770 [SEC]  Hig  P4  Andr  petrix.harri@intel.com  RESO  FIXE  [WiFi] The TI WLAN driver and module should be under control of Android native connectivity control  
+539 [SEC]  Hig  P4  Andr  marcx.blassin@intel.com  RESO  FIXE  Can NOT CAMP on ORANGE and BOUYGUES TELECOM Network  
+580 [SEC]  Hig  P4  Andr  srivathsan.soundararajan@in...  RESO  WONT  No fallback mechanism in case of RAT change failure  
+771 [SEC]  Hig  P4  Andr  suhail.ahmed@intel.com  RESO  DUPL  Need registration entry for GPIO info in mrst.c  
+1238 [SEC]  Hig  P4  Andr  fengx.xiao@intel.com  RESO  FIXE  AVC/H264 IDR frame data should contains sps & pps data and new NALU start code support for stagefright config data parser from first frame header  
+762 [SEC]  Hig  P4  Andr  petrix.harri@intel.com  RESO  FIXE  TIWLAN driver module can not be re-instantiated  
+701 [SEC]  Med  P4  Andr  nicolas.petit@intel.com  RESO  DUPL  CWS WLAN: Failed to connect and stay connected for 12 Hrs  
+1256 [SEC]  Med  P4  Andr  sushma.singh@intel.com  RESO  INVA  BT_PBAP: Car kit can not access contacts in Phone  
+1225 [SEC]  Med  P4  Andr  vincentx.pillet@intel.com  ASSI   The browser crashed after several times normal web browsing  
+839 [SEC]  Med  P4  Andr  zhenjie.pan@intel.com  RESO  FIXE  Besides 30GB filesystem, other partitions are also mounted to PC.  
+1253 [SEC]  Med  P4  Andr  sylvestrex.dischamp@intel.com  ASSI   Modem alters loopback audio data on I2S2  
+443 [SEC]  Med  P4  Andr  haijun.cao@intel.com  RESO  WONT  Sensor Hub Latency is too long from application in concurrence mode  
+1261 [SEC]  Med  P4  Andr  shanshanx.liu@intel.com  RESO  DUPL  Firmware error code is "F503" when play music via BlueTooth Headset  
+1046  Med  P4  Andr  ganeshx.petkar@intel.com  RESO  WORK  File playback by alsa_aplay with given option(alsa_aplay s_48k_24.raw -c2 -r 48000 -fs24_le -traw -Dhw:0,0) is not working.  
+767 [SEC]  Med  P4  Andr  jason.hu@intel.com  ASSI   [Video] Sometimes, MKV H264 (AAC audio) video playback fails  
+1233 [SEC]  Med  P4  Andr  jeanx.trivelly@intel.com  ASSI   WLAN : WPS support  
+722 [SEC]  Med  P4  Andr  gang.a.hu@intel.com  RESO  FIXE  Video Camera can not display normal when recording.  
+1020  Med  P4  Andr  khanh.v.nguyen@intel.com  ASSI   Playback of AAC format audio file in the media player is failing  
+775 [SEC]  Med  P4  Andr  gang.a.hu@intel.com  RESO  DUPL  Video Camera would die after video recording some times.  
+1171  Med  P4  Andr  gang.a.hu@intel.com  RESO  DUPL  System hang when capture image continuously.  
+1102  Med  P4  Andr  timothy.c.dietz@intel.com  ASSI   Mfld/Android: OSPM: state changes occur but SPI Card LED code never changes from 5017 to expected values  
+822 [SEC]  Med  P4  Andr  daniel.zhu@intel.com  ASSI   [PnP] Low UDP uplink throughputs in USB  
+1193  Med  P4  Andr  christophe.guerard@intel.com  ASSI   Unable to bringup Android Signed/unsigned OS boot.bin with secure signed android kboot  
+843 [SEC]  Med  P4  Andr  wen.w.wang@intel.com  NEW   Noise Reduction has no effect with OV2720 camera.  
+649 [SEC]  Med  P4  Andr  christophex.lebouc@intel.com  ASSI   FW: Enable Hunit bypass HMISC1[7] by default  
+1084  Med  P4  Andr  gang.a.wang@intel.com  ASSI   Mfld/Android/GB: GLES2.0 Conformance - 2 cases fail  
+603 [SEC]  Med  P4  Andr  yong.yao@intel.com  RESO  FIXE  [WLAN] All boards have same MAC address  
+1168  Med  P4  Andr  yu.y.xia@intel.com  RESO  FIXE  Flash light did not work when capture image with Medfield Android application.  
+769 [SEC]  Med  P4  Andr  petrix.harri@intel.com  ASSI   [TIWLAN] WLAN chip unusable with 50 MHz SDIO bus clock (SW point of view)  
+1221  Med  P4  Andr  yun.tu@intel.com  ASSI   GFX_PERF: 3DMMES2.0: some white artifacts/corruption about 5-10 seconds into Taiji game bench  
+848 [SEC]  Med  P4  Andr  sylvestrex.dischamp@intel.com  ASSI   3GPP Conformance - 12.2.1.5d test case (TS 3GPP 34.123) is failing because modem stucks after AT+CGATT=1  
+644 [SEC]  Med  P4  Andr  nicolas.roux@intel.com  ASSI   Seeing a hot spot in the ULPIMSIC module when in System states  
+990  Med  P4  Andr  randy.xu@intel.com  RESO  FIXE  Mfld (Android): GFX-PM - PM Service available test failed  
+1211  Med  P4  Andr  lawrence.r.klos@intel.com  NEW   Mfld/Android/GB: GFX-PM - system not waking up by touching screen or plugging/unpluging headphone jack  
+1081  Med  P4  Andr  jean-mariex.bellouard@intel...  RESO  FIXE  when playing on alsa devices with aplay: driver reaches max stream count then board is frozen  
+1067  Med  P4  Andr  shanshanx.liu@intel.com  ASSI   After run cts for some time, the Android OS hangs up  
+1043  Med  P4  Andr  ganeshx.petkar@intel.com  ASSI   click noise at the end of playback of wav or raw file.  
+817 [SEC]  Med  P4  Andr  li.zeng@intel.com  REOP   Crc value of some vc1 clips calculated by cdk is different with VXDSIM  
+1262 [SEC]  Med  P4  Andr  shanshanx.liu@intel.com  ASSI   When Ringtone rings with BT A2DP headset, the system alert happens, but the alert delayed 10 seconds outputed from BT headset than Speaker  
+818 [SEC]  Med  P4  Andr  jason.hu@intel.com  VERI  FIXE  Function vaCreateSurfaces() failed after vaDestroySurfaces() and vaTerminate() failed several times  
+1100  Med  P4  Andr  yaney.rodriguez@intel.com  NEW   For MDFLD_Android_ROW, the Peak Current Control driver's sysfs interface "action_mask" accepts out of range values.  
+1235 [SEC]  Med  P4  Andr  weian.chen@intel.com  RESO  FIXE  merge libmix  
+781 [SEC]  Med  P4  Andr  fabienx.barthes@intel.com  ASSI   [Audio] Midi file with Xmf container cannot be played  
+759 [SEC]  Med  P4  Andr  juliex.regairaz@intel.com  RESO  FIXE  Can not connect wifi network  
+1251 [SEC]  Med  P4  Andr  gang.a.hu@intel.com  INTE  FIXE  Double click the touch screen cause camera application crash during viewfinder  
+1230 [SEC]  Med  P4  Andr  juliex.regairaz@intel.com  ASSI   WLAN : WAPI support  
+739 [SEC]  Med  P4  Andr  lili.a.wang@intel.com  RESO  FIXE  [Video] Thumbnails of some H264 main and high profile video clips cannot be show in Gallery  
+467 [SEC]  Med  P4  Andr  yong.yao@intel.com  RESO  FIXE  SD card insertion failure  
+841 [SEC]  Med  P4  Andr  wen.w.wang@intel.com  NEW   Black Level Compensation has no effect with OV2720 camera.  
+1228 [SEC]  Med  P4  Andr  kun.k.wang@intel.com  RESO  FIXE  Port the latest libva library to MFLD android Gingerbread  
+466 [SEC]  Med  P4  Andr  xiaokang.qin@intel.com  REOP   boot to command prompt from USB Memory stick (with kboot on eMMC)  
+614 [SEC]  Med  P4  Andr  ramesh.babu@intel.com  RESO  FIXE  [Audio]play audio files faster than normal.  
+1111  Med  P4  Andr  jayant.mangalampalli@intel.com  ASSI   Chaabi UMIP read fails on some combinations of offset and size.  
+703 [SEC]  Med  P4  Andr  vgonzalez@intrinsyc.com  ASSI   Failed to set airplane mode when no SIM card in the device.  
+683 [SEC]  Med  P4  Andr  nicolas.petit@intel.com  RESO  FIXE  BT not enable at boot as well as it was on at switch off  
+673 [SEC]  Med  P4  Andr  frederic.predon@intel.com  RESO  FIXE  Airplane mode can¡¯t be set successfully  
+845 [SEC]  Med  P4  Andr  jurgen.von.oerthel@intel.com  NEW   Digital Zoom running in ISP primay mode dosn't have effect for RGB565 and dual stream  
+1167  Med  P4  Andr  jurgen.von.oerthel@intel.com  ASSI   incorrect judgement for flash on/off in auto flash mode in 3A source code  
+772 [SEC]  Med  P4  Andr  wei.c.gao@intel.com  ASSI   Can not repeatedly take pictures  
+1169  Med  P4  Andr  xiaolin.zhang@intel.com  RESO  FIXE  The color effect options in the camera application did not work.  
+442 [SEC]  Med  P4  Andr  haijun.cao@intel.com  RESO  WONT  Sensor Hub Latency is too long from application layer  
+1089  Med  P4  Andr  jing.a.sun@intel.com  NEW   eMMC Chip's HW reset triggered by its drivers when data timeouts happened might have a bad effect on other ingredients.  
+785 [SEC]  Med  P4  Andr  nicolas.roux@intel.com  RESO  FIXE  Power: Current on PADEMC (1p80AON) rail is higher in forced S0i3 state when using POR FW compared to Custom FW (2.31mA vs 97uA)  
+991  Med  P4  Andr  randy.xu@intel.com  RESO  FIXE  Mfld (Android): GFX-PM - Early suspend test failed  
+1332  Med  P4  Andr  lawrence.r.klos@intel.com  RESO  WONT  Mfld/Android: GFX_PERF: Significantly lower perf scores on various tests than in previous ENG build 5.4.0.1003  
+1197  Med  P4  Andr  randy.xu@intel.com  RESO  FIXE  [patch] Use the bottom page of KERN_DATA_HEAP for GL3_USSE_WR_ADDR  
+1237 [SEC]  Med  P4  Andr  shanshanx.liu@intel.com  NEED   Sometimes there is no sound outputed from BlueTooth Headset when make screen selection.  
+1044  Med  P4  Andr  ganeshx.petkar@intel.com  RESO  WORK  we see warning message while playback using alsa_aplay command  
+699 [SEC]  Med  P4  Andr  al.bettner@intel.com  ASSI   CWS WLAN: [Android] Cycle back between two APs several times then DUT always displays connect to the same AP.  
+1210  Med  P4  Andr  christophex.lebouc@intel.com  NEW   Medfield B0 ICDK/ CEAK platform cannot be reliably detected with a 6 ft. USB cable.  
+1232 [SEC]  Med  P4  Andr  jeanx.trivelly@intel.com  RESO  FIXE  WLAN : WPA Enterprise  
+975  Med  P4  Andr  saadi.maalem@intel.com  RESO  FIXE  XML needs to be updated (GPIO Slew Setting): I2C3 Port with 16.6MHz Controller frequency the Hold time Clock Fall 30% to Data Rise 30% fail EMTS spec.  
+1170  Med  P4  Andr  gang.a.hu@intel.com  RESO  FIXE  When capture video with "low" and "mms" resolution, the viewfinding and recorded video are all invisible.  
+642 [SEC]  Med  P4  Andr  daniel.zhu@intel.com  ASSI   [PnP] Very low USB copy throughput  
+842 [SEC]  Med  P4  Andr  wen.w.wang@intel.com  NEW   Edge Enhancement has no effect with OV2720 camera.  
+1015  Med  P4  Andr  jasonx.m.harper@intel.com  RESO  FIXE  [Medfield-Android]: "music playback forward seek relative" shows abnormal  
+724 [SEC]  Med  P4  Andr  lindax.lin@intel.com  ASSI   Sending larger file(4GB) uplink from iCDK ES2 to laptop failed.  
+1399 [SEC]  Med  P4  Andr  jianchunx.shen@intel.com  RESO  FIXE  Audio StreamIn Standby issue, without actualizing in HAL  
+1229 [SEC]  Med  P4  Andr  kun.k.wang@intel.com  RESO  FIXE  Port the latest psb_video library to MFLD Android Gingerbread  
+686 [SEC]  Med  P4  Andr  nicholas.j.yoke@intel.com  RESO  FIXE  Penwell UART_0_CTS intermediate voltage level issue at Medfield platform boot up  
+805 [SEC]  Med  P4  Andr  suhail.ahmed@intel.com  INTE  FIXE  Modem reset and crash dump signals must be handled properly for modem boot and silent reset  
+1271 [SEC]  Med  P4  Andr  wen.w.wang@intel.com  ASSI   Still Camera consuming ~530mW in some runs during system Idle case  
+1241 [SEC]  Med  P4  Andr  suhail.ahmed@intel.com  ASSI   AP SW log can¡¯t be collected through UART.  
+468 [SEC]  Med  P4  Andr  gareth.yu@intel.com  ASSI   Change USB interface with PID  
+798 [SEC]  Med  P4  Andr  christophex.lebouc@intel.com  ASSI   Fail to boot from dead battery  
+1429 [SEC]  Med  P4  Andr  sebastien.cayetanot@intel.com  ASSI   0001862: [BKB2][Bluetooth]Can not enable bluetooth successfully by the first time after flash the phone.  
+ID  Sev  Pri  OS  Assignee  Status  Resolution  Title  
+820 [SEC]  Med  P4  Andr  vgonzalez@intrinsyc.com  ASSI   Call Barring not working when class is not filled  
+1060  Low  P4  Andr  fredericx.berat@intel.com  ASSI   Can't activate call waiting during a voice call  
+823 [SEC]  Low  P4  Andr  jeanx.trivelly@intel.com  ASSI   WLAN: UI for WPA/WPA2 Enterprise is misleading  
+1250 [SEC]  Low  P4  Andr  ramesh.agarwal@intel.com  NEW   [Battery] The counter runs faster during battery discharge  
+1074  Low  P4  Andr  jayant.mangalampalli@intel.com  ASSI   Firmware Arch Spec says Chaabi code includes Version info but they do not.  
+743 [SEC]  Low  P4  Andr  fredericx.berat@intel.com  ASSI   RIL_REQUEST_SEND_SMS_EXPECT_MORE not used for long SMS  
+824 [SEC]  Low  P4  Andr  jeanx.trivelly@intel.com  ASSI   WLAN: WPA/WPA2 Enterprise - Issue when switching between PEAP and TTLS methods  
+746 [SEC]  Low  P4  Andr  gang.a.hu@intel.com  RESO  FIXE  [camera] camera app does not recover from ISP timeout/csi reciever error  
+1286 [SEC]  Low  P4  Andr  li.zeng@intel.com  RESO  FIXE  [Video] First few frames display black screen when playing some H264 video clips  
+1267 [SEC]  Low  P4  Andr  saadi.maalem@intel.com  NEW   Texture streaming error seen in the preview log  
+1045  Low  P4  Andr  rajesh.poornachandran@intel...  ASSI   Taskforce: Mtfld-Android No Driver with D0i3/D3 for HDMI  
+835 [SEC]  Low  P4  Andr  fabienx.peix@intel.com  ASSI   Pairing code input timeout too short  
+1016  Low  P4  Andr  sebastien.cayetanot@intel.com  ASSI   Duplicate service definition in init.rc and init.device.rc  
+598 [SEC]  Low  P4  Andr  louis.le.gall@intel.com  ASSI   2-3Hz glitches during voice call  
+1279 [SEC]  Low  P4  Andr  jin.b.zhang@intel.com  ASSI   The boot failed only one time with "AudioPolicyService not published"  
+487 [SEC]  Low  P4  Andr  yan.a.wang@intel.com  REOP   boot to command prompt from SD card (with kernel on eMMC) unstable issue  
+970  Low  P4  Andr  kerry.vander.kamp@intel.com  ASSI   IA FW v26 - Programs OS Image to eMMC before HASH verification  
+1108  Low  P4  Andr  yaney.rodriguez@intel.com  RESO  DUPL  current temeprature value in temp sysfs interfaces of thermal zones remains constant for MDFLD_Android_20110318-003  
+1096  Low  P4  Andr  rajesh.poornachandran@intel...  ASSI   [Taskforce]Display doesn't come back reliably on S3 exit  
+478 [SEC]  Low  P4  Andr  yong.yao@intel.com  RESO  FIXE  Set Bluetooth Mac address failure  
+931  Low  P4  Andr  livingston.tong@intel.com  NEW   IFWI Public keys reversed compared to FAS  
+969  Low  P4  Andr  bin.yang@intel.com  ASSI   IPC failed message during long duration wav playback  
+1234 [SEC]  Blo  P4  Andr  juliex.regairaz@intel.com  ASSI   WLAN : CRDA support  
+570 [SEC]  enh  P4  Andr  philippe.lemoine@intel.com  ASSI   P_IUC_1901 Audio Listen FM Radio - wired HS  
+793 [SEC]  enh  P4  Andr  louis.le.gall@intel.com  REOP   I2S/PCM ports of Modem and MSIC not disabled after voice call  
+640 [SEC]  enh  P4  Andr  pierre.tardy@intel.com  ASSI   PnP:Standby power KPI "Standby Flight Mode-S3" is not meeting PV targets of 9mW  
+825 [SEC]  enh  P4  Andr  selma.bensaid@intel.com  ASSI   PWL I2S_1 port to be set as master for voice playback and recording over Bluetooth headset  
+1249 [SEC]  enh  P4  Andr  frederic.predon@intel.com  NEW   Integration and test of Customer AT Commands extensions  
+619 [SEC]  enh  P4  Andr  jingtaox.wang@intel.com  RESO  WONT  "Music" can't scan the stream file: ap02_LTP--AAC_128Kbps_2c_48KHz_19s.mp4  
+1231 [SEC]  enh  P4  Andr  richard.tang@intel.com  ASSI   [PnP] Regression found from GB0330 to WW15 build , i2c-dw-pci-5 interrupt jump from 0 to 60  
+1268 [SEC]  enh  P4  Andr  jason.m.bills@intel.com  ASSI   Errata in IA FW 00.37 Release Notes  
+1341 [SEC]  enh  P4  Andr  fabienx.marotte@intel.com  ASSI   D-BUS path activation between wpa_supplicant and WDAgent  
+1254 [SEC]  enh  P4  Andr  juliex.regairaz@intel.com  NEW   WLAN : 5GHz band support  
+620 [SEC]  enh  P4  Andr  jianjiang.fei@borqs.com  RESO  WONT  0001539: [Framework]the numbers may flash after switch back.  
+1240 [SEC]  enh  P4  Andr  hongyu.zhang@intel.com  RESO  FIXE  Video buffer sharing flag in camera HAL not enabled  
+636 [SEC]  enh  P4  Andr  nicolas.petit@intel.com  RESO  FIXE  Wifi calibration file to add  
+1361 [SEC]  enh  P4  Andr  xiaokang.qin@intel.com  ASSI   scuutils: Disable actual pm before firmware update  
+709 [SEC]  enh  P4  Andr  guillaumex.lucas@intel.com  RESO  FIXE  Enable TTY support in Gingerbread  
+1391 [SEC]  enh  P4  Andr  bingx.deng@intel.com  INTE  FIXE  Need design a new lock in alsa_asound directory to replace the old lock.  
+847 [SEC]  enh  P4  Andr  jack.ren@intel.com  ASSI   music file failed to be played when it is in SD card of MFLD iCDK board  
+693 [SEC]  enh  P4  Andr  jackx.w.lix@intel.com  RESO  FIXE  Rapid RIL : TTY read AT commands is not correctly parsed  
+816 [SEC]  enh  P4  Andr  jackx.w.lix@intel.com  RESO  FIXE  New - Rapid RIL 5.4 integration  
+556 [SEC]  enh  P4  Andr  hellenx.zeng@intel.com  VERI  FIXE  Proximity sensors are not responding.  
+1356 [SEC]  enh  P4  Andr  norvin.shuster@intel.com  ASSI   Rebase tool to Download DLL 4.77  
+1348  enh  P4  Andr  jianchunx.shen@intel.com  ASSI   stereo record from mone device: only one channel contains audio  
+516 [SEC]  enh  P4  Andr  jianjun.liu@intel.com  ASSI   fail to charge when the battery is dead  
+814 [SEC]  enh  P4  Andr  honorex.tricot@intel.com  ASSI   [NLCP] Add NVS auto generation at boot  
+1257 [SEC]  enh  P4  Andr  wei.gao@borqs.com  REOP   the camera window size is smaller when phone wake up from idle status  
+780 [SEC]  enh  P4  Andr  janex.han@intel.com  RESO  INVA  [Audio] Midi file with Kar container cannot be found in audio playlist  
+1292 [SEC]  enh  P4  Andr  leo.yan@intel.com  INTE  FIXE  sensor_t 's struct member power's value is not set properly  
+637 [SEC]  enh  P4  Andr  juliex.regairaz@intel.com  RESO  FIXE  start calibrate_wlan script during the first platform boot  
+444 [SEC]  enh  P4  Andr  alexandre.lewicki@intel.com  REOP   CWS: Cannot configure browser settings for proxy server to connect to internet  
+819 [SEC]  enh  P4  Andr  juliex.regairaz@intel.com  RESO  FIXE  CWS-WLAN: Roaming not integrated  
+1310 [SEC]  enh  P4  Andr  liang.l.yang@intel.com  RESO  FIXE  need add 480p and QVGA video recording resolution  
+760 [SEC]  enh  P4  Andr  fabienx.marotte@intel.com  ASSI   [NLCP] Switch TI WiFi driver to NLCP version  
+1270 [SEC]  enh  P4  Andr  hong.liu@intel.com  NEW   auto brightness adjust for LCD is not working  
+384  enh  P4  Andr  livingston.tong@intel.com  RESO  FIXE  Can't make vocie call  
+438 [SEC]  enh  P4  Andr  denis.delaveau@intel.com  RESO  WONT  Modem high power consumption in PCH RRC state (Data call)  
+1008  enh  P4  Andr  nicholas.j.yoke@intel.com  ASSI   Feature Request to turn off all IPs by default on a power reset  
+527 [SEC]  enh  P4  Andr  nicolas.petit@intel.com  RESO  FIXE  Can not control audio from Bluetooth headset  
+728 [SEC]  enh  P4  Andr  ramesh.babu@intel.com  RESO  FIXE  Mono to stereo sample conversion support in audio drivers/fw.  

@@ -1,0 +1,17 @@
+例6.18 要求将变量i和j的值互换。下面的程序无法实现此要求。
+#include <iostream>
+using namespace std;
+int main( )
+{ void swap(int,int);                 //函数声明
+int i=3,j=5;
+swap(i,j);                          //调用函数swap
+cout<<i<<″ ″<<j<<endl;              //i和j的值未互换
+return 0;
+}
+
+void swap(int a,int b)      //企图通过形参a和b的值互换，实现实参i和j的值互换
+{ int temp;
+temp=a;                             //以下3行用来实现a和b的值互换
+a=b;
+b=temp;
+}

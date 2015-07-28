@@ -1,0 +1,9 @@
+例6.11 定义一个字符串变量并初始化，然后输出其中的字符串。
+#include <string>
+#include <iostream>
+using namespace std;
+int main( )
+{ string str=″I love CHINA!″;
+cout<<str<<endl;
+return 0;
+}

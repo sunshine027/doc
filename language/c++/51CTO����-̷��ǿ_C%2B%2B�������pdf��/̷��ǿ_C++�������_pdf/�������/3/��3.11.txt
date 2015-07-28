@@ -1,0 +1,14 @@
+例3.11 用do-while语句求1+2+3+…+100。
+先画出流程图，见图3.12。
+可编写出下面的程序： 
+#include <iostream>
+using namespace std;
+int main( )
+{int i=1,sum=0;
+ do 
+  { sum=sum+i;
+    i++;
+   }while (i<=100);
+ cout<<″sum=″<<sum<<endl;
+ return 0;
+}

@@ -1,0 +1,19 @@
+----------------------------------------------------------,,,
+Intel Corporation Matrix Tool Version 2.3a Release,,,
+Copyright (c) 2009-2011, Intel Corp. All Rights Reserved.,,
+For use with Intel(R) processors, chipsets and platforms.,,
+Strictly For Intel Internal Use Only.,,,
+email: matrix@intel.com,,,
+----------------------------------------------------------,,,
+,,,
+,Captured for, 100.0002 seconds,
+,----------,----------,----------
+,   C State, Residency,          
+,----------,----------,----------
+,     C0_C1,5.60%,           
+,        C2,5.26%,           
+,        C3,0.00%,           
+,        C4,70.80%,           
+,        C5,18.34%,           
+,        C6,0.00%,           
+,----------,----------,----------

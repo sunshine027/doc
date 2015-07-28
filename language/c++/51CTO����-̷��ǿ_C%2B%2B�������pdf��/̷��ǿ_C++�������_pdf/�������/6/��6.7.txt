@@ -1,0 +1,12 @@
+例6.7 输出二维数组各元素的值。
+这里采用的方法是用基类型为整型的指针变量先后指向各元素，逐个输出它们的值。
+#include <iostream>
+using namespace std;
+int main( )
+{ int a[3][4]={1,3,5,7,9,11,13,15,17,19,21,23};
+int *p;                              //p是基类型为整型的指针变量
+for(p=a[0];p<a[0]+12;p++)
+cout<<*p<<″ ″;
+cout<<endl;
+return 0;
+}

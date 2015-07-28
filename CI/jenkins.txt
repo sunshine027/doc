@@ -1,0 +1,122 @@
+1.groovy postbuild:
+   this script is run on master, others like shell and report is run on slaves.
+
+2. post-build(trigger parameterized build on other projects:
+   1) even with multi configration, trigger downstream job only once
+   2) "on the same node" means the same with master
+   3) trigger by file: the file must be in master workspace: http://jenkins-ci.361315.n4.nabble.com/downstream-job-set-by-Parameterized-Trigger-never-runs-td4666140.html
+
+3.jenkins slave should install java-1_7_0-openjdk
+4. scritps:
+
+def log(msg) {
+    manager.listener.logger.println(msg)
+}
+
+log("Groovy postbuild")
+
+def parent_project_name = "Pre-deployment-testing-dispatcher"
+def subproject_name = "Pre-deployment-testing-worker-multi"
+def jenkins_baseurl = "https://otctools.jf.intel.com/ci/"
+
+def download(String url, String filename) {
+    
+    def file = new File(filename).newOutputStream() 
+ 
+    file << new URL(url).openStream()  
+    file.close() 
+ 
+}
+
+def build_id = manager.build.number
+//def project_name = manager.build.project.getName()
+def workspace = manager.build.getWorkspace()
+def label = manager.build.getEnvironment(manager.listener)['label'] 
+def upstream_project_name = parent_project_name + "/label=" + label
+log("upstream_project_name=" + upstream_project_name )
+log("label=" + label)
+
+def job = manager.hudson.getJob(subproject_name)
+download_url=''
+
+job.getBuilds().each { build -> 
+    for (cause in build.getProperties().get("causes")) {
+        def desc = cause.getShortDescription()
+        def matcher = (desc =~ /Started by upstream project "(.*?)" build number (\d+)/)
+        if (!matcher.matches())
+            continue
+       
+        def pname = matcher[0][1]
+        def pbuild_id = Integer.parseInt(matcher[0][2])
+        log("pname=" + pname)
+        log("pbuild_id=" + pbuild_id)
+      
+        if (build_id == pbuild_id && upstream_project_name == pname){
+            def props = build.getProperties()
+            for (trigger_label in props.get('exactRuns')) {
+                 label_props = trigger_label.getProperties()
+                 for (artifact in label_props.get('artifacts')) {
+//                 for (artifact in props.get('artifacts')) {
+                     def url = jenkins_baseurl + label_props.get("url") + "artifact/" + artifact
+//                     def url = jenkins_baseurl + props.get("url") + "artifact/" + artifact
+                     manager.listener.logger.println "Try to download " + url
+                     if ( download_url != '') {
+                           download_url = download_url + '|' + url
+                      }else{
+                            download_url = url
+                       }
+                 }
+            }
+        }
+    }
+}
+import hudson.model.*
+def pa = new ParametersAction([
+  new StringParameterValue("download_url", download_url)
+])
+
+// add variable to current job
+Thread.currentThread().executable.addAction(pa)
+
+
+
+def log(msg) {
+    manager.listener.logger.println(msg)
+}
+def resptn = /^Result:(.*)/
+def imgptn = /^Image:(.*)/
+def dstptn = /^Distribution:(.*)/
+def parent_project_name = "Pre-deployment-testing-dispatcher-debug2"
+def pbid
+
+for (cause in manager.build.parentBuild.getProperties().get("causes")) {
+        def desc = cause.getShortDescription()
+        def matcher = (desc =~ /Started by upstream project "(.*?)" build number (\d+)/)
+        if (!matcher.matches())
+            continue
+       
+        def pname = matcher[0][1]
+        if(pname.find(parent_project_name) != -1){
+            pbid = Integer.parseInt(matcher[0][2])
+         }
+ }     
+
+if (pbid){
+    def m1 = manager.getLogMatcher(resptn)
+    def m2 = manager.getLogMatcher(imgptn)
+    def m3 = manager.getLogMatcher(dstptn)
+
+    if (m1?.matches() && m2?.matches() && m3?.matches()) {
+         def res = m1.group(1).trim()
+         def img = m2.group(1).trim()
+         def dst = m3.group(1).trim()
+         def color
+         if (res == 'Passed') color = 'lightgreen'
+         else if (res == 'Regression') color = 'lightpink'
+         else color = 'yellow'
+
+          def text = '['+pbid+'] '+res+' '+img+'@'+dst
+
+          manager.addShortText(text, "black", color, "1px", "gray")
+     }
+}

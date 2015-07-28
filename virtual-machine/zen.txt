@@ -1,0 +1,56 @@
+
+
+1. 网卡和网络: 
+   1) 遇到 eth0 hwaddr:00:00:00:00:00:00，可以用: http://unixfoo.blogspot.com/2009/04/xen-adding-and-removing-nics-on-virtual.html
+   2)eth1 -> eth0（openSUSE的机器安装后，网卡类型更改为e1000）
+     a. 修改/etc/udev/rules.d/70-persistent*-net
+     b. mv /etc/sysconfig/network-script/ifcfg-eth1  /etc/sysconfig/network-script/ifcfg-eth0
+        里面的内容改成eth0
+   3)如果ip为6位, 改为4位:
+     dhclient eth0
+   4)（Fedora的虚拟机安装后，修改hostname后network无法restart）
+ 	systemctl restart network.service(显示failed, code=exited, status=1/Failed, Fail to start LSB: Bring up/down):
+      debug method: dmesg | grep eth/network or cat /var/log/message | grep eth/network
+                     查看mac地址在ifconfig和/etc/sysconfig/network-scripts/ifcfg-eth0是否一样
+      chkconfig network on
+      retoot
+   
+2.硬盘扩展:
+   qemu-img resize xx.raw 50G
+   1)ext4: fdisk -l
+           fdisk /dev/sda(删除最后的分区，然后再增加分区，一定不要忘记指定boot分区的标号（toggle partition))
+           reboot
+           resize2fs /dev/sda2(更改的分区号)
+   2)LVM: http://serverfault.com/questions/324281/how-do-you-increase-a-kvm-guests-disk-space
+   3)ext3/ext2: gparted
+
+3. vm install:
+   virt-install --name fedora-18-auto -r 1024 -v --disk path=test/fedora-18-test.raw 
+    --location=http://mirror.pnl.gov/fedora/linux/releases/18/Fedora/x86_64/os/ --extra-args "ks=file:./ks/junchunx-f17.ks" -d
+
+4. fedora安装包问题:
+   yum install some-rpm shows:
+   Traceback (most recent call last):
+  File "/usr/bin/yum", line 29, in <module>
+    yummain.user_main(sys.argv[1:], exit_code=True)
+  File "/usr/share/yum-cli/yummain.py", line 319, in user_main
+    errcode = main(args)
+  File "/usr/share/yum-cli/yummain.py", line 227, in main
+    return_code = base.doTransaction()
+  File "/usr/share/yum-cli/cli.py", line 558, in doTransaction
+    problems = self.downloadPkgs(downloadpkgs, callback_total=self.download_call
+  File "/usr/lib/python2.7/site-packages/yum/__init__.py", line 2224, in downloa
+    self.plugins.run('predownload', pkglist=pkglist)
+   使用以下命令试试:
+   安装 yum install deltarpm
+
+5. create opensuse:
+  1)network card: e1000
+  2)dhclient eth0
+  3)dhclient eth0获取不了4位的ip address
+
+6. feodra issue:
+   1)/etc/init.d/network restart
+      failed
+     a. 检查 ifconfig and /etc/sysconfig/network-scripts/ifcfg-eth0  网卡地址是否一样
+     b. rm  /etc/sysconfig/network-scripts/ifcfg-eth0.bak.1374079084.9

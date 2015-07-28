@@ -1,0 +1,9 @@
+1. dump 数据库里面的数据
+   mysqldump -n -t  -uprod_iris -proot prod_iris(db name) > **.sql
+   mysqldump -hdbprod1.vlan103.tizen.org -uprod_iris -proot -psja48jssaHahJJhs84jsaBNdsu prod_iris 
+
+
+2. 导入data
+    cat 0613.sql | mysql -uroot -p123456 iris_development(db name)
+3. 允许别的host远程访问本机mysql:
+   GRANT ALL ON *.* to root(db user)@'nemo-precise.bj.intel.com(host)' IDENTIFIED BY 'newpassword(dbpassword)';

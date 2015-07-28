@@ -1,0 +1,16 @@
+例4.4 函数指定为内置函数。
+#include <iostream>
+using namespace std;
+inline int max(int,int, int);       //声明函数，注意左端有inline
+int main( )
+{int i=10,j=20,k=30,m;
+ m=max(i,j,k);
+ cout<<″max=″<<m<<endl;
+ return 0;
+}
+
+inline int max(int a,int b,int c)       //定义max为内置函数
+{if(b>a) a=b;                           //求a,b,c中的最大者
+ if(c>a) a=c;
+ return a;
+}

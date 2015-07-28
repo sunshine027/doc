@@ -1,0 +1,8 @@
+Àı3.3 ÊäÈëµ¥¸ö×Ö·û¡£
+#include <iostream>
+using namespace std;
+int main( )
+{char c;
+ c=getchar( ); putchar(c+32); putchar(¡ä£Ün¡ä);
+ return 0;
+} 

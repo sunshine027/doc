@@ -1,0 +1,1 @@
+1. etcmtab-is-read-only: http://www.leonli.co.uk/blog/etcmtab-is-not-writable-read-only-file-system-linux-virtual-machine-problem-solution/

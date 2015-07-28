@@ -1,0 +1,5 @@
+1.nova interface-attach --net-id 5693298a-120d-4b62-8071-7c5fa646bf28  0f81e61e-604b-42d2-a608-5dfd97bb52a9(vm-id: view by openstack)
+2. neutron net-list(get net id)
+3.nova interface-list 0f81e61e-604b-42d2-a608-5dfd97bb52a9(vm-id)
+4.nova interface-detach  5693298a-120d-4b62-8071-7c5fa646bf28(vmid)  125141dd-1a38-47ff-b6ae-3c2182f55691(interface id: got by 3)
+

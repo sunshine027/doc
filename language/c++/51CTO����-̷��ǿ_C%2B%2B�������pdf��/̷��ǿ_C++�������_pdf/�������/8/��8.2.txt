@@ -1,0 +1,85 @@
+例8.2 引用多个对象的成员。
+（1） 程序(a)
+#include <iostream>
+using namespace std;
+class Time
+{public:
+int hour;
+int minute;
+int sec;
+};
+int main( )
+{Time t1;                                            //定义对象t1
+cin>>t1.hour;                                       //向t1的数据成员输入数据
+cin>>t1.minute;
+cin>>t1.sec;
+cout<<t1.hour<<″:″<<t1.minute<<″:″<<t1.sec<<endl;   //输出t1中数据成员的值
+Time t2;                                           //定义对象t2
+cin>>t2.hour;                                      //向t2的数据成员输入数据
+cin>>t2.minute;
+cin>>t2.sec;
+cout<<t2.hour<<″:″<<t2.minute<<″:″<<t2.sec<<endl;  //输出t2中数据成员的值
+return 0;
+}
+
+（2） 程序(b)
+#include <iostream>
+using namespace std;
+class Time
+{public:
+int hour;
+int minute;
+int sec;
+};
+
+int main( )
+{
+void set_time(Time&);     //函数声明
+void show_time(Time&);     //函数声明
+Time t1;                  //定义t1为Time类对象
+set_time(t1);             //调用set_time函数，向t1对象中的数据成员输入数据
+show_time(t1);            //调用show_time函数，输出t1对象中的数据
+Time t2;                  //定义t2为Time类对象
+set_time(t2);             //调用set_time函数，向t2对象中的数据成员输入数据
+show_time(t2);            //调用show_time函数，输出t2对象中的数据
+return 0;
+}
+
+void set_time(Time& t)          //定义函数set_time，形参t是引用变量
+{
+ cin>>t.hour;                  //输入设定的时间
+ cin>>t.minute;
+ cin>>t.sec;
+}
+
+void show_time(Time& t)         //定义函数show_time，形参t是引用变量
+{
+ cout<<t.hour<<″:″<<t.minute<<″:″<<t.sec<<endl;     //输出对象中的数据
+}
+
+（3） 程序(c)
+可以对上面的程序作一些修改，数据成员的值不再由键盘输入，而在调用函数时由实参给出，并在函数中使用默认参数。将程序(b)第8行以下的部分修改为
+int main( )
+{
+ void set_time(Time&,int hour=0,int minute=0,int sec=0);  //函数声明
+void show_time(Time&);                                   //函数声明
+Time t1;
+set_time(t1,12,23,34);                       //通过实参传递时、分、秒的值
+show_time(t1);
+Time t2;
+set_time(t2);                                //使用默认的时、分、秒的值
+show_time(t2);
+return 0;
+}
+
+void set_time(Time& t,int hour,int minute,int sec)   
+{
+t.hour=hour;
+t.minute=minute;
+t.sec=sec;
+}
+
+void show_time(Time& t)
+{
+cout<<t.hour<<″:″<<t.minute<<″:″<<t.sec<<endl;
+}

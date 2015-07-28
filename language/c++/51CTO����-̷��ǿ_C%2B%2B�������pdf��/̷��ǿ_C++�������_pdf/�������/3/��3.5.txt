@@ -1,0 +1,14 @@
+例3.5 求一元二次方程式ax2+bx+c=0的根。a,b,c的值在运行时由键盘输入，它们的值满足b2-4ac≥0。
+根据求x1,x2的算法。它可以编写出以下C++程序： 
+#include <iostream>
+#include <cmath>              //由于程序要用到数学函数sqrt，故应包含头文件cmath
+using namespace std;
+int main( )
+{float  a,b,c,x1,x2;
+ cin>>a>>b>>c;
+ x1=(-b+sqrt(b*b-4*a*c))/(2*a);
+ x2=(-b-sqrt(b*b-4*a*c))/(2*a);
+ cout<<″x1=″<<x1<<endl;
+ cout<<″x2=″<<x2<<endl;
+ return 0;
+}

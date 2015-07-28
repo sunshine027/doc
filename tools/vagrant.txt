@@ -1,0 +1,2 @@
+1.share files
+   put files in where Vagrantfile located, and check files at /vagrant/ in the vm.

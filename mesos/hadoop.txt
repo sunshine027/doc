@@ -1,0 +1,11 @@
+1.hadoop-env.sh在哪里就用哪里的配置文件，所以conf里面必须放置这个文件才有效
+2. hadoop on mesos:
+  service hadoop-hdfs-namenode restart
+  service hadoop-hdfs-datanode start
+  service hadoop-0.20-mapreduce-jobtracker start
+  hadoop jar /usr/lib/hadoop-0.20-mapreduce/hadoop-examples-2.6.0-mr1-cdh5.4.2.jar wordcount /user/foo/data /user/foo/out3
+   chown -R hdfs:hdfs /home/hdfs/hadoop-store/datadir
+
+  https://strat0sphere.wordpress.com/2014/10/30/cloudera-hdfs-cdh5-installation-to-use-with-mesos/
+  https://strat0sphere.wordpress.com/2014/10/30/hadoop-on-mesos-installation-guide/
+  https://github.com/mesos/hadoop

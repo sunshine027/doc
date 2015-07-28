@@ -1,0 +1,21 @@
+例7.3 指向结构体变量的指针的应用。
+#include <iostream>
+#include <string>
+using namespace std;
+int main( )
+{struct Student             //声明结构体类型student
+{ int num;
+string name;
+char sex;
+float score;
+};
+Student stu;                //定义Student类型的变量stu
+Student *p=&stu;            //定义p为指向Student类型数据的指针变量并指向stu
+stu.num=10301;              //对stu中的成员赋值
+stu.name=″Wang Fun″;        //对string变量可以直接赋值
+stu.sex=′f′;
+stu.score=89.5;
+cot<<stu. num<<″ ″<<stu.name<<″ ″<<stu.sex<<″ ″<<stu.score<<endl;
+cout<<(*p)>num<<″ ″<<(*p).name<<″ ″<<(*p).sex<<″ ″<<(*p).score<<endl;
+return 0;
+}

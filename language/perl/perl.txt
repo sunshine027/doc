@@ -1,0 +1,23 @@
+1.判断是否等于空串
+if($buggyContent ne ""){
+}
+2.从文件中读数据到字符串
+my $fcontent;
+open IN, $buggyContent  or die "cann't open $buggyContent:$!";
+while(<IN>){
+ $fcontent.=$_;
+}
+print $fcontent;
+
+3.判断变量是否等于某个字符串
+if(($buggyContent eq ""){
+
+}
+4.perl中的正则表达式：把<krugleResponse>转换成<krugleResponse><bugName>$bname<\/bugName><bugId>$bid<\/bugId>，相当于在<krugleResponse></krugleResponse>标签内加上2个标签
+xml =~ s/<krugleResponse>/<krugleResponse>
+	  <bugName>$bname<\/bugName>
+	  <bugId>$bid<\/bugId>/;
+5.my $html = doXSLT($xml, "DC.xsl");
+  打印：kPrintHTTPResponse($html);
+6.perl中用.表示加：my $url = $auth_url."/files?bugId=";
+     $url.=$bid;

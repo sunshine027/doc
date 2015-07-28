@@ -1,0 +1,12 @@
+例2.2 字符数据与整数进行算术运算。下面程序的作用是将小写字母转换为大写字母。
+#include <iostream>
+using namespace std;
+int main( )
+{char c1,c2;
+ c1=′a′;
+ c2=′b′;
+ c1=c1-32;
+ c2=c2-32;
+ cout<<c1<<′ ′<<c2<<endl;
+ return 0;
+}

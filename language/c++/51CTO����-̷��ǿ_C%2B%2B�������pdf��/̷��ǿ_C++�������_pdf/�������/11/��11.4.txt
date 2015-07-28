@@ -1,0 +1,27 @@
+例11.4 多级派生的访问属性。
+如果声明了以下的类:
+class A//基类
+{public:
+  int i;
+ protected:
+  void f2( );
+  int j;
+ private:
+  int k;
+};
+
+class B: public A              //public方式
+{public:
+void f3( );
+ protected:
+void f4( );
+ private:
+  int m;
+};
+
+class C: protected B           //protected方式
+{public:
+void f5( );
+ private:
+  int n;
+};

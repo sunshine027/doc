@@ -1,0 +1,24 @@
+例7.4 建立一个如图7.9所示的简单链表，它由3个学生数据的结点组成。输出各结点中的数据。
+#define NULL 0   
+#include <iostream> 
+struct Student
+{ long num;
+float score;
+struct Student *next;
+};
+int main( )
+{ Student a,b,c,*head,*p;
+a. num=31001; a.score=89.5;             //对结点a的num和score成员赋值
+b. num=31003; b.score=90;               //对结点b的num和score成员赋值
+c. num=31007; c.score=85;               //对结点c的num和score成员赋值
+head=&a;                                //将结点a的起始地址赋给头指针head
+a.next=&b;                              //将结点b的起始地址赋给a结点的next成员
+b.next=&c;                              //将结点c的起始地址赋给b结点的next成员
+c.next=NULL;                            //结点的next成员不存放其他结点地址
+p=head;                                 //使p指针指向a结点
+do        
+{cout<<p->num<<″  ″<<p->score<<endl;     //输出p指向的结点的数据
+p=p->next;                              //使p指向下一个结点 
+} while(p!=NULL);                         //输出完c结点后p的值为NULL 
+return 0;
+}

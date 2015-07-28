@@ -1,0 +1,4 @@
+1.mesos-master 必须创建/etc/mesos-master/ip，不然slave解析都是localhost:5050 ot 127.0.0.1:5050
+2.set ip for every master or slave
+3. zookeeper的端口2181如果不监听，可以查看log:/var/log/zookeeper.log，一般原因是/var/lib/zookeeper/versionx的owner必须是zookeeper
+3. marathon如果不监听，可能是hostname的原因，单独起进程看log
